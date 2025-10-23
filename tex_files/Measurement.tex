@@ -1,0 +1,151 @@
+
+\section{Informal income as classical measurement error}
+Let $y_{si}$ and $y_{fi}$ denote the logarithm of the long-run income status of the child and the parent, respectively.
+
+We define the \textit{intergenerational income elasticity} (IGE) as:
+\[
+\rho = \frac{\operatorname{Cov}(y_{si},y_{fi})}{\operatorname{Var}(y_{fi})}.
+\]
+
+We assume a linear relationship between incomes:
+\[
+y_{si} = \alpha + \beta y_{fi} + \varepsilon_{i}.
+\]
+And we assume that $\beta>0$.
+Estimating by Ordinary Least Squares (OLS) yields:
+\[
+y_{si} = \hat{\alpha} + \hat{\rho}\, y_{fi} + e_i,
+\]
+where
+\[
+\hat{\rho} = \frac{\widehat{\cov(y_{si},y_{fi})}}{\widehat{\var(y_{fi})}},
+\qquad \text{and} \qquad \cov(y_{fi},e_i) = 0.
+\]
+
+By the weak law of large numbers, this estimator converges asymptotically to the population IGE i.e $\plim \hat{\rho} = \rho.$
+
+
+
+Now suppose that the incomes of parents and children are observed in administrative records:
+\[
+\tilde{y}_{si} = y_{si}+ v_i, \qquad
+\tilde{y}_{fi}= y_{fi} + u_i,
+\]
+where $\tilde{y}_{si}$ and $\tilde{y}_{fi}$ correspond to the observed incomes of the child and the parent, respectively.  
+Each observation consists of the long run income status plus a random component, which can be interpreted as informal income or as a transitory fluctuation.
+
+
+\begin{assumption}[Classical measurement error]
+Under the assumption of \textit{classical measurement error}, these components are independent of both the true income of each individual and their intergenerational counterpart:
+\begin{itemize}
+    \item[A1.] $\cov(v_i,u_i) = 0$
+    \item[A2.] $\cov(y_{si},v_i) = 0, \quad \cov(\varepsilon_i,v_i)=0$
+    \item[A3.] $\cov(y_{fi},u_i) = 0, \quad \cov(\varepsilon_i,u_i)=0$
+\end{itemize}
+\end{assumption}
+
+Assumption \emph{A2} implies that $\cov(y_{fi},v_i)=0$ and Assumption \emph{A3} implies that $\cov(y_{si},u_i)=0$.
+
+In this setting, projecting the administrative income of children on administrative income of parents yields an estimator $\hat{\rho}_{OLS}$ that asymptotically provides a lower bound for the true IGE. Indeed,
+\[
+\plim \hat{\rho}_{OLS} 
+= \frac{\cov(\tilde{y}_{si},\tilde{y}_{fi})}{\var(\tilde{y}_{fi})}
+= \frac{ \sigma_{y_{fi}}^2}{ \sigma_{y_{fi}}^2+\sigma^2_u}\,\rho = \lambda\rho
+\;<\; \rho.
+\]
+
+Where $\lambda =\frac{ \sigma_{y_{fi}}^2}{ \sigma_{y_{fi}}^2+\sigma^2_u}<1$ is the attenuation factor. 
+
+
+Thus, if informal income is interpreted as classical measurement error, the IGE estimated from administrative data represents a lower bound of the IGE based on long run economic status.\footnote{If classical measurement error affects only the child’s income, while the parent’s income is measured precisely, the OLS estimator of the IGE is consistent for the population parameter.}
+ This result is consistent with the findings of \textcite{Zimmerman_1992}, \textcite{Solon_1992}, and \textcite{Björklund_1997}, who argue that what is captured in administrative records is not individuals’ \textit{long-run status income}, but rather income subject to transitory fluctuations that are uncorrelated with the long-run incomes of either parents or children.
+
+\section{Nonclassical measurement error}
+However, interpreting informal income as classical measurement error may be questionable when only formal income is observed. There are several reasons to suspect that the informal component is systematically related to the level of formal income: higher formal earnings may reduce the necessity or opportunity to earn informal income, while lower formal earnings may induce a higher share of informal income. Consequently, the independence assumptions required for classical measurement error (A2 and A3) are likely violated, suggesting that informal income should be treated as a form of non-classical measurement error rather than a purely random, mean-zero perturbation.
+
+We say that an income variable exhibits \textbf{non-classical measurement error} in the context of informal income if the observed income $\tilde y$ is related to the long-run total income $y$ through
+\[
+\tilde y = y - y^I,
+\]
+where $y^I$ is an unobserved informal income component satisfying the conditions below.
+
+\begin{assumption}[Non-classical measurement error]\leavevmode
+\begin{itemize}[nosep]
+   \item[B1] \textbf{Non-negativity and systematic bias:} The informal income component is always non-negative $(y^I \ge 0)$, which implies that the observed income systematically understates total income $(\mathbb{E}[\tilde y] < \mathbb{E}[y])$. Unlike classical measurement error (mean zero), this error is biased and one-sided.
+   
+   \item[B2] \textbf{Negative correlation with total income:} The informal income component is negatively correlated with long-run status income $(\cov(y, y^I) < 0)$, reflecting that individuals with higher total income tend to have a lower share of income coming from informal sources.
+   
+   \item[B3] \textbf{Independence from intergenerational shocks:} The informal income component is uncorrelated with the idiosyncratic error of the child’s income regression $(\cov(y^I, \varepsilon_i) = 0)$, ensuring that informal income does not systematically move with unobserved factors affecting the child’s observed income.
+\end{itemize}
+
+\end{assumption}
+
+After defining the assumptions, we note that the negative correlation between total income and the informal component (\emph{B2}) is empirically and theoretically plausible. Individuals with higher total income often have less incentive or need to engage in informal economic activities, either because they already earn sufficient income through formal channels or because higher-income jobs are more tightly monitored and less flexible for informal work. This pattern has been documented in the literature on informal labor markets and income reporting \parencite[see, e.g.,][]{Montenegro_2010,Gomes_2020}, supporting the plausibility of $\cov(y, y^I) < 0$. By explicitly incorporating these assumptions, our framework captures a realistic form of non-classical measurement error that arises in the study of informal income.
+
+\textcolor{red}{\textit{Note:}  It is worth mentioning that assumptions B2 and B3 could be replaced by a single condition directly imposing that the informal income component is negatively correlated with the long-run status income of the counterpart, i.e., $\cov(y^I_{si}, y_{fi}) < 0$ or vice versa.}
+
+
+This framework allows us to model scenarios where only some income variables, such as the child’s income, are subject to non-classical measurement error, while others, such as the father’s income, are observed without such error. Specifically, the child’s observed income is
+\[
+\tilde y_{si} = y_{si} - y_{si}^I, \quad y_{si}^I \ge 0,
+\]
+which is subject to non-classical measurement error (assumptions \emph{B1, B2, B3}). Under these assumptions and the specified linear relationship
+\[
+y_{si} = \alpha + \beta y_{fi} + \varepsilon_i,
+\]
+it follows that $\cov(y^I_{si}, y_{fi}) < 0$. Meanwhile, the father’s income is observed without error.
+
+If we calculate the intergenerational elasticity (IGE) using the child’s income with non-classical measurement error, the probability limit of the OLS estimator is
+\[
+\plim \hat{\rho}_{OLS} = \frac{\cov(\tilde{y}_{si}, y_{fi})}{\var(y_{fi})} = \frac{\cov(y_{si},y_{fi}) - \cov(y^I_{si},y_{fi})}{\var(y_{fi})} > \rho.
+\]
+
+Since $\cov(y^I_{si},y_{fi}) < 0$, the asymptotic limit of the IGE estimator becomes an upper bound of the true IGE when the child’s long-run status income is unobserved and only the formal component is observed, subject to non-classical measurement error arising from informal income.
+
+\subsection{Missing parental income}
+
+So far, we considered the scenario where the father’s income is observed without error, while the child’s income is subject to non-classical measurement error, which leads the OLS estimator to be an upper bound of the true IGE. We now discuss more general scenarios, linking our current framework with cases previously studied in the literature.
+
+Suppose first that both the child’s and the father’s long-run incomes are observed without error. In that case, the probability limit of the OLS estimator of the IGE is
+\[
+\plim \hat{\rho}_{OLS} = \beta + \frac{\cov(\varepsilon_i, y_{fi})}{\var(y_{fi})},
+\]
+where $\varepsilon_i$ is the idiosyncratic shock to the child’s income.
+
+Next, consider the scenario where the father’s income is not observed, but some parental characteristics reported by the child are available. Denote the imputed father’s income by $\hat{y}_{fi}$. In this case, the child’s observed income is still subject to non-classical measurement error:
+\[
+\tilde y_{si} = y_{si} - y_{si}^I, \quad y_{si}^I \ge 0,
+\]
+and the linear relationship is
+\[
+y_{si} = \alpha + \beta y_{fi} + \varepsilon_i.
+\]
+
+Using two-stage techniques (TSTSLS) with the imputed father’s income, the probability limit of the estimator becomes
+\[
+\plim \hat{\rho}_{TSTSLS} = \frac{\cov(\tilde y_{si}, \hat{y}_{fi})}{\var(\hat{y}_{fi})} = \frac{\beta \cov(y_{fi}, \hat{y}_{fi}) + \cov(\varepsilon_i, \hat{y}_{fi}) - \cov(y_{si}^I, \hat{y}_{fi})}{\var(\hat{y}_{fi})}.
+\]
+
+Assuming that the sample of pseudo parents is asymptotically equivalent to the real parent sample, the sample covariance of $y_{fi}$ and $\hat{y}_{fi}$ coincides with the sample variance of $\hat{y}_{fi}$ (see Appendix \ref{app:assumption}). This allows us to simplify the expression as:
+\[
+\frac{\cov(\tilde y_{si}, \hat{y}_{fi})}{\var(\hat{y}_{fi})} = \beta + \frac{\cov(\varepsilon_i, \hat{y}_{fi}) - \cov(y_{si}^I, \hat{y}_{fi})}{\var(\hat{y}_{fi})}.
+\]
+
+
+Comparing this to the true IGE $\rho$, we have
+\[
+\frac{\cov(\tilde y_{si}, \hat{y}_{fi})}{\var(\hat{y}_{fi})} - \rho = \frac{\cov(\varepsilon_i, \hat{y}_{fi}) - \cov(y_{si}^I, \hat{y}_{fi})}{\var(\hat{y}_{fi})} - \frac{\cov(\varepsilon_i, y_{fi})}{\var(y_{fi})}.
+\]
+
+The TSTSLS estimator is consistent when
+\[
+\frac{\cov(\varepsilon_i, \hat{y}_{fi}) - \cov(y_{si}^I, \hat{y}_{fi})}{\cov(\varepsilon_i, y_{fi})} = \frac{\var(\hat{y}_{fi})}{\var(y_{fi})} = R^2.
+\]
+
+In contrast to the case in which the father’s income is observed and the child’s income is affected by non-classical measurement error, so that the OLS estimator systematically overstates the true IGE, in the setting where the father’s income is missing and imputed through reported parental characteristics the TSTSLS estimator does not necessarily display an upward bias. Depending on the joint covariance structure of the imputation error, the child’s income shock, and the true parental income, the estimator may converge to the true parameter. This shows that imputing parental income, while seemingly adding an additional source of error, may generate scenarios in which the upwards bias is eliminated.
+
+
+
+
+
+

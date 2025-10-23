@@ -1,0 +1,204 @@
+\documentclass[12pt,oneside]{article}
+\usepackage{appendix}
+\usepackage{tikz}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[a4paper, total={7.2in, 9in}]{geometry}
+\usepackage{csquotes} % requerido por biblatex
+\usepackage{booktabs}
+\usepackage{centernot}
+\usepackage{listings}
+\renewcommand{\lstlistingname}{Listado}
+\usepackage{xcolor}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{myblue}{rgb}{0,0,0.7}
+\usepackage{amssymb}
+\usepackage{amsmath,amsfonts}
+\DeclareMathOperator{\var}{Var}
+\DeclareMathOperator{\cov}{Cov}
+\usepackage{amsthm}
+
+\DeclareMathOperator*{\plim}{plim}
+\newtheorem*{assumption}{Assumption}
+% Definir un environment para proposiciones
+\newtheorem{proposition}{Proposition}[section] 
+% Estilo personalizado para teoremas con nombres opcionales
+\makeatletter
+\newtheoremstyle{bracket}%
+  {\topsep}      % espacio arriba
+  {\topsep}      % espacio abajo
+  {\itshape}     % cuerpo del teorema en itálica
+  {}             % sangría
+  {\bfseries}    % encabezado en negrita
+  {}             % sin puntuación automática
+  { }            % espacio después del encabezado
+  {% encabezado personalizado
+    \thmname{#1}\thmnumber{ #2}%
+    \@ifnotempty{#3}{\ \textnormal{[#3]}}.%
+  }
+\makeatother
+
+% Activar estilo
+\theoremstyle{bracket}
+\usepackage{enumitem}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+\usepackage[tikz]{tcolorbox}
+
+\usepackage[style=authoryear, hyperref=auto,dashed=false,maxnames=99,labelnumber=true,defernumbers=false,sorting=nyt]{biblatex}
+
+% Override the sorting behavior: use only first author for sorting
+\defbibenvironment{numberedbib}
+  {\list
+     {\normalfont[\arabic{enumi}]}% <-- number with brackets here
+     {\usecounter{enumi}%
+      \setlength{\leftmargin}{2.5em}% adjust left margin if needed
+      \setlength{\itemsep}{0pt}%
+      \setlength{\parsep}{0pt}}}
+  {\endlist}
+  {\item}
+
+\usepackage{xcolor}
+% Cambiar color del numerito de la nota al pie en el texto principal
+\makeatletter
+\renewcommand\@makefnmark{%
+    \hbox{\textsuperscript{\normalfont\color{cyan}\@thefnmark}}%
+}
+\makeatother
+\usepackage[colorlinks=true, linkcolor=cyan, citecolor=cyan, urlcolor=cyan, hyperfootnotes=false]{hyperref}
+
+\DeclareFieldFormat{citehyperref}{%
+  \DeclareFieldAlias{bibhyperref}{noformat}% Avoid nested links
+  \bibhyperref{#1}}
+
+\DeclareFieldFormat{textcitehyperref}{%
+  \DeclareFieldAlias{bibhyperref}{noformat}% Avoid nested links
+  \bibhyperref{%
+    #1%
+    \ifbool{cbx:parens}
+      {\bibcloseparen\global\boolfalse{cbx:parens}}
+      {}}}
+
+\savebibmacro{cite}
+\savebibmacro{textcite}
+
+\renewbibmacro*{cite}{%
+  \printtext[citehyperref]{%
+    \restorebibmacro{cite}%
+    \usebibmacro{cite}}}
+
+\renewbibmacro*{textcite}{%
+  \ifboolexpr{
+    ( not test {\iffieldundef{prenote}} and
+      test {\ifnumequal{\value{citecount}}{1}} )
+    or
+    ( not test {\iffieldundef{postnote}} and
+      test {\ifnumequal{\value{citecount}}{\value{citetotal}}} )
+  }
+    {\DeclareFieldAlias{textcitehyperref}{noformat}}
+    {}%
+  \printtext[textcitehyperref]{%
+    \restorebibmacro{textcite}%
+    \usebibmacro{textcite}}}
+
+\renewcommand{\baselinestretch}{1.2}
+\setlength{\parskip}{\smallskipamount}
+\setlength{\parindent}{0pt}
+\usepackage[T1]{fontenc}
+\setcounter{tocdepth}{1}
+\usepackage{xparse}
+\NewDocumentCommand{\textcitebrackets}{m}{%
+  \citeauthor{#1}~\mkbibbrackets{\bibhyperref{\citeyear{#1}}}%
+}
+\addbibresource{biblio.bib}
+
+
+\usepackage{graphicx, amsmath, amssymb}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{pifont}
+% Custom numbering for appendices
+\usepackage{etoolbox}
+\usepackage{titling} 
+\newcommand{\cmark}{\ding{51}}
+\newcommand{\xmark}{\ding{55}}
+% Definir el entorno "definición" en español
+\usepackage{comment}
+\usepackage{booktabs}
+ % Agregar en el preámbulo
+\usepackage{tikz-network}
+\usepackage{subcaption} % Para organizar las imágenes en subfiguras
+\usepackage{caption} % Para agregar títulos a las imágenes
+\usepackage{diffcoeff}  
+\usepackage{multirow}
+\usepackage{epstopdf}
+\usepackage{etoolbox} % Para detectar si es chapter o section
+\usepackage{abstract}
+% Redefinir el nombre "Abstract" por "Resumen"
+\renewcommand{\abstractname}{Resumen}
+\usepackage{titling}
+\usepackage{subfig}
+% No cargues biblatex aquí, se cargará por capítulo
+\usepackage[bottom]{footmisc}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{lmodern}
+\usepackage{multicol}
+\newcommand\scalemath[2]{\scalebox{#1}{\mbox{\ensuremath{\displaystyle #2}}}}
+\usepackage{sectsty}
+\allsectionsfont{\raggedright}
+\title{Intergenerational Income Mobility under Informal Income and Measurement Error}
+\author{rjaraq}
+\date{\today}
+\begin{document}
+\maketitle
+\input{Measurement}
+\printbibliography
+
+\appendix
+\renewcommand{\thesection}{\Alph{section}} % Secciones en letras (A, B, C...)
+\renewcommand{\thesubsection}{\Alph{section}.\arabic{subsection}}
+
+\section{Asymptotic Properties of Predicted Parental Income}
+\label{app:assumption}
+
+\begin{proposition}[Sample covariance and variance of $\hat{y}_{fi}$]
+\label{prop:covvar}
+Let $\hat{y}_{fi} = X_i' \hat{\delta}$, where $\hat{\delta}$ is an OLS estimator obtained from a sample of pseudo parents asymptotically equivalent to the real parent sample. Then:
+\[
+\plim \widehat{\cov(y_{fi}, \hat{y}_{fi})} = \plim \widehat{\var(\hat{y}_{fi})} = \cov(y_{fi}, X_i) \var(X_i)^{-1} \cov(X_i, y_{fi}).
+\]
+\end{proposition}
+
+\begin{proof}
+By definition of sample covariance and variance:
+\[
+\widehat{\cov(y_{fi}, \hat{y}_{fi})} = \hat{\delta}' \widehat{\cov(y_{fi}, X_i)}, \qquad
+\widehat{\var(\hat{y}_{fi})} = \hat{\delta}' \widehat{\var(X_i)} \hat{\delta}.
+\]
+
+Applying the probability limit and using that the pseudo-parent sample is asymptotically equivalent to the real parent sample, we have
+\[
+\plim \hat{\delta} = \var(X_i)^{-1} \cov(X_i, y_{fi}).
+\]
+
+Therefore:
+\[
+\plim \widehat{\cov(y_{fi}, \hat{y}_{fi})} = (\plim \hat{\delta})' \cov(y_{fi}, X_i) = \cov(y_{fi}, X_i) \var(X_i)^{-1} \cov(X_i, y_{fi}),
+\]
+and similarly:
+\[
+\plim \widehat{\var(\hat{y}_{fi})} = (\plim \hat{\delta})' \var(X_i) (\plim \hat{\delta}) = \cov(y_{fi}, X_i) \var(X_i)^{-1} \cov(X_i, y_{fi}).
+\]
+
+Hence, the equality of probability limits holds $\plim \widehat{\cov(y_{fi}, \hat{y}_{fi})} = \plim \widehat{\var(\hat{y}_{fi})}$. \end{proof}
+
+
+
+\end{document}

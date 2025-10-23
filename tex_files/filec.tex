@@ -1,0 +1,647 @@
+\documentclass[12pt,oneside]{article}
+\usepackage{appendix}
+\usepackage{tikz}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[a4paper, total={7.2in, 9in}]{geometry}
+\usepackage{csquotes} % requerido por biblatex
+\usepackage{booktabs}
+\usepackage{centernot}
+\usepackage{listings}
+\renewcommand{\lstlistingname}{Listado}
+\usepackage{xcolor}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{myblue}{rgb}{0,0,0.7}
+\usepackage{appendix}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\DeclareMathOperator*{\plim}{plim}
+% Estilo personalizado para teoremas con nombres opcionales
+\makeatletter
+\newtheoremstyle{bracket}%
+  {\topsep}      % espacio arriba
+  {\topsep}      % espacio abajo
+  {\itshape}     % cuerpo del teorema en itálica
+  {}             % sangría
+  {\bfseries}    % encabezado en negrita
+  {}             % sin puntuación automática
+  { }            % espacio después del encabezado
+  {% encabezado personalizado
+    \thmname{#1}\thmnumber{ #2}%
+    \@ifnotempty{#3}{\ \textnormal{[#3]}}.%
+  }
+\makeatother
+
+% Activar estilo
+\theoremstyle{bracket}
+\usepackage{enumitem}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+\usepackage[tikz]{tcolorbox}
+
+\usepackage[style=authoryear, hyperref=auto,dashed=false,maxnames=99,labelnumber=true,defernumbers=false,sorting=nyt]{biblatex}
+
+% Override the sorting behavior: use only first author for sorting
+\defbibenvironment{numberedbib}
+  {\list
+     {\normalfont[\arabic{enumi}]}% <-- number with brackets here
+     {\usecounter{enumi}%
+      \setlength{\leftmargin}{2.5em}% adjust left margin if needed
+      \setlength{\itemsep}{0pt}%
+      \setlength{\parsep}{0pt}}}
+  {\endlist}
+  {\item}
+
+\usepackage{xcolor}
+% Cambiar color del numerito de la nota al pie en el texto principal
+\makeatletter
+\renewcommand\@makefnmark{%
+    \hbox{\textsuperscript{\normalfont\color{cyan}\@thefnmark}}%
+}
+\makeatother
+\usepackage[colorlinks=true, linkcolor=cyan, citecolor=cyan, urlcolor=cyan, hyperfootnotes=false]{hyperref}
+
+
+
+
+\DeclareFieldFormat{citehyperref}{%
+  \DeclareFieldAlias{bibhyperref}{noformat}% Avoid nested links
+  \bibhyperref{#1}}
+
+\DeclareFieldFormat{textcitehyperref}{%
+  \DeclareFieldAlias{bibhyperref}{noformat}% Avoid nested links
+  \bibhyperref{%
+    #1%
+    \ifbool{cbx:parens}
+      {\bibcloseparen\global\boolfalse{cbx:parens}}
+      {}}}
+
+\savebibmacro{cite}
+\savebibmacro{textcite}
+
+\renewbibmacro*{cite}{%
+  \printtext[citehyperref]{%
+    \restorebibmacro{cite}%
+    \usebibmacro{cite}}}
+
+\renewbibmacro*{textcite}{%
+  \ifboolexpr{
+    ( not test {\iffieldundef{prenote}} and
+      test {\ifnumequal{\value{citecount}}{1}} )
+    or
+    ( not test {\iffieldundef{postnote}} and
+      test {\ifnumequal{\value{citecount}}{\value{citetotal}}} )
+  }
+    {\DeclareFieldAlias{textcitehyperref}{noformat}}
+    {}%
+  \printtext[textcitehyperref]{%
+    \restorebibmacro{textcite}%
+    \usebibmacro{textcite}}}
+
+\renewcommand{\baselinestretch}{1.2}
+\setlength{\parskip}{\smallskipamount}
+\setlength{\parindent}{0pt}
+\usepackage[T1]{fontenc}
+\setcounter{tocdepth}{1}
+\usepackage{xparse}
+\NewDocumentCommand{\textcitebrackets}{m}{%
+  \citeauthor{#1}~\mkbibbrackets{\bibhyperref{\citeyear{#1}}}%
+}
+\addbibresource{biblio.bib}
+
+
+\usepackage{graphicx, amsmath, amssymb}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{pifont}
+% Custom numbering for appendices
+\usepackage{etoolbox}
+\usepackage{titling} 
+\newcommand{\cmark}{\ding{51}}
+\newcommand{\xmark}{\ding{55}}
+% Definir el entorno "definición" en español
+\usepackage{comment}
+\usepackage{booktabs}
+ % Agregar en el preámbulo
+\usepackage{tikz-network}
+\usepackage{subcaption} % Para organizar las imágenes en subfiguras
+\usepackage{caption} % Para agregar títulos a las imágenes
+\usepackage{diffcoeff}  
+\usepackage{multirow}
+\usepackage{epstopdf}
+\usepackage{etoolbox} % Para detectar si es chapter o section
+\usepackage{abstract}
+% Redefinir el nombre "Abstract" por "Resumen"
+\renewcommand{\abstractname}{Resumen}
+\usepackage{titling}
+\usepackage{subfig}
+% No cargues biblatex aquí, se cargará por capítulo
+\usepackage[bottom]{footmisc}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{lmodern}
+\usepackage{multicol}
+\newcommand\scalemath[2]{\scalebox{#1}{\mbox{\ensuremath{\displaystyle #2}}}}
+\usepackage{sectsty}
+\allsectionsfont{\raggedright}
+\title{Two Sample Two Stages Least Squares (TSTSLS)}
+\author{rjaraq}
+\date{\today}
+\begin{document}
+\maketitle
+\section{Model with Exogeneity}
+
+Consider the following two linear models:
+\begin{align}
+    y_i^c &= \beta y_i^p + \psi_i, \\
+    y_i^p &= \delta z_i + u_i,
+\end{align}
+where $y^{c}_i$ denotes the (log) permanent earnings of child $i$, and $y^{p}_i$ denotes the (log) permanent earnings of father $i$.
+
+The intergenerational earnings elasticity (IGE) estimator is defined as:
+\[
+\rho = \frac{\operatorname{Cov}(y^c_i,y_i^p)}{\operatorname{Var}(y_i^p)}.
+\]
+
+The probability limit of the OLS estimator is
+\[
+\plim_{n\to \infty}\hat{\rho}_{OLS}
+= \frac{\operatorname{Cov}(\beta y_i^p+\psi_i,y_i^p)}{\operatorname{Var}(y_i^p)}
+= \beta + \frac{\operatorname{Cov}(\psi_i,y_i^p)}{\operatorname{Var}(y_i^p)}.
+\]
+
+If we assume \textcolor{blue}{$\mathbb{E}[\psi_i|y_i^p]=0$}, then $\operatorname{Cov}(\psi_i,y_i^p)=0$, and hence
+\[
+\plim_{n\to \infty}\hat{\rho}_{OLS} = \beta.
+\]
+
+Now suppose we use TSTSLS and obtain the parameter $\hat{\delta}$ from an asymptotically representative sample of fathers. Then,
+\begin{align*}
+\hat{\rho}_{TSTSLS} &=\frac{\widehat{\operatorname{Cov}(y^c_i,\hat{y}_i^p)}}{\widehat{\operatorname{Var}(\hat{y}_i^p)}}= \frac{\beta \hat{\delta} \widehat{\operatorname{Cov}(y_i^p,z_i)}}{\hat{\delta}^2\widehat{\operatorname{Var}(z_i)}}+\frac{\hat{\delta}\widehat{\operatorname{Cov}(\psi_i,z_i)}}{\hat{\delta}^2\widehat{\operatorname{Var}(z_i)}}
+\end{align*}
+Using Strong LLN and assuming that \textcolor{blue}{$\mathbb{E}[u_i|z_i]=0$}, so $\hat{\delta}$ is consistent, we have that.
+\begin{align*}
+\plim\hat{\rho}_{TSTSLS} &= \frac{\beta \delta\operatorname{Cov}(y_i^p,z_i)}{\delta^2\operatorname{Var}(z_i)}+ \frac{\delta\,\operatorname{Cov}(z_i,\psi_i)}{\delta^2\operatorname{Var}(z_i)}
+\end{align*}
+ We know that $\delta = \frac{\operatorname{Cov}(y_i^p,z_i)}{\operatorname{Var}(z_i)}$.
+
+\begin{align*}
+\plim\hat{\rho}_{TSTSLS} &= \beta+ \frac{\delta\,\operatorname{Cov}(z_i,\psi_i)}{\delta^2\operatorname{Var}(z_i)}
+\end{align*}
+
+Thus, the TSTSLS estimator of the IGE is consistent if the instrument to impute parental income satisfies the exogeneity condition \textcolor{blue}{$\operatorname{Cov}(z_i,\psi_i) = \mathbb{E}[z_i\psi_i]=0$}.
+
+\section{Model with Endogeneity}
+
+Now consider the following two linear models:
+\begin{align}
+    y_i^c &= \beta y_i^p + \varepsilon_i, \\
+    y_i^p &= \delta z_i + u_i,
+\end{align}
+where $\varepsilon_i = \psi_i + \varphi_i$, \textcolor{blue}{$\mathbb{E}[\varphi_i|y_i^p] \neq 0$} and \textcolor{blue}{$\mathbb{E}[\psi_i|y_i^p] = 0$}.  
+
+The probability limit of the OLS estimator is
+\[
+\plim_{n\to \infty}\hat{\rho}_{OLS}
+= \frac{\operatorname{Cov}(\beta y_i^p + \psi_i + \varphi_i ,\, y_i^p)}{\operatorname{Var}(y_i^p)}
+= \beta + \frac{\operatorname{Cov}(\varphi_i,y_i^p)}{\operatorname{Var}(y_i^p)}.
+\]
+
+Now suppose we use TSTSLS and obtain the parameter $\hat{\delta}$ from an asymptotically representative sample of fathers, under the same condition as before: \textcolor{blue}{$\mathbb{E}[u_i|z_i]=0$}. Then,
+\begin{align*}
+    \plim_{n\to \infty}\hat{\rho}_{TSTSLS}
+    &= \frac{\operatorname{Cov}(y^c_i,\hat{y}_i^p)}{\operatorname{Var}(\hat{y}_i^p)} 
+    = \frac{\operatorname{Cov}(\beta y_i^p + \psi_i + \varphi_i,\, \delta z_i)}{\operatorname{Var}(\delta z_i)} \\
+    &= \frac{\beta\,\delta\,\operatorname{Cov}(y_i^p,z_i) + \delta\,\operatorname{Cov}(z_i,\psi_i) + \delta\,\operatorname{Cov}(z_i,\varphi_i)}{\delta^2\operatorname{Var}(z_i)} \\
+    &= \beta + \frac{\operatorname{Cov}(\psi_i,\hat{y}_i^p) + \operatorname{Cov}(\varphi_i,\hat{y}_i^p)}{\operatorname{Var}(\hat{y}_i^p)}.
+\end{align*}
+
+Rewriting, we obtain
+\begin{align*}
+   \plim_{n\to \infty}\hat{\rho}_{TSTSLS} 
+   &= \plim_{n\to \infty}\hat{\rho}_{OLS} 
+   + \frac{\operatorname{Cov}(\psi_i,\hat{y}_i^p)}{\operatorname{Var}(\hat{y}_i^p)} 
+   + \left( \frac{\operatorname{Cov}(\varphi_i,\hat{y}_i^p)}{\operatorname{Var}(\hat{y}_i^p)} - \frac{\operatorname{Cov}(\varphi_i,y_i^p)}{\operatorname{Var}(y_i^p)} \right).
+\end{align*}
+
+$\hat{\rho}_{TSTSLS}$ is consistent if:
+$$\frac{\operatorname{Cov}(\varepsilon_i,\hat{y}_i^p)}{\operatorname{Cov}(\varphi_i,y_i^p)}=\frac{\operatorname{Var(\hat{y}_i^p)}}{\operatorname{Var}(y_i^p)}=R^2$$
+
+\begin{comment}
+\section{Errors in variables}
+\begin{align*}
+    y_i^c &= \beta y_i^p + \varepsilon_i, \\
+    y_i^{p} &= \delta z_i + u_i,\\
+    y_i^p &= y_i^{p_f}+y_i^{p_i} 
+\end{align*}
+where $\varepsilon_i = \psi_i + \varphi_i$, \textcolor{blue}{$\mathbb{E}[\varphi_i|y_i^p] \neq 0$} and \textcolor{blue}{$\mathbb{E}[\psi_i|y_i^p] = 0$}.  
+Define $\rho^{Formal} = \frac{\operatorname{Cov}(y^c_i,y_i^{p_f})}{\operatorname{Var}(y_i^{p_f})}$
+\begin{align*}
+     \plim_{n\to \infty}\hat{\rho}^{Formal}_{OLS}  &= \frac{\operatorname{Cov}(\beta y_i^p + \psi_i + \varphi_i - y^{p_i}_i, y_i^{p_f})}{\operatorname{Var}(y_i^{p_f})}\\
+     \plim_{n\to \infty}\hat{\rho}^{Formal}_{TSTSLS}  &
+\end{align*}
+\end{comment}
+\section{Simultaneity bias in Estimation Using OLS}
+
+Consider a sample of $n$ individuals, who may be either children or parents, each with both formal and informal sources of income. 
+We model the joint determination of these income components through the following system of simultaneous linear equations:
+\begin{align}
+    y_i^f &= z_i' \alpha_0 + \alpha_1 y_i^i + u_i, \\
+    y_i^i &= z_i' \beta_0 + \beta_1 y_i^f + v_i,
+\end{align}
+where $y_i^f$ denotes the formal income of individual $i$, $y_i^i$ the informal income, and $z_i$ is a vector of observed covariates. 
+The error terms $u_i$ and $v_i$ capture unobserved heterogeneity.
+
+Solving for the endogenous variables in terms of the exogenous covariates and error terms, we obtain the reduced forms:
+
+\begin{align}
+    y^f_i &= \frac{z'_i \alpha_0 + \alpha_1 z'_i \beta_0 + \alpha_1 v_i + u_i}{1 - \alpha_1 \beta_1}, \\
+    y^i_i &= \frac{z'_i \beta_0 + \beta_1 z'_i \alpha_0 + v_i + \beta_1 u_i}{1 - \alpha_1 \beta_1}.
+\end{align}
+
+
+
+By the Frisch–Waugh–Lovell theorem, the OLS estimator of $\beta_1$ converges asymptotically to the partial covariance:
+
+\[
+\plim \hat{\beta}_1^{OLS} = \frac{\operatorname{Cov}(y^i_i, y^f_i \mid z_i)}{\operatorname{Var}(y^f_i \mid z_i)}
+= \frac{\operatorname{Cov}(z'_i \beta_0 + \beta_1 y^f_i + v_i, y^f_i \mid z_i)}{\operatorname{Var}(y^f_i \mid z_i)}
+= \beta_1 + \frac{\operatorname{Cov}(v_i, y^f_i \mid z_i)}{\operatorname{Var}(y^f_i \mid z_i)}.
+\]
+
+Assuming that $u_i$ and $v_i$ are uncorrelated, i.e., $\operatorname{Cov}(u_i, v_i) = 0$, the conditional variance and covariance can be computed from the reduced forms as:
+
+\begin{align}
+    \operatorname{Var}(y^f_i \mid z_i) &= \frac{\alpha_1^2 \operatorname{Var}(v_i) + \operatorname{Var}(u_i)}{(1 - \alpha_1 \beta_1)^2}, \\
+    \operatorname{Cov}(v_i, y^f_i \mid z_i) &= \frac{\alpha_1 \operatorname{Var}(v_i)}{1 - \alpha_1 \beta_1}.
+\end{align}
+
+Substituting these expressions gives the asymptotic bias of $\hat{\beta}_1^{OLS}$:
+
+\[
+\plim \hat{\beta}_1^{OLS} - \beta_1
+= \frac{\alpha_1 \operatorname{Var}(v_i) (1 - \alpha_1 \beta_1)}{\alpha_1^2 \operatorname{Var}(v_i) + \operatorname{Var}(u_i)}.
+\]
+
+Analogously, the asymptotic bias of $\hat{\alpha}_1^{OLS}$ is:
+
+\[
+\plim \hat{\alpha}_1^{OLS} - \alpha_1
+= \frac{\beta_1 \operatorname{Var}(u_i) (1 - \alpha_1 \beta_1)}{\beta_1^2 \operatorname{Var}(u_i) + \operatorname{Var}(v_i)}.
+\]
+
+
+
+This derivation illustrates the simultaneity bias inherent in OLS estimates.
+The inconsistency of $\hat{\beta}_1$ permeates in $\hat{\beta}_0$ on the following way (assuming that \textcolor{blue}{$\mathrm{E}[v_iz_i]=0$}):
+$$\plim \hat\beta_0-\beta_0 = -(\mathrm{E}[z_iz'_i])^{-1}(\mathrm{E}[z_i\tilde{y}_i^c](\plim \hat\beta_1-\beta_1))=-(\mathrm{E}[z_iz'_i])^{-1}\bigg( \mathrm{E}[z_i\tilde{y}_i^c]\frac{\alpha_1 \operatorname{Var}(v_i) (1 - \alpha_1 \beta_1)}{\alpha_1^2 \operatorname{Var}(v_i) + \operatorname{Var}(u_i)}\bigg)$$
+
+\begin{comment}
+\section{Estimating informal income in a subsample}
+
+Consider a sample of $n$ individuals with both formal and informal income. We model these incomes using the following simultaneous linear equations:
+
+\begin{align}
+    \tilde{y}^c_i &= z'_i \alpha_0 + \alpha_1 \dot{y}^c_i + u_i, \\
+    \dot{y}^c_i &= z'_i \beta_0 + \beta_1 \tilde{y}^c_i + v_i,\\
+    & y^c_i =\tilde{y}^c_i + \dot{y}^c_i ,\\
+    y^c_i&= \alpha + \beta y_i^p+\varepsilon_i
+\end{align}
+
+De las $n$ observaciones del hijo, $n_1$ observaciones tenemos informacion del ingreso formal e informal del hijo, mientras que $n_2$ observaciones solo tenemos ingreso formal.
+$$\mathbf{y}^c= [y_1^c,y_2^c,\ldots , y_{n_1}^c,\hat{y}_{n_1+1}^c,\ldots,\hat{y}_{n}^c]'$$
+Donde $\hat{y}_i^c = z'_i\hat{\beta}_0+\hat{\tilde{y}}^c_i(\hat{\beta}_1+1)$, donde los parametros estimados se obtienen mediante OLS en la submuestra de hijos en las que se observa ambos ingresos.
+En contraste con $y_i^c = z'_i\beta_0+\tilde{y}^c_i(\beta_1+1)+v_i$.
+Ahora obtenemos la proyeccion de $\mathbf{y}^c$ en el vector de ingresos totales de los padres para obtener la elasticidad de ingreso intergeneracional (IGE en ingles). Si asumimos $\mathrm{E}[\varepsilon_i|y_i^p]=0$, entonces
+$$\rho = \frac{\operatorname{Cov}(y^c_i,y^p_i)}{\operatorname{Var}(y_i^p)}=\beta$$
+$$\hat{\rho}_{OLS}=\bigg(\frac{\sum_{i=1}^n(y_i^p)^2}{n}\bigg)^{-1}\bigg(\frac{n_1}{n}\frac{\sum_{i=1}^{n_1}(y_i^c-\bar{y}^c)(y_i^p-\bar{y}^p)}{n_1}+\frac{n_2}{n}\frac{\sum_{i=n_1+1}^{n}(\hat{y}_i^c-\bar{y}^c)(y_i^p-\bar{y}^p)}{n_2}\bigg)$$
+Donde $\bar{y}^c=(\sum_{i=1}^{n_1} y^c_i+\sum_{i=n_1+1}^n \hat{y}^c_i)/n$ y $\bar{y}^p = \sum_{i=1}^ny_i^p/n $
+
+$$\hat{\rho}_{OLS}=\bigg(\hat{\operatorname{Var}}(y_i^p)\bigg)^{-1}\bigg(\frac{n_1}{n}\hat{\operatorname{Cov}}(y_i^cy_i^p)+\frac{n_2}{n}\hat{\operatorname{Cov}}(\hat{y}_i^cy_i^p)+\frac{n_1}{n}(\bar{y}^c_{n_1}-\bar{y}^c)(\bar{y}^p_{n_1}-\bar{y}^p)+\frac{n_2}{n}(\hat{\bar{y}}^c_{n_2}-\bar{y}^c)(\bar{y}^p_{n_2}-\bar{y}^p)\bigg)$$
+
+\begin{comment}
+tenemos que :
+$$y^c_i= \frac{(1+\beta_1)(z_i'\alpha_0+u_i)+(1+\alpha_1)(z_i'\beta_0+v_i)}{1-\beta_1\alpha_1}$$
+\end{comment}
+
+\begin{comment}
+$$\operatorname{Cov}(\hat{y}_i^c,y_i^p)=\operatorname{Cov}(y_i^c,y_i^p)+(\plim \hat{\beta}_1^{OLS} - \beta_1)(\operatorname{Cov}(\tilde{y}_i^c,y_i^p)-\gamma_{\tilde{y}z})$$
+Where $\gamma_{\tilde{y}z}=  (\mathrm{E}[z_iz'_i])^{-1}\mathrm{E}[z_i\tilde{y}_i^c]$.
+
+Assuming that $\plim \bar{y}^p_{n_1}= \plim \bar{y}^p_{n_2} = \plim \bar{y}^p$ and $\plim \frac{n_1}{n} = p_1, \plim \frac{n_2}{n} = p_2$ we have:
+$$\plim \hat{\rho}_{OLS} = \beta + p_2(\plim \hat{\beta}_1^{OLS} - \beta_1)(\operatorname{Cov}(\tilde{y}_i^c,y_i^p)-\gamma_{\tilde{y}z})$$
+$$\plim \hat{\rho}_{OLS} = \beta + p_2(\plim \hat{\beta}_1^{OLS} - \beta_1)(\operatorname{Cov}(\tilde{y}_i^c,y_i^p)-\operatorname{Cov}(z_i,y_i^p)\gamma_{\tilde{y}z})$$
+
+$$\plim \hat{\rho}_{OLS} = \beta + p_2((\plim \hat{\beta}_1^{OLS} - \beta_1)\operatorname{Cov}(\tilde{y}_i^c,y_i^p)-\operatorname{Cov}(z_i,y_i^p)(\plim \hat{\beta}_0^{OLS} - \beta_0))$$
+\end{comment}
+
+\section{Estimating informal income in a subsample}
+
+Consider a sample of $n$ individuals with information on income. These incomes are modeled through the following system of simultaneous linear equations:
+
+\begin{align}
+    \tilde{y}^c_i &= z'_i \alpha_0 + \alpha_1 \dot{y}^c_i + u_i, \\
+    \dot{y}^c_i &= z'_i \beta_0 + \beta_1 \tilde{y}^c_i + v_i, \\
+    y^c_i &= \tilde{y}^c_i + \dot{y}^c_i, \\
+    y^c_i &= \alpha + \beta y_i^p + \varepsilon_i,
+\end{align}
+
+where $\tilde{y}^c_i,\dot{y}^c_i$ denotes formal and informal child income respectively, $y_i^p$  denotes parental income.  
+
+Out of the $n$ child observations, $n_1$ include both formal and informal income, while the remaining $n_2$ contain only formal income.
+Define
+\[
+\mathbf{y}^c = [y_1^c, y_2^c, \ldots, y_{n_1}^c, \hat{y}_{n_1+1}^c, \ldots, \hat{y}_n^c]',
+\]
+where
+\[
+\hat{y}_i^c = z'_i \hat{\beta}_0 + \tilde{y}^c_i(\hat{\beta}_1+1),
+\]
+with parameters estimated by OLS on the subsample of children with both types of income observed.  
+In contrast, the true model satisfies:
+\[
+y_i^c = z'_i \beta_0 + \tilde{y}_i^c(\beta_1+1) + v_i.
+\]
+
+Assuming \textcolor{blue}{$\mathrm{E}[\varepsilon_i \mid y_i^p]=0$}, the intergenerational income elasticity (IGE) is:
+\[
+\rho = \frac{\operatorname{Cov}(y_i^c,y_i^p)}{\operatorname{Var}(y_i^p)} = \beta.
+\]
+
+We then project $\mathbf{y}^c$ on parental income to estimate the intergenerational income elasticity (IGE).
+The OLS estimator is
+\[
+\hat{\rho}_{OLS} = \left(\frac{\sum_{i=1}^n (y_i^p)^2}{n}\right)^{-1}
+\left(\frac{n_1}{n}\frac{\sum_{i=1}^{n_1}(y_i^c-\bar{y}^c)(y_i^p-\bar{y}^p)}{n_1}+
+\frac{n_2}{n}\frac{\sum_{i=n_1+1}^{n}(\hat{y}_i^c-\bar{y}^c)(y_i^p-\bar{y}^p)}{n_2}\right),
+\]
+where
+\[
+\bar{y}^c = \frac{\sum_{i=1}^{n_1} y^c_i + \sum_{i=n_1+1}^n \hat{y}^c_i}{n}, 
+\quad 
+\bar{y}^p = \frac{\sum_{i=1}^n y_i^p}{n}.
+\]
+
+Equivalently,
+\[
+\hat{\rho}_{OLS} = \big(\widehat{\operatorname{Var}(y_i^p)}\big)^{-1}\Bigg(
+\frac{n_1}{n}\widehat{\operatorname{Cov}(y_i^c,y_i^p)} +
+\frac{n_2}{n}\widehat{\operatorname{Cov}(\hat{y}_i^c,y_i^p)} +
+\frac{n_1}{n}(\bar{y}^c_{n_1}-\bar{y}^c)(\bar{y}^p_{n_1}-\bar{y}^p) +
+\frac{n_2}{n}(\hat{\bar{y}}^c_{n_2}-\bar{y}^c)(\bar{y}^p_{n_2}-\bar{y}^p)\Bigg).
+\]
+
+From the structural system, we have
+\[
+\frac{\operatorname{Cov}(y_i^c,y_i^p)}{\operatorname{Var}(y_i^p)} = \beta,
+\]
+while for the imputed values ( if we assume \textcolor{blue}{$\operatorname{Cov}(v_i,y_i^p)=0$}),
+
+\[
+\operatorname{Cov}(\hat{y}_i^c,y_i^p)=\operatorname{Cov}(y_i^c,y_i^p)+(\plim \hat{\beta}_1^{OLS} - \beta_1)\operatorname{Cov}(\tilde{y}_i^c,y_i^p)+(\plim \hat{\beta}_0^{OLS} - \beta_0)\operatorname{Cov}(z_i,y_i^p),
+\]
+
+Assume \textcolor{blue}{$\plim \bar{y}^p_{n_1} = \plim \bar{y}^p_{n_2} = \plim \bar{y}^p$}, meaning that, asymptotically, the average paternal income for children with observed total income coincides with that for children with imputed income.
+And $\plim (n_1/n) = p_1,\ \plim (n_2/n) = p_2$, it follows that
+\[
+\plim \hat{\rho}_{OLS} = \beta + \frac{p_2\big((\plim \hat{\beta}_1^{OLS} - \beta_1)\operatorname{Cov}(\tilde{y}_i^c,y_i^p) + (\plim \hat{\beta}_0^{OLS} - \beta_0)\operatorname{Cov}(z_i,y_i^p)\big)}{\operatorname{Var}(y_i^p)}
+\]
+From the previous section, we have that:
+$$\plim \hat\beta_0-\beta_0 = -(\mathrm{E}[z_iz'_i])^{-1}(\mathrm{E}[z_i\tilde{y}_i^c](\plim \hat\beta_1-\beta_1))$$
+ so:
+
+\[
+\plim \hat{\rho}_{OLS} = \beta +\frac{p_2(\plim \hat{\beta}_1^{OLS} - \beta_1)\big(\operatorname{Cov}(\tilde{y}_i^c,y_i^p)-\gamma_{\tilde{y}z}'\operatorname{Cov}(z_i,y_i^p)\big)}{\operatorname{Var}(y_i^p)},
+\]
+ where 
+ \[
+\underset{k\times1}{\gamma_{\tilde{y}z}} = \big(\mathrm{E}[z_i z'_i]\big)^{-1}\mathrm{E}[z_i \tilde{y}_i^c].
+\]
+
+\section{Estimating Informal income for the whole sample}
+We assume the same model as before, but now we do not have informal income from either children or parents, and we only observe the formal income of both.  
+
+\begin{align}
+    \dot{y}^a_i &= (z^a_i)' \beta^a_0 + \beta^a_1 \tilde{y}^a_i + v_i^a, \quad a\in \{p,c\}\\
+    y^a_i &= \tilde{y}^a_i + \dot{y}^a_i,\quad a\in \{p,c\} \\
+    y^c_i &= \alpha + \beta y_i^p + \varepsilon_i,
+\end{align}
+
+We impute the informal income of children and parents through the estimation of the parameters $\hat{\beta}_0^a$ using a pseudo-sample(s).
+\[
+\hat{y}^a_i= \tilde{y}^a_i+(z_i^a)'\hat{\beta}^a_0 
+\quad (\text{omits the effect of } \tilde{y}^a_i \text{ on } \dot{y}^a_i)
+\]
+
+True value:
+\[
+y^a_i=(z_i^a)'\beta^a_0+ \tilde{y}^a_i(\beta_1^a+1)+ v^a_i
+\]
+
+Assume $\textcolor{blue}{\operatorname{Cov}(v_i^c,v_i^p)=0}$.
+
+The IGE when observing the total income of parents and children:
+\[
+\scalemath{0.9}{
+\frac{(\beta_0^c)'\bigg(\operatorname{Cov}(z_i^c,z_i^p)\beta_0^p+\operatorname{Cov}(z_i^c,\tilde{y}_i^p)\bigg)+(1+\beta_1^c)\bigg((\beta_0^p)'\operatorname{Cov}(\tilde{y}_i^c,z_i^p) +\operatorname{Cov}(\tilde{y}_i^c,\tilde{y}_i^p) (1+\beta_1^p)\bigg) +\operatorname{Cov}(v_i^c,y_i^p)+\operatorname{Cov}(y_i^c,v_i^p)}{\operatorname{Var}(y_i^p)}}
+\]
+
+The IGE with imputed informal income for children and parents:
+\[
+\frac{(\hat{\beta}_0^c)'\operatorname{Cov}(z_i^c,z_i^p)\hat{\beta}_0^p + (\hat{\beta}_0^p)'\operatorname{Cov}(\tilde{y}_i^c,z_i^p)+\operatorname{Cov}(\tilde{y}_i^c,\tilde{y}_i^p)+(\hat{\beta}_0^c)'\operatorname{Cov}(z_i^c,\tilde{y}_i^p)}{\operatorname{Var}(\hat{y}_i^p)}
+\]
+
+\textcolor{blue}{Here, applying other techniques (stochastic multiple imputation) and carefully examining the functional relationship between formal and informal income over the life cycle could provide valuable insights into the consequences of imputing informal income for individuals.} 
+
+\begin{comment}
+Suppose \textcolor{blue}{$\operatorname{Var}(y_i^p)=\operatorname{Var}(\hat{y}_i^p)$ (strong assumption)}:
+
+$$(\hat{\beta}_0^c)'\operatorname{Cov}(z_i^c,z_i^p)\hat{\beta}_0^p- (\beta_0^c)'\operatorname{Cov}(z_i^c,z_i^p)\beta_0^p=\frac{1}{2}\frac{(\hat{\beta}^c_0+\beta_0^c)\operatorname{Cov}(z_i^c,z_i^p)(\hat{\beta}^p_0-\beta_0^p)+(\hat{\beta}^c_0-\beta_0^c)\operatorname{Cov}(z_i^c,z_i^p)(\hat{\beta}^p_0+\beta_0^p)}{\operatorname{Var}(y_i^p)}$$
+$$\rho+\frac{}{}$$
+
+
+
+Agregar lo de las sumas de los ingresos para representar el ingreso representativo.
+
+\end{comment}
+
+
+
+\section{Informal income as classical measurement error}
+
+Let $y_i^c$ and $y_i^p$ denote the logarithm of the long-run income status of the child and the parent, respectively.
+
+We define the \textit{intergenerational income elasticity} (IGE) as:
+\[
+\rho = \frac{\operatorname{Cov}(y_i^c,y_i^p)}{\operatorname{Var}(y_i^p)}.
+\]
+
+We assume a linear relationship between incomes:
+\[
+y_i^c = \alpha + \beta y_i^p + \varepsilon_i.
+\]
+And we assume that $\beta>0$.
+Estimating by Ordinary Least Squares (OLS) yields:
+\[
+y_i^c = \hat{\alpha} + \hat{\rho}\, y_i^p + e_i,
+\]
+where
+\[
+\hat{\rho} = \frac{\widehat{\operatorname{Cov}(y_i^c,y_i^p)}}{\widehat{\operatorname{Var}(y_i^p)}},
+\qquad \text{and} \qquad \operatorname{Cov}(y_i^p,e_i) = 0.
+\]
+
+By the weak law of large numbers, this estimator converges asymptotically to the population IGE i.e $\plim \hat{\rho} = \rho.$
+
+
+Now suppose that the incomes of parents and children are observed in administrative records:
+\[
+\tilde{y}_{i}^c = y_i^c + v_i, \qquad
+\tilde{y}_{i}^p = y_i^p + u_i,
+\]
+where $\tilde{y}_i^c$ and $\tilde{y}_i^p$ correspond to the observed incomes of the child and the parent, respectively.  
+Each observation consists of the true income plus a random component, which can be interpreted as informal income or as a transitory fluctuation.
+
+\begin{tcolorbox}[title=Classical measurement error Assumptions, colback=white, colframe=black]
+Under the assumption of \textit{classical measurement error}, these components are independent of both the true income of each individual and their intergenerational counterpart:
+\begin{itemize}
+    \item[$A1.$] $\operatorname{Cov}(v_i,u_i) = 0$
+    \item[$A2.$] $\operatorname{Cov}(y_i^c,v_i) = 0, \quad \operatorname{Cov}(\varepsilon,v_i)=0$
+    \item[$A3.$] $\operatorname{Cov}(y_i^p,u_i) = 0, \quad \operatorname{Cov}(\varepsilon,u_i)=0$
+\end{itemize}
+\end{tcolorbox}
+
+Assumption $A2$ implies that $\operatorname{Cov}(y_i^p,v_i)=0$ and Assumption $A3$ implies that $\operatorname{Cov}(y_i^c,u_i)=0$.
+In this setting, projecting the administrative income of children on administrative income of parents yields an estimator $\hat{\rho}_{OLS}$ that asymptotically provides a lower bound for the true IGE. Indeed,
+\[
+\plim \hat{\rho}_{OLS} 
+= \frac{\operatorname{Cov}(\tilde{y}_i^c,\tilde{y}_i^p)}{\operatorname{Var}(\tilde{y}_i^p)}
+= \frac{ \sigma_{y^p}^2}{ \sigma_{y^p}^2+\sigma^2_u}\,\rho = \lambda\rho
+\;<\; \rho.
+\]
+
+Where $\lambda =\frac{ \sigma_{y^p}^2}{ \sigma_{y^p}^2+\sigma^2_u}<1$ is the attenuation factor. 
+
+Thus, if informal income is interpreted as classical measurement error, the IGE estimated from administrative data is a lower bound of the IGE based on total income. This result is analogous to those obtained by \cite{Zimmerman_1992}, \cite{Solon_1992}, and \cite{Björklund_1997}, who argue what is observed in a administrative data is not the \textit{long-run status income} of indiviuduals, but income subject to transitory fluctuations that are uncorrelated with the long-run incomes of either parents or children.
+
+\section{Nonclassical measurement error}
+
+In this section, we relax the classical measurement error assumption and consider a scenario in which, on average, the measurement error decreases as the \textbf{observed} income increases.  
+We first assume this behavior for the observed income of children, while the observed income of parents still contains classical measurement error (Assumption A1 and A3 still holds).
+
+Suppose that as the child's observed income increases, it more closely reflects the true income, so that the magnitude of the measurement error decreases, i.e.,
+\[
+\operatorname{Cov}(\tilde{y}_i^c, v_i) < 0.
+\]
+This affects the relationship between the child's true income and its explanatory variables.
+
+In particular, it follows that
+\[
+\operatorname{Cov}(y_i^c, v_i) < -\operatorname{Var}(v_i),
+\]
+which can be rewritten as
+\[
+\beta \operatorname{Cov}(y_i^p, v_i) + \operatorname{Cov}(\varepsilon_i, v_i) < -\operatorname{Var}(v_i).
+\]
+
+Assuming further that \(\beta > 0\) and \(\operatorname{Cov}(\varepsilon_i, v_i) = 0\), we necessarily have
+\[
+\operatorname{Cov}(y_i^p, v_i) < -\frac{\operatorname{Var}(v_i)}{\beta} < 0.
+\]
+
+If the parent's income contains classical measurement error but the child's income follows this nonclassical pattern (Assumption A1 and A2 still holds), then the OLS estimator satisfies
+\[
+\plim \hat{\rho}_{OLS} 
+= \frac{\operatorname{Cov}(\tilde{y}_i^c,\tilde{y}_i^p)}{\operatorname{Var}(\tilde{y}_i^p)} 
+= \lambda \left(\rho + \frac{\beta_{vy^p}}{\sigma^2_{y^p}} \right)
+< \lambda \left(\rho - \frac{\sigma^2_v}{\sigma_{y^p}^2 \beta}\right),
+\]
+where \(\beta_{vy^p} = \operatorname{Cov}(v_i,y_i^p)/\operatorname{Var}(y_i^p)\) is the projection coefficient of the child's error component on the parent's true income.  
+Thus, we obtain a lower bound for the true IGE: because the incomes of both parents and children are not fully observed, and since the child's error decreases in magnitude when the reported income is high, this lower bound becomes even smaller.
+
+Conversely, if the child's error is classical and the parent's error is nonclassical (\(\operatorname{Cov}(\tilde{y}_i^p,u_i)<0\)), this implies \(\operatorname{Cov}(y_i^p,u_i)<-\operatorname{Var}(u_i)\).  
+If additionally \(\operatorname{Cov}(\varepsilon_i,u_i)=0\), then \(\operatorname{Cov}(y_i^c,u_i) < -\beta \operatorname{Var}(u_i)\), and we have
+\[
+\plim \hat{\rho}_{OLS} 
+= \frac{\operatorname{Cov}(\tilde{y}_i^c,\tilde{y}_i^p)}{\operatorname{Var}(\tilde{y}_i^p)} 
+= \frac{\operatorname{Cov}(y_i^c,y_i^p)+\operatorname{Cov}(y_i^c,u_i)}{\operatorname{Var}(y_i^p)+\operatorname{Var}(u_i)+2\operatorname{Cov}(y_i^p,u_i)}
+= \phi\left(\rho+\frac{\operatorname{Cov}(y_i^c,u_i)}{\operatorname{Var}(y_i^p)}\right)
+< \phi \left(\rho-\beta \frac{\sigma^2_u}{\sigma^2_{y^p}}\right),
+\]
+where \(\phi = \frac{\sigma^2_{y^p}}{\sigma^2_{y^p} + \sigma^2_u + 2\sigma_{y^p u}} < 1\).
+
+Finally, if nonclassical errors are present in both parents' and children's incomes—where the errors diminish as reported incomes increase—then
+\[
+\plim \hat{\rho}_{OLS} 
+= \frac{\operatorname{Cov}(\tilde{y}_i^c,\tilde{y}_i^p)}{\operatorname{Var}(\tilde{y}_i^p)} 
+< \phi \left(\rho - \frac{\sigma^2_v}{\sigma^2_{y^p} \beta} - \frac{\beta \sigma^2_u}{\sigma^2_{y^p}} + \frac{\sigma_{uv}}{\sigma^2_{y^p}} \right).
+\]
+
+
+\section{Other assumptions}
+El error es siempre negativo, que quiere decir, que el ingreso observado es siempre menor que el long term income status del individuo, ahora que tanto menor es depende del ingreso 
+\begin{itemize}
+    \item[B1.] $P(v_i\leq 0) = P(u_i\leq 0)= 1$ 
+    \item[B2.] $\operatorname{Cov}(y^c_i,v_i) >0,\quad \operatorname{Cov}(\varepsilon_i,v_i)=0$
+    \item[B3.] $\operatorname{Cov}(y^p_i,u_i) >0,\quad \operatorname{Cov}(\varepsilon_i,u_i)=0$
+\end{itemize}
+B3 implies that $\operatorname{Cov}(y_i^p,v_i)>0$ and B4 $ \operatorname{Cov}(y^c_i,u_i)>0$.
+
+\subsection{Solo $v_i$ es no clásico (A1 A3 B1 B2)}
+Entonces, 
+\[
+\plim \hat{\rho}_{OLS} 
+= \frac{\operatorname{Cov}(\tilde{y}_i^c,\tilde{y}_i^p)}{\operatorname{Var}(\tilde{y}_i^p)}
+=\lambda(\rho+\beta_{vy^p})
+\]
+el estimador es consistente si 
+$$\beta_{vy^p} = \frac{1-\lambda}{\lambda} \rho = \frac{\sigma^2_u}{\sigma^2_{y^p}}\rho$$
+
+\subsection{Solo $u_i$ es no clásico (A1 A2 B1 B3)}
+
+\[
+\plim \hat{\rho}_{OLS} 
+= \frac{\operatorname{Cov}(\tilde{y}_i^c,\tilde{y}_i^p)}{\operatorname{Var}(\tilde{y}_i^p)}
+=\phi(\rho+\frac{\sigma^2_{y^c}}{\sigma^2_{y^p}}\beta_{uy^c})
+\]
+
+el estimador es consistente si:
+
+\[
+\beta_{uy^c} 
+= \frac{\sigma^2_{y^p}}{\sigma^2_{y^c}} \, \rho \left( \frac{1}{\phi} - 1 \right)
+= \frac{\sigma^2_{y^p}}{\sigma^2_{y^c}} \, \rho \, \frac{\sigma^2_u + 2 \sigma_{y^pu}}{\sigma^2_{y^p}}
+= \frac{\sigma^2_u + 2 \sigma_{uy^p}}{\sigma^2_{y^c}} \, \rho
+\]
+
+\subsection{Ambos no clasicos (B1 B2 B3)}
+$$\plim \hat{\rho}_{OLS} = \phi(\rho + \frac{\sigma^2_{y^c}}{\sigma^2_{y^p}}\beta_{uy^c} + \beta_{vy^p} + \sigma_{uv}/\sigma^2_{y^p}) $$
+
+\subsection{8.1 Pero padres estimamos ingreso}
+
+Ahora suponemos que no observamos el ingreso del padre, pero si características de ellos reportadas por los hijos, en dicha muestra no existen errores de medición, mientras que  el ingreso del hijo esta supuesto a un error de medición no clásico.
+
+$$\tilde{y}^c_i = y_i^c + v_i$$
+$$y_i^c = \alpha + \beta y_i^p + \varepsilon_i$$
+Si observamos ambos ingresos en el long run economic status, tendriamos
+$$\plim \rho_{OLS} = \beta + \frac{\operatorname{Cov}(\varepsilon_i,y_i^p)}{\operatorname{Var}(y_i^p)}$$
+Si no observamos ni el ingreso del padre, ni el verdadero ingreso del hijo.
+$$\plim \rho_{TSTSLS} = \frac{\operatorname{Cov}(\tilde{y}_i^c,\hat{y}_i^p)}{\operatorname{Var}(\hat{y}_i^p)}= \frac{\beta \operatorname{Cov}(y_i^p,\hat{y}_i^p)+\operatorname{Cov}(\varepsilon_i,\hat{y}_i^p)+\operatorname{Cov}(v_i,\hat{y}_i^p)}{\operatorname{Var}(\hat{y}_i^p)}$$
+Si asumimos que $\operatorname{Cov}(y_i^p,\hat{y}_i^p) = \operatorname{Var}(\hat{y}_i^p)$ Entonces : 
+$$ \frac{\operatorname{Cov}(\tilde{y}_i^c,\hat{y}_i^p)}{\operatorname{Var}(\hat{y}_i^p)}= \beta + \frac{\operatorname{Cov}(\varepsilon_i,\hat{y}_i^p)+\operatorname{Cov}(v_i,\hat{y}_i^p)}{\operatorname{Var}(\hat{y}_i^p)}$$
+En comparacion a rho tenemos 
+$$ \frac{\operatorname{Cov}(\tilde{y}_i^c,\hat{y}_i^p)}{\operatorname{Var}(\hat{y}_i^p)}= \rho + \frac{\operatorname{Cov}(\varepsilon_i,\hat{y}_i^p)+\operatorname{Cov}(v_i,\hat{y}_i^p)}{\operatorname{Var}(\hat{y}_i^p)}-  \frac{\operatorname{Cov}(\varepsilon_i,y_i^p)}{\operatorname{Var}(y_i^p)}$$
+El estimador es consistente cuando: 
+$$\frac{\operatorname{Cov}(\varepsilon_i,\hat{y}_i^p)+\operatorname{Cov}(v_i,\hat{y}_i^p)}{\operatorname{Cov}(\varepsilon_i,y_i^p)} = \frac{\operatorname{Var}(\hat{y}_i^p)}{\operatorname{Var}(y_i^p)} = R^2$$
+
+
+
+\end{document}
+

@@ -1,0 +1,193 @@
+\documentclass[12pt,oneside]{article}
+\usepackage{appendix}
+\usepackage{tikz}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[a4paper, total={7.2in, 9in}]{geometry}
+\usepackage{csquotes} % requerido por biblatex
+\usepackage{booktabs}
+\usepackage{centernot}
+\usepackage{listings}
+\renewcommand{\lstlistingname}{Listado}
+\usepackage{xcolor}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{myblue}{rgb}{0,0,0.7}
+\usepackage{appendix}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+% Estilo personalizado para teoremas con nombres opcionales
+\makeatletter
+\newtheoremstyle{bracket}%
+  {\topsep}      % espacio arriba
+  {\topsep}      % espacio abajo
+  {\itshape}     % cuerpo del teorema en itálica
+  {}             % sangría
+  {\bfseries}    % encabezado en negrita
+  {}             % sin puntuación automática
+  { }            % espacio después del encabezado
+  {% encabezado personalizado
+    \thmname{#1}\thmnumber{ #2}%
+    \@ifnotempty{#3}{\ \textnormal{[#3]}}.%
+  }
+\makeatother
+
+% Activar estilo
+\theoremstyle{bracket}
+\usepackage{enumitem}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+\usepackage[tikz]{tcolorbox}
+
+\usepackage[style=authoryear, hyperref=auto,dashed=false,maxnames=99,labelnumber=true,defernumbers=false,sorting=nyt]{biblatex}
+
+% Override the sorting behavior: use only first author for sorting
+\defbibenvironment{numberedbib}
+  {\list
+     {\normalfont[\arabic{enumi}]}% <-- number with brackets here
+     {\usecounter{enumi}%
+      \setlength{\leftmargin}{2.5em}% adjust left margin if needed
+      \setlength{\itemsep}{0pt}%
+      \setlength{\parsep}{0pt}}}
+  {\endlist}
+  {\item}
+
+\usepackage{xcolor}
+% Cambiar color del numerito de la nota al pie en el texto principal
+\makeatletter
+\renewcommand\@makefnmark{%
+    \hbox{\textsuperscript{\normalfont\color{cyan}\@thefnmark}}%
+}
+\makeatother
+\usepackage[colorlinks=true, linkcolor=cyan, citecolor=cyan, urlcolor=cyan, hyperfootnotes=false]{hyperref}
+
+
+
+
+\DeclareFieldFormat{citehyperref}{%
+  \DeclareFieldAlias{bibhyperref}{noformat}% Avoid nested links
+  \bibhyperref{#1}}
+
+\DeclareFieldFormat{textcitehyperref}{%
+  \DeclareFieldAlias{bibhyperref}{noformat}% Avoid nested links
+  \bibhyperref{%
+    #1%
+    \ifbool{cbx:parens}
+      {\bibcloseparen\global\boolfalse{cbx:parens}}
+      {}}}
+
+\savebibmacro{cite}
+\savebibmacro{textcite}
+
+\renewbibmacro*{cite}{%
+  \printtext[citehyperref]{%
+    \restorebibmacro{cite}%
+    \usebibmacro{cite}}}
+
+\renewbibmacro*{textcite}{%
+  \ifboolexpr{
+    ( not test {\iffieldundef{prenote}} and
+      test {\ifnumequal{\value{citecount}}{1}} )
+    or
+    ( not test {\iffieldundef{postnote}} and
+      test {\ifnumequal{\value{citecount}}{\value{citetotal}}} )
+  }
+    {\DeclareFieldAlias{textcitehyperref}{noformat}}
+    {}%
+  \printtext[textcitehyperref]{%
+    \restorebibmacro{textcite}%
+    \usebibmacro{textcite}}}
+
+\renewcommand{\baselinestretch}{1.2}
+\setlength{\parskip}{\smallskipamount}
+\setlength{\parindent}{0pt}
+\usepackage[T1]{fontenc}
+\setcounter{tocdepth}{1}
+\usepackage{xparse}
+\NewDocumentCommand{\textcitebrackets}{m}{%
+  \citeauthor{#1}~\mkbibbrackets{\bibhyperref{\citeyear{#1}}}%
+}
+\addbibresource{bibliography.bib}
+\addbibresource{bibtesis_roth_sorted.bib}
+
+\usepackage{graphicx, amsmath, amssymb}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{pifont}
+% Custom numbering for appendices
+\usepackage{etoolbox}
+\usepackage{titling} 
+\newcommand{\cmark}{\ding{51}}
+\newcommand{\xmark}{\ding{55}}
+% Definir el entorno "definición" en español
+\usepackage{comment}
+\usepackage{booktabs}
+ % Agregar en el preámbulo
+\usepackage{tikz-network}
+\usepackage{subcaption} % Para organizar las imágenes en subfiguras
+\usepackage{caption} % Para agregar títulos a las imágenes
+\usepackage{diffcoeff}  
+\usepackage{multirow}
+\usepackage{epstopdf}
+\usepackage{etoolbox} % Para detectar si es chapter o section
+\usepackage{abstract}
+% Redefinir el nombre "Abstract" por "Resumen"
+\renewcommand{\abstractname}{Resumen}
+\usepackage{titling}
+\usepackage{subfig}
+% No cargues biblatex aquí, se cargará por capítulo
+\usepackage[bottom]{footmisc}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{lmodern}
+\usepackage{multicol}
+\usepackage{sectsty}
+\allsectionsfont{\raggedright}
+\title{Two Sample Two Stages Least Squares (TSTSLS)}
+\author{rjaraq}
+\date{\today}
+\begin{document}
+\maketitle
+\section{Model}
+Following the classical linear regression model,
+\begin{equation}
+y^{\text{true}}_i = \alpha + \beta x^{\text{true}}_i + \varepsilon_i \quad \forall i \in \{1, \ldots, n\},
+\end{equation}
+where $y^{\text{true}}_i$ denotes the (log) permanent earnings of son $i$, and $x^{\text{true}}_i$ denotes the (log) permanent earnings of his father.
+
+We assume that both permanent earnings can be decomposed into a formal and an informal component:
+\begin{equation}
+y_i^{\text{true}} = y_i^f + y_i^i, \quad x_i^{\text{true}} = x_i^f + x_i^i,
+\end{equation}
+where $y_i^f$ and $x_i^f$ represent the formal earnings of the son and the father, respectively, while $y_i^i$ and $x_i^i$ represent their informal earnings. Assume that $E[\varepsilon_i]=0$ and $E[x_i^f\varepsilon_i]=0$ (or $E[\varepsilon_i|x_i^f]=0$)
+
+In practice, informal earnings are often unobserved in survey or administrative data. As a result, the estimation of intergenerational mobility typically relies only on the observable formal components. This leads to an estimate of the intergenerational elasticity (IGE) based on formal earnings, given by:
+\begin{align}
+\rho^{f} &= \frac{\operatorname{Cov}(y_i^f, x_i^f)}{\operatorname{Var}(x_i^f)}
+\end{align}
+
+\begin{align*}
+\mathrm{plim}_{n \to \infty}\hat{\rho}^{f} &= \frac{\operatorname{Cov}(y_i^f, x_i^f)}{\operatorname{Var}(x_i^f)}\\
+ &= \frac{\operatorname{Cov}(\alpha + \beta x^{\text{true}}_i + \varepsilon_i-y_i^i, x_i^f)}{\operatorname{Var}(x_i^f)}\\
+ &= \frac{\beta\operatorname{Cov}(x^{\text{true}}_i,x_i^f)- \operatorname{Cov}(y_i^i,x_i^f)}{\operatorname{Var}(x_i^f)}\\
+ &= \frac{\beta[\operatorname{Var}(x^f_i)+\operatorname{Cov}(x_i^i,x_i^f)]-\operatorname{Cov}(y_i^i,x_i^f)}{\operatorname{Var}(x_i^f)}\\
+ &=\beta(1+\frac{\operatorname{Cov}(x_i^i,x_i^f)}{\operatorname{Var}(x_i^f)})-\frac{\operatorname{Cov}(y_i^i,x_i^f)}{\operatorname{Var}(x_i^f)}
+\end{align*}
+Now we suppose the following equation:
+$$y_i^i = \phi+\theta x_i^{true}+\psi_i$$
+Where $E[\psi_i]=0$ and $E[x_i^f\psi_i]=0$,
+Consistency conditions (formal and total income) :
+\begin{align*}
+\beta \frac{\operatorname{Cov}(x_i^i,x_i^f)}{\operatorname{Var}(x_i^f)}&=\frac{\operatorname{Cov}(y_i^i,x_i^f)}{\operatorname{Var}(x_i^f)}\\
+&= \theta \frac{\operatorname{Cov}(x_i^{true},x_i^f)}{\operatorname{Var}(x_i^f)}\\
+\beta \frac{\operatorname{Cov}(x_i^i,x_i^f)}{\operatorname{Var}(x_i^f)}&= \theta  \frac{\operatorname{Cov}(x_i^{i},x_i^f)}{\operatorname{Var}(x_i^f)}+\theta
+\end{align*}
+If we let $\lambda = \frac{\operatorname{Cov}(x_i^i,x_i^f)}{\operatorname{Var}(x_i^f)}$, we have:
+$$\beta =\frac{\theta(\lambda+1)}{\lambda}$$
+\end{document}
