@@ -49,76 +49,12 @@
 \usepackage{algorithm}
 \usepackage{algpseudocode}
 
-\usepackage[tikz]{tcolorbox}
+\usepackage{tcolorbox}
 
 \usepackage[style=authoryear, hyperref=auto,dashed=false,maxnames=99,labelnumber=true,defernumbers=false,sorting=nyt]{biblatex}
 
-% Override the sorting behavior: use only first author for sorting
-\defbibenvironment{numberedbib}
-  {\list
-     {\normalfont[\arabic{enumi}]}% <-- number with brackets here
-     {\usecounter{enumi}%
-      \setlength{\leftmargin}{2.5em}% adjust left margin if needed
-      \setlength{\itemsep}{0pt}%
-      \setlength{\parsep}{0pt}}}
-  {\endlist}
-  {\item}
-
-\usepackage{xcolor}
-% Cambiar color del numerito de la nota al pie en el texto principal
-\makeatletter
-\renewcommand\@makefnmark{%
-    \hbox{\textsuperscript{\normalfont\color{cyan}\@thefnmark}}%
-}
-\makeatother
-\usepackage[colorlinks=true, linkcolor=cyan, citecolor=cyan, urlcolor=cyan, hyperfootnotes=false]{hyperref}
-
-\DeclareFieldFormat{citehyperref}{%
-  \DeclareFieldAlias{bibhyperref}{noformat}% Avoid nested links
-  \bibhyperref{#1}}
-
-\DeclareFieldFormat{textcitehyperref}{%
-  \DeclareFieldAlias{bibhyperref}{noformat}% Avoid nested links
-  \bibhyperref{%
-    #1%
-    \ifbool{cbx:parens}
-      {\bibcloseparen\global\boolfalse{cbx:parens}}
-      {}}}
-
-\savebibmacro{cite}
-\savebibmacro{textcite}
-
-\renewbibmacro*{cite}{%
-  \printtext[citehyperref]{%
-    \restorebibmacro{cite}%
-    \usebibmacro{cite}}}
-
-\renewbibmacro*{textcite}{%
-  \ifboolexpr{
-    ( not test {\iffieldundef{prenote}} and
-      test {\ifnumequal{\value{citecount}}{1}} )
-    or
-    ( not test {\iffieldundef{postnote}} and
-      test {\ifnumequal{\value{citecount}}{\value{citetotal}}} )
-  }
-    {\DeclareFieldAlias{textcitehyperref}{noformat}}
-    {}%
-  \printtext[textcitehyperref]{%
-    \restorebibmacro{textcite}%
-    \usebibmacro{textcite}}}
-
-\renewcommand{\baselinestretch}{1.2}
-\setlength{\parskip}{\smallskipamount}
-\setlength{\parindent}{0pt}
-\usepackage[T1]{fontenc}
-\setcounter{tocdepth}{1}
-\usepackage{xparse}
-\NewDocumentCommand{\textcitebrackets}{m}{%
-  \citeauthor{#1}~\mkbibbrackets{\bibhyperref{\citeyear{#1}}}%
-}
 \addbibresource{biblio.bib}
-
-
+\usepackage[colorlinks=true, linkcolor=cyan, citecolor=cyan, urlcolor=cyan, hyperfootnotes=false]{hyperref}
 \usepackage{graphicx, amsmath, amssymb}
 \usepackage{setspace}
 \usepackage{hyperref}
@@ -132,7 +68,6 @@
 \usepackage{comment}
 \usepackage{booktabs}
  % Agregar en el preámbulo
-\usepackage{tikz-network}
 \usepackage{subcaption} % Para organizar las imágenes en subfiguras
 \usepackage{caption} % Para agregar títulos a las imágenes
 \usepackage{diffcoeff}  

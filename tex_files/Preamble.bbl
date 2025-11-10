@@ -1,0 +1,474 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{Björklund_1997}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=15a101eab186168716e4b7e950ff73fa}{%
+           family={Björklund},
+           familyi={B\bibinitperiod},
+           given={Anders},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b02c24e889a5a8c423e06e84654e8070}{%
+           family={Jäntti},
+           familyi={J\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Economic Association}%
+      }
+      \strng{namehash}{e1a9b8397468e80de8d3201f79f83b1e}
+      \strng{fullhash}{e1a9b8397468e80de8d3201f79f83b1e}
+      \strng{fullhashraw}{e1a9b8397468e80de8d3201f79f83b1e}
+      \strng{bibnamehash}{e1a9b8397468e80de8d3201f79f83b1e}
+      \strng{authorbibnamehash}{e1a9b8397468e80de8d3201f79f83b1e}
+      \strng{authornamehash}{e1a9b8397468e80de8d3201f79f83b1e}
+      \strng{authorfullhash}{e1a9b8397468e80de8d3201f79f83b1e}
+      \strng{authorfullhashraw}{e1a9b8397468e80de8d3201f79f83b1e}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00028282}
+      \field{journaltitle}{The American Economic Review}
+      \field{number}{5}
+      \field{title}{Intergenerational Income Mobility in Sweden Compared to the United States}
+      \field{urlday}{11}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{volume}{87}
+      \field{year}{1997}
+      \field{urldateera}{ce}
+      \field{pages}{1009\bibrangedash 1018}
+      \range{pages}{10}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/2951338
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/2951338
+      \endverb
+    \endentry
+    \entry{friedman1957consumption}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ed599767cda235bc9b7bb0e787374d60}{%
+           family={Friedman},
+           familyi={F\bibinitperiod},
+           given={Milton},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Princeton University Press}%
+      }
+      \strng{namehash}{ed599767cda235bc9b7bb0e787374d60}
+      \strng{fullhash}{ed599767cda235bc9b7bb0e787374d60}
+      \strng{fullhashraw}{ed599767cda235bc9b7bb0e787374d60}
+      \strng{bibnamehash}{ed599767cda235bc9b7bb0e787374d60}
+      \strng{authorbibnamehash}{ed599767cda235bc9b7bb0e787374d60}
+      \strng{authornamehash}{ed599767cda235bc9b7bb0e787374d60}
+      \strng{authorfullhash}{ed599767cda235bc9b7bb0e787374d60}
+      \strng{authorfullhashraw}{ed599767cda235bc9b7bb0e787374d60}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Originally published in 1957}
+      \field{title}{A Theory of the Consumption Function}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://www.nber.org/books-and-chapters/theory-consumption-function
+      \endverb
+      \verb{url}
+      \verb https://www.nber.org/books-and-chapters/theory-consumption-function
+      \endverb
+    \endentry
+    \entry{Glewwe_2011}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=6a5e3fa7400a428ae883ddb1e06d9310}{%
+           family={Glewwe},
+           familyi={G\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6a5e3fa7400a428ae883ddb1e06d9310}
+      \strng{fullhash}{6a5e3fa7400a428ae883ddb1e06d9310}
+      \strng{fullhashraw}{6a5e3fa7400a428ae883ddb1e06d9310}
+      \strng{bibnamehash}{6a5e3fa7400a428ae883ddb1e06d9310}
+      \strng{authorbibnamehash}{6a5e3fa7400a428ae883ddb1e06d9310}
+      \strng{authornamehash}{6a5e3fa7400a428ae883ddb1e06d9310}
+      \strng{authorfullhash}{6a5e3fa7400a428ae883ddb1e06d9310}
+      \strng{authorfullhashraw}{6a5e3fa7400a428ae883ddb1e06d9310}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Research on economic growth and inequality inevitably raises issues concerning economic mobility because the relationship between long-run inequality and short-run inequality is mediated by income mobility; for a given level of short-run inequality, greater mobility implies lower long-run inequality. But empirical measures of both inequality and mobility tend to be biased upward due to measurement error in income and expenditure data collected from household surveys. This paper examines how to reduce or remove this bias using instrumental variable methods, and provides conditions that instrumental variables must satisfy to provide consistent estimates. This approach is applied to panel data from Vietnam. The results imply that at least 15 percent, and perhaps as much as 42 percent, of measured mobility is upward bias due to measurement error. The results also suggest that measurement error accounts for at least 12 percent of measured inequality.}
+      \field{issn}{0258-6770}
+      \field{journaltitle}{The World Bank Economic Review}
+      \field{month}{11}
+      \field{number}{2}
+      \field{title}{How Much of Observed Economic Mobility is Measurement Error? IV Methods to Reduce Measurement Error Bias, with an Application to Vietnam}
+      \field{volume}{26}
+      \field{year}{2011}
+      \field{pages}{236\bibrangedash 264}
+      \range{pages}{29}
+      \verb{doi}
+      \verb 10.1093/wber/lhr040
+      \endverb
+      \verb{eprint}
+      \verb https://academic.oup.com/wber/article-pdf/26/2/236/23943578/lhr040.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1093/wber/lhr040
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1093/wber/lhr040
+      \endverb
+    \endentry
+    \entry{Gomes_2020}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=09e0ea0463e0e6b9a38650d21096136a}{%
+           family={Gomes},
+           familyi={G\bibinitperiod},
+           given={Diego\bibnamedelima B.P.},
+           giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d7000181d5477604e972481a7d8423b0}{%
+           family={Iachan},
+           familyi={I\bibinitperiod},
+           given={Felipe\bibnamedelima S.},
+           giveni={F\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=edd74ca8b04b951e3ce318a1e394b08f}{%
+           family={Santos},
+           familyi={S\bibinitperiod},
+           given={Cezar},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c14504dce644d883a2eeac528661b797}
+      \strng{fullhash}{c14504dce644d883a2eeac528661b797}
+      \strng{fullhashraw}{c14504dce644d883a2eeac528661b797}
+      \strng{bibnamehash}{c14504dce644d883a2eeac528661b797}
+      \strng{authorbibnamehash}{c14504dce644d883a2eeac528661b797}
+      \strng{authornamehash}{c14504dce644d883a2eeac528661b797}
+      \strng{authorfullhash}{c14504dce644d883a2eeac528661b797}
+      \strng{authorfullhashraw}{c14504dce644d883a2eeac528661b797}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We study labor earnings dynamics in a developing economy with a large informal sector. We use nationally representative Brazilian panel data that cover both formal and informal workers. We document large disparities in earnings fluctuations faced by these segments of the labor market, as well as the high frequency of transitions between them. Informality is associated with more volatile earnings, while workers in the formal sector are subject to significant downside risk. Transitions between formal and informal employment bring large asymmetric earnings shocks and have a frequency that depends on age and the initial earnings level.}
+      \field{issn}{0165-1889}
+      \field{journaltitle}{Journal of Economic Dynamics and Control}
+      \field{title}{Labor earnings dynamics in a developing economy with a large informal sector}
+      \field{volume}{113}
+      \field{year}{2020}
+      \field{pages}{103854}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.jedc.2020.103854
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0165188920300245
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0165188920300245
+      \endverb
+    \endentry
+    \entry{Millimet_2019}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=967cc4ef6cbb878a3b3ba75b2d07b92b}{%
+           family={Millimet},
+           familyi={M\bibinitperiod},
+           given={Daniel\bibnamedelima L.},
+           giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2620b9afd37cca5b9b7354f67c036d4d}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Hao},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=06b6954f295fc049f1c9b0af79746c33}{%
+           family={Roychowdhury},
+           familyi={R\bibinitperiod},
+           given={Punarjit},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Statistical Association}%
+      }
+      \strng{namehash}{2be952a5e57c51f89fbd9264dfc386df}
+      \strng{fullhash}{2be952a5e57c51f89fbd9264dfc386df}
+      \strng{fullhashraw}{2be952a5e57c51f89fbd9264dfc386df}
+      \strng{bibnamehash}{2be952a5e57c51f89fbd9264dfc386df}
+      \strng{authorbibnamehash}{2be952a5e57c51f89fbd9264dfc386df}
+      \strng{authornamehash}{2be952a5e57c51f89fbd9264dfc386df}
+      \strng{authorfullhash}{2be952a5e57c51f89fbd9264dfc386df}
+      \strng{authorfullhashraw}{2be952a5e57c51f89fbd9264dfc386df}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The economic mobility of individuals and households is of fundamental interest. While many measures of economic mobility exist, reliance on transition matrices remains pervasive due to simplicity and ease of interpretation. However, estimation of transition matrices is complicated by the well-acknowledged problem of measurement error in self-reported and even administrative data. Existing methods of addressing measurement error are complex, rely on numerous strong assumptions, and often require data from more than two periods. In this article, we investigate what can be learned about economic mobility as measured via transition matrices while formally accounting for measurement error in a reasonably transparent manner. To do so, we develop a nonparametric partial identification approach to bound transition probabilities under various assumptions on the measurement error and mobility processes. This approach is applied to panel data from the United States to explore short-run mobility before and after the Great Recession.}
+      \field{journaltitle}{Journal of Business \& Economic Statistics}
+      \field{number}{4}
+      \field{title}{Partial Identification of Economic Mobility: With an Application to the United States}
+      \field{volume}{38}
+      \field{year}{2020}
+      \field{pages}{732\bibrangedash 753}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1080/07350015.2019.1569527
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1080/07350015.2019.1569527
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1080/07350015.2019.1569527
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1080/07350015.2019.1569527
+      \endverb
+    \endentry
+    \entry{CortesOrihuela_2025}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=208c75cb0ad3f5de3bdc5c8250ebbec4}{%
+           family={Orihuela},
+           familyi={O\bibinitperiod},
+           given={Javier\bibnamedelima Cortes},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=355cee0b5a63fb56680d28f735bbb759}{%
+           family={Díaz},
+           familyi={D\bibinitperiod},
+           given={Juan\bibnamedelima D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=288874aeceaa1aa8db6c7b4ebe7111ff}{%
+           family={Cubillos},
+           familyi={C\bibinitperiod},
+           given={Pablo\bibnamedelima Gutiérrez},
+           giveni={P\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bf51393eb7e3408ec605a16e5c40c41b}{%
+           family={Troncoso},
+           familyi={T\bibinitperiod},
+           given={Pablo\bibnamedelima A.},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{90dfbd15105f6c9af70d251435e03f08}
+      \strng{fullhash}{90dfbd15105f6c9af70d251435e03f08}
+      \strng{fullhashraw}{90dfbd15105f6c9af70d251435e03f08}
+      \strng{bibnamehash}{90dfbd15105f6c9af70d251435e03f08}
+      \strng{authorbibnamehash}{90dfbd15105f6c9af70d251435e03f08}
+      \strng{authornamehash}{90dfbd15105f6c9af70d251435e03f08}
+      \strng{authorfullhash}{90dfbd15105f6c9af70d251435e03f08}
+      \strng{authorfullhashraw}{90dfbd15105f6c9af70d251435e03f08}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Economic Inequality}
+      \field{number}{2}
+      \field{title}{The Two-Sample Two-Stage Least Squares Method to Estimate the Intergenerational Earnings Elasticity}
+      \field{volume}{23}
+      \field{year}{2025}
+      \field{pages}{549\bibrangedash 570}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1007/s10888-024-09643-8
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s10888-024-09643-8
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s10888-024-09643-8
+      \endverb
+    \endentry
+    \entry{Montenegro_2010}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=c2a4d169ca2894add06e7fddb2ad954b}{%
+           family={Schneider},
+           familyi={S\bibinitperiod},
+           given={Friedrich},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e05b8ca8f33d74e1441a94d874dbf738}{%
+           family={Buehn},
+           familyi={B\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2eae9ecd3614ba28b0de629035aca3d1}{%
+           family={Montenegro},
+           familyi={M\bibinitperiod},
+           given={Claudio},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7b5280e5e69e1c069a3a45d47ca6fa80}
+      \strng{fullhash}{7b5280e5e69e1c069a3a45d47ca6fa80}
+      \strng{fullhashraw}{7b5280e5e69e1c069a3a45d47ca6fa80}
+      \strng{bibnamehash}{7b5280e5e69e1c069a3a45d47ca6fa80}
+      \strng{authorbibnamehash}{7b5280e5e69e1c069a3a45d47ca6fa80}
+      \strng{authornamehash}{7b5280e5e69e1c069a3a45d47ca6fa80}
+      \strng{authorfullhash}{7b5280e5e69e1c069a3a45d47ca6fa80}
+      \strng{authorfullhashraw}{7b5280e5e69e1c069a3a45d47ca6fa80}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper presents estimations of the shadow economies for 162 countries, including developing, Eastern European, Central Asian, and high income OECD countries over 1999 to 2006/2007. According to our estimations, the weighted average size of the shadow economy (as a percentage of 'official' GDP) in Sub-Saharan Africa is 37.6\%, in Europe and Central Asia (mostly transition countries) 36.4\% and in high income OECD countries 13.4\%. We find that an increased burden of taxation (direct and indirect ones), combined with (labour market) regulations and the quality of public goods and services as well as the state of the 'official' economy are the driving forces of the shadow economy.}
+      \field{journaltitle}{International Economic Journal}
+      \field{number}{4}
+      \field{title}{New Estimates for the Shadow Economies all over the World}
+      \field{volume}{24}
+      \field{year}{2010}
+      \field{pages}{443\bibrangedash 461}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1080/10168737.2010.525974
+      \endverb
+      \verb{urlraw}
+      \verb https://ideas.repec.org/a/taf/intecj/v24y2010i4p443-461.html
+      \endverb
+      \verb{url}
+      \verb https://ideas.repec.org/a/taf/intecj/v24y2010i4p443-461.html
+      \endverb
+      \keyw{Shadow economy of 162 countries; tax burden; quality of state institutions; regulation; MIMIC model}
+    \endentry
+    \entry{Solon_1992}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e7467c3311ae98ee7c2d93b368c22a2e}{%
+           family={Solon},
+           familyi={S\bibinitperiod},
+           given={Gary},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Economic Association}%
+      }
+      \strng{namehash}{e7467c3311ae98ee7c2d93b368c22a2e}
+      \strng{fullhash}{e7467c3311ae98ee7c2d93b368c22a2e}
+      \strng{fullhashraw}{e7467c3311ae98ee7c2d93b368c22a2e}
+      \strng{bibnamehash}{e7467c3311ae98ee7c2d93b368c22a2e}
+      \strng{authorbibnamehash}{e7467c3311ae98ee7c2d93b368c22a2e}
+      \strng{authornamehash}{e7467c3311ae98ee7c2d93b368c22a2e}
+      \strng{authorfullhash}{e7467c3311ae98ee7c2d93b368c22a2e}
+      \strng{authorfullhashraw}{e7467c3311ae98ee7c2d93b368c22a2e}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Social scientists and policy analysts have long expressed concern about the extent of intergenerational income mobility in the United States, but remarkably little empirical evidence is available. The few existing estimates of the intergenerational correlation in income have been biased downward by measurement error, unrepresentative samples, or both. New estimates based on intergenerational data from the Panel Study of Income Dynamics imply that the intergenerational correlation in long-run income is at least 0.4, indicating dramatically less mobility than suggested by earlier research.}
+      \field{issn}{00028282}
+      \field{journaltitle}{The American Economic Review}
+      \field{number}{3}
+      \field{title}{Intergenerational Income Mobility in the United States}
+      \field{urlday}{11}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{volume}{82}
+      \field{year}{1992}
+      \field{urldateera}{ce}
+      \field{pages}{393\bibrangedash 408}
+      \range{pages}{16}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/2117312
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/2117312
+      \endverb
+    \endentry
+    \entry{Zimmerman_1992}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2d489d9f0544792d2676beef97950732}{%
+           family={Zimmerman},
+           familyi={Z\bibinitperiod},
+           given={David\bibnamedelima J.},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Economic Association}%
+      }
+      \strng{namehash}{2d489d9f0544792d2676beef97950732}
+      \strng{fullhash}{2d489d9f0544792d2676beef97950732}
+      \strng{fullhashraw}{2d489d9f0544792d2676beef97950732}
+      \strng{bibnamehash}{2d489d9f0544792d2676beef97950732}
+      \strng{authorbibnamehash}{2d489d9f0544792d2676beef97950732}
+      \strng{authornamehash}{2d489d9f0544792d2676beef97950732}
+      \strng{authorfullhash}{2d489d9f0544792d2676beef97950732}
+      \strng{authorfullhashraw}{2d489d9f0544792d2676beef97950732}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper provides estimates of the correlation in lifetime earnings between fathers and sons. Intergenerational data from the National Longitudinal Survey are used. Earlier studies, conducted for the United States, report elasticities of children's earnings with respect to parent's earnings of 0.2 or less, suggesting extensive integenerational mobility. These estimates, however, are biased downward by error-contaminated measures of lifetime economic status. Estimates presented in this paper correct for the problem of measurement error and find the intergenerational correlation in income to be on the order of 0.4. This suggests considerably less intergenerational mobility than previously believed.}
+      \field{issn}{00028282}
+      \field{journaltitle}{The American Economic Review}
+      \field{number}{3}
+      \field{title}{Regression Toward Mediocrity in Economic Stature}
+      \field{urlday}{11}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{volume}{82}
+      \field{year}{1992}
+      \field{urldateera}{ce}
+      \field{pages}{409\bibrangedash 429}
+      \range{pages}{21}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/2117313
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/2117313
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
