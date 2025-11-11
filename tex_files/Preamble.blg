@@ -1,15 +1,17 @@
-[0] Config.pm:328> INFO - This is Biber 2.21
-[0] Config.pm:331> INFO - Logfile is 'Preamble.blg'
-[131] biber-MSWIN64:342> INFO - === 
-[172] Biber.pm:421> INFO - Reading 'Preamble.bcf'
-[315] Biber.pm:1002> INFO - Found 9 citekeys in bib section 0
-[335] Biber.pm:4487> INFO - Processing section 0
-[360] Biber.pm:4678> INFO - Looking for bibtex file 'biblio.bib' for section 0
-[422] bibtex.pm:1713> INFO - LaTeX decoding ...
-[455] bibtex.pm:1519> INFO - Found BibTeX data source 'biblio.bib'
-[625] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[625] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[625] Biber.pm:4307> INFO - Sorting list 'nyt/global//global/global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[625] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
-[694] bbl.pm:676> INFO - Writing 'Preamble.bbl' with encoding 'UTF-8'
-[701] bbl.pm:779> INFO - Output to Preamble.bbl
+[1] Config.pm:307> INFO - This is Biber 2.19
+[1] Config.pm:310> INFO - Logfile is 'Preamble.blg'
+[116] biber:340> INFO - === Tue Nov 11, 2025, 19:19:08
+[190] Biber.pm:419> INFO - Reading 'Preamble.bcf'
+[266] Biber.pm:979> INFO - Found 12 citekeys in bib section 0
+[280] Biber.pm:4419> INFO - Processing section 0
+[312] Biber.pm:4610> INFO - Looking for bibtex file 'biblio.bib' for section 0
+[314] bibtex.pm:1713> INFO - LaTeX decoding ...
+[336] bibtex.pm:1519> INFO - Found BibTeX data source 'biblio.bib'
+[576] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[576] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[576] Biber.pm:4239> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[576] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[637] bbl.pm:660> INFO - Writing 'Preamble.bbl' with encoding 'UTF-8'
+[645] bbl.pm:763> INFO - Output to Preamble.bbl
+[645] Biber.pm:131> WARN - legacy month field 'July' in entry 'Berman_2022' is not an integer - this will probably not sort properly.
+[645] Biber.pm:133> INFO - WARNINGS: 1
