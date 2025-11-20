@@ -9,10 +9,10 @@ library(tidyr)
 params <- list(
   A_F = 1,
   A_I = 1.25,
-  alpha = 0.9,
-  gamma = 0.2,
-  C = 0.25, #((1-alpha)*A_F)*((1-gamma)*A_I)^(-1)
-  kappa = 0, # 200000
+  alpha = 0.7,
+  gamma = 0.3,
+  C = ((1-alpha)*A_F)*((1-gamma)*A_I)^(-1),
+  kappa = 0,
   beta = 0.7
 )
 
@@ -20,7 +20,6 @@ params <- list(
 # 2) FUNCIONES DEL MODELO
 # ------------------------------------------------------------
 
-# l_exact: solución numérica interior de la FOC del hijo
 l_exact <- function(h, alpha, gamma, C){
   target <- function(l) l^alpha / ((1-l)^gamma) - C*h^(alpha-gamma)
   eps <- 1e-9
@@ -36,20 +35,17 @@ l_exact <- function(h, alpha, gamma, C){
   uniroot(target, lower = eps, upper = 1 - eps)$root
 }
 
-# ingreso exacto del hijo
 y_c_exact <- function(h, A_F, A_I, alpha, gamma, kappa, C){
   l <- l_exact(h, alpha, gamma, C)
   A_F*h^alpha * l^(1-alpha) +
     A_I*h^gamma * (1-l)^(1-gamma) - kappa
 }
 
-# utilidad del padre
 U_p <- function(h, y_p, beta, A_F, A_I, alpha, gamma, kappa, C){
   if(h <= 0 || h >= y_p) return(-Inf)
   log(y_p - h) + beta * y_c_exact(h, A_F, A_I, alpha, gamma, kappa, C)
 }
 
-# solución numérica del padre
 h_opt_parent <- function(y_p, params){
   optimize(
     f = function(h) U_p(
@@ -69,9 +65,8 @@ h_opt_parent <- function(y_p, params){
 
 set.seed(123)
 n <- 10000
-mu = 1
 sigma <- 0.7
-meanlog <- log(mu_target) - sigma^2/2
+mu = 1
 y_p <- rlnorm(n, meanlog = mu, sdlog = sigma)
 
 # ------------------------------------------------------------
@@ -84,10 +79,26 @@ l_star <- sapply(h_star, l_exact,
                  gamma = params$gamma,
                  C = params$C)
 
-# ingreso formal/informal y total del hijo
+# INGRESOS SIN RUIDO
 y_formal <- params$A_F * h_star^params$alpha * l_star^(1 - params$alpha)
 y_informal <- params$A_I * h_star^params$gamma * (1 - l_star)^(1 - params$gamma)
-y_c <- y_formal + y_informal
+
+# ----------------------------------------------
+#  🔥  AQUI AGREGO EL RUIDO QUE PEDISTE
+# ----------------------------------------------
+
+# ruido informal: mayor varianza
+ruido_informal <- rnorm(n, mean = 0, sd = 0.015 )   ### <-- AQUI
+
+# ruido formal: menor varianza
+ruido_formal   <- rnorm(n, mean = 0, sd = 0.01 )     ### <-- AQUI
+
+# aplicar
+y_formal_ruido   <- pmax(y_formal   + ruido_formal,   0)            ### <-- AQUI
+y_informal_ruido <- pmax(y_informal + ruido_informal, 0)            ### <-- AQUI
+
+# total hijo
+y_c <- y_formal_ruido + y_informal_ruido
 
 # ------------------------------------------------------------
 # 5) DATAFRAME FINAL
@@ -98,9 +109,10 @@ df <- data.frame(
   h = h_star,
   l = l_star,
   y_c = y_c,
-  y_formal = y_formal,
-  y_informal = y_informal
+  y_formal = y_formal_ruido,
+  y_informal = y_informal_ruido
 )
+
 
 # ------------------------------------------------------------
 # 6) GRAFICOS
@@ -131,6 +143,58 @@ ggplot(df_long, aes(x = y_p, y = ingreso, color = tipo)) +
   ) +
   theme_minimal(base_size = 14)
 
+
+# ----------------------------------------------
+# 1) Calcular percentiles del padre e hijo
+# ----------------------------------------------
+
+df <- df %>%
+  mutate(
+    p_parent = percent_rank(y_p),          # percentil del ingreso del padre
+    p_formal = percent_rank(y_formal),     # percentil del ingreso formal
+    p_informal = percent_rank(y_informal), # percentil del ingreso informal
+    p_total = percent_rank(y_total)        # percentil del ingreso total
+  )
+
+# Pasar a formato largo
+df_long_p <- df %>%
+  pivot_longer(
+    cols = c(p_formal, p_informal, p_total),
+    names_to = "tipo",
+    values_to = "percentil_hijo"
+  )
+
+# ----------------------------------------------
+# 2) Gráfico percentil vs percentil
+# ----------------------------------------------
+
+ggplot(df_long_p, aes(x = p_parent, y = percentil_hijo, color = tipo)) +
+  geom_point(alpha = 0.25, size = 1) +
+  labs(
+    x = "Percentil del ingreso del padre",
+    y = "Percentil del ingreso del hijo",
+    title = "Movilidad intergeneracional: percentil del hijo vs padre"
+  ) +
+  scale_color_manual(
+    values = c("p_formal" = "blue", "p_informal" = "red"),
+    labels = c("Formal", "Informal")
+  ) +
+  theme_minimal(base_size = 14)
+
+df_long_p = df_long_p %>% filter(tipo == "p_total")
+
+ggplot(df_long_p, aes(x = p_parent, y = percentil_hijo, color = tipo)) +
+  geom_point(alpha = 0.25, size = 1) +
+  labs(
+    x = "Percentil del ingreso del padre",
+    y = "Percentil del ingreso del hijo",
+    title = "Movilidad intergeneracional: percentil del hijo vs padre"
+  ) +
+  scale_color_manual(
+    values = c("p_total" = "black"),
+    labels = c("Total")
+  ) +
+  theme_minimal(base_size = 14)
 
 
 
