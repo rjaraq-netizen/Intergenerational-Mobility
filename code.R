@@ -132,16 +132,20 @@ df_long <- df %>%
     values_to = "ingreso"
   )
 
+
 ggplot(df_long, aes(x = y_p, y = ingreso, color = tipo)) +
   geom_point(alpha = 0.25) +
   scale_x_log10() +
   scale_y_log10() +
   labs(
-    x = "Ingreso del padre",
-    y = "Ingreso del hijo",
-    title = "Ingreso formal, informal y total del hijo"
+    x = "Father's income",
+    y = "Child's income",
+    title = "Child's formal, informal and total income",
+    color = NULL   # <-- elimina el título en la leyenda
   ) +
   theme_minimal(base_size = 14)
+
+
 
 
 # ----------------------------------------------
@@ -181,7 +185,7 @@ ggplot(df_long_p, aes(x = p_parent, y = percentil_hijo, color = tipo)) +
   ) +
   theme_minimal(base_size = 14)
 
-df_long_p = df_long_p %>% filter(tipo == "p_total")
+df_long_p = df_long_p %>% filter(tipo == "p_formal")
 
 ggplot(df_long_p, aes(x = p_parent, y = percentil_hijo, color = tipo)) +
   geom_point(alpha = 0.25, size = 1) +
@@ -198,4 +202,39 @@ ggplot(df_long_p, aes(x = p_parent, y = percentil_hijo, color = tipo)) +
 
 
 
+# df_long tiene y_p = rank del padre, ingreso = rank del hijo
+
+df_bins <- df_long_p %>%
+  mutate(
+    bin = ntile(y_p, 100)   # cambia 20 a 100 si quieres percentiles individuales
+  ) %>%
+  group_by(bin) %>%
+  summarise(
+    mean_parent = mean(p_parent, na.rm = TRUE),
+    mean_child  = mean(percentil_hijo, na.rm = TRUE),
+    n = n()
+  )
+
+ggplot(df_bins, aes(x = mean_parent, y = mean_child)) +
+  geom_point(size = 3) +
+  geom_line() +
+  labs(
+    x = "Parent income percentile rank",
+    y = "Child formal income percentile rank",
+    title = "Binned scatterplot: Parent vs Child formal income ranks"
+  ) +
+  theme_minimal(base_size = 14)
+
+
+
+ggplot(df_bins, aes(x = mean_parent, y = mean_child)) +
+  geom_point(size = 3) +
+  geom_line() +
+  geom_smooth(method = "lm", se = FALSE, linetype = "dashed") +
+  labs(
+    x = "Parent income percentile rank",
+    y = "Child income percentile rank",
+    title = "Binned scatterplot with linear fit"
+  ) +
+  theme_minimal(base_size = 14)
 
