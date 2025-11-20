@@ -238,3 +238,5 @@ ggplot(df_bins, aes(x = mean_parent, y = mean_child)) +
   ) +
   theme_minimal(base_size = 14)
 
+modelo <- lm(y_total~ y_p , data = df)
+summary(modelo)
