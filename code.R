@@ -9,11 +9,10 @@ library(tidyr)
 params <- list(
   A_F = 1,
   A_I = 1.25,
-  alpha = 0.7,
-  gamma = 0.3,
+  alpha = 0.8,
+  gamma = 0.35,
   C = ((1-alpha)*A_F)*((1-gamma)*A_I)^(-1),
-  kappa = 0,
-  beta = 0.7
+  phi = 0.8
 )
 
 # ------------------------------------------------------------
@@ -35,24 +34,24 @@ l_exact <- function(h, alpha, gamma, C){
   uniroot(target, lower = eps, upper = 1 - eps)$root
 }
 
-y_c_exact <- function(h, A_F, A_I, alpha, gamma, kappa, C){
+y_c_exact <- function(h, A_F, A_I, alpha, gamma, C){
   l <- l_exact(h, alpha, gamma, C)
   A_F*h^alpha * l^(1-alpha) +
-    A_I*h^gamma * (1-l)^(1-gamma) - kappa
+    A_I*h^gamma * (1-l)^(1-gamma) 
 }
 
-U_p <- function(h, y_p, beta, A_F, A_I, alpha, gamma, kappa, C){
+U_p <- function(h, y_p, phi, A_F, A_I, alpha, gamma, C){
   if(h <= 0 || h >= y_p) return(-Inf)
-  log(y_p - h) + beta * y_c_exact(h, A_F, A_I, alpha, gamma, kappa, C)
+  log(y_p - h) + phi * log(y_c_exact(h, A_F, A_I, alpha, gamma, C))
 }
 
 h_opt_parent <- function(y_p, params){
   optimize(
     f = function(h) U_p(
       h, y_p,
-      params$beta, params$A_F, params$A_I,
+      params$phi, params$A_F, params$A_I,
       params$alpha, params$gamma,
-      params$kappa, params$C
+      params$C
     ),
     interval = c(1e-8, y_p - 1e-8),
     maximum = TRUE
@@ -88,10 +87,10 @@ y_informal <- params$A_I * h_star^params$gamma * (1 - l_star)^(1 - params$gamma)
 # ----------------------------------------------
 
 # ruido informal: mayor varianza
-ruido_informal <- rnorm(n, mean = 0, sd = 0.015 )   ### <-- AQUI
+ruido_informal <- rnorm(n, mean = 0, sd = 0.05 )   ### <-- AQUI
 
 # ruido formal: menor varianza
-ruido_formal   <- rnorm(n, mean = 0, sd = 0.01 )     ### <-- AQUI
+ruido_formal   <- rnorm(n, mean = 0, sd = 0.02)     ### <-- AQUI
 
 # aplicar
 y_formal_ruido   <- pmax(y_formal   + ruido_formal,   0)            ### <-- AQUI
@@ -185,7 +184,7 @@ ggplot(df_long_p, aes(x = p_parent, y = percentil_hijo, color = tipo)) +
   ) +
   theme_minimal(base_size = 14)
 
-df_long_p = df_long_p %>% filter(tipo == "p_formal")
+df_long_p = df_long_p %>% filter(tipo == "p_informal")
 
 ggplot(df_long_p, aes(x = p_parent, y = percentil_hijo, color = tipo)) +
   geom_point(alpha = 0.25, size = 1) +
@@ -238,5 +237,5 @@ ggplot(df_bins, aes(x = mean_parent, y = mean_child)) +
   ) +
   theme_minimal(base_size = 14)
 
-modelo <- lm(y_total~ y_p , data = df)
+modelo <- lm(y_formal~ y_p , data = df)
 summary(modelo)
