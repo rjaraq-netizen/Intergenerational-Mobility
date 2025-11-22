@@ -8,9 +8,9 @@ library(tidyr)
 
 params <- list(
   A_F = 1,
-  A_I = 1.25,
-  alpha = 0.9,
-  gamma = 0.35,
+  A_I = 1.1,
+  alpha = 0.8,
+  gamma = 0.3, #0.9 0.35
   C = ((1-alpha)*A_F)*((1-gamma)*A_I)^(-1),
   phi = 0.8
 )
@@ -64,10 +64,9 @@ h_opt_parent <- function(y_p, params){
 
 set.seed(123)
 n <- 10000
-sigma <- 0.7
-mu = 1
+sigma <- 1.3
+mu = 0.7
 y_p <- rlnorm(n, meanlog = mu, sdlog = sigma)
-
 # ------------------------------------------------------------
 # 4) CALCULAR h*, l(h*) y los ingresos del hijo
 # ------------------------------------------------------------
@@ -226,5 +225,8 @@ ggplot(df_bins, aes(x = mean_parent, y = mean_child)) +
   theme_minimal(base_size = 14)
 
 
-modelo <- lm(y_formal~ y_p , data = df)
+modelo <- lm(y_informal~ y_p , data = df)
 summary(modelo)
+
+# Convertir a data.frame
+l <- data.frame(l = l_star)
