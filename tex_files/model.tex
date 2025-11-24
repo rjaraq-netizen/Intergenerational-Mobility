@@ -1,0 +1,245 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb, amsthm, geometry, setspace, graphicx}
+\usepackage[style=authoryear, hyperref=auto,dashed=false,maxnames=99,labelnumber=true,defernumbers=false,sorting=nyt]{biblatex}
+\addbibresource{biblio.bib}
+\newtheorem{proposition}{Proposition}
+\usepackage{enumitem}
+\setlist[itemize]{itemsep=0pt, topsep=2pt}
+\geometry{margin=2.5cm}
+\setstretch{1.2}
+
+\begin{document}
+\title{Intergenerational Theoretical Model with Formal and Informal Employment}
+\maketitle 
+
+We propose a theoretical model of intergenerational mobility, based on the seminal works of \textcite{Becker_Tomes_1979} and \textcite{Solon_1999}. Whereas in these models the sole maximizing agent is the parent, who chooses an optimal investment in the child to maximize their own utility, our model introduces an informal sector of the economy in which the child can also work and earn income. This allows the child to decide the proportion of time allocated to each sector based on the investment received from the parent, so that both agents face a maximization problem.
+
+The main objective of this model is not to fully characterize the individual behavior of the child’s income in each sector, but rather to analyze how each component of the child’s income (formal and informal) depends on the parent’s income and investment. This provides a clearer understanding of the linear relationship  between the child’s informal income and the parent’s total income, a key component in measuring intergenerational income elasticity and, consequently, social mobility in developing countries with a large informal sector.
+
+\section*{Child Problem}
+Consider a representative family with two generations: a parent in period $t-1$ and a child in period $t$. 
+The parent receives income $y_{t-1}$ and allocates it between consumption and an investment $I_{t-1} \ge 0$ in the child’s human capital.
+
+Once the child reaches adulthood, they allocate their unit of time between the formal and informal (underground) sectors. Let $l_t \in [0,1]$ denote the fraction of time devoted to formal work; the remaining $1 - l_t$ is supplied to the informal sector.
+
+The child chooses $l_t$ to maximize total labor income,
+\[
+y_t(I_{t-1}, l_t)
+= A_F I_{t-1}^{\alpha} l_t^{\,1-\alpha}
+  + A_U I_{t-1}^{\gamma} (1-l_t)^{\,1-\gamma} ,
+\]
+with $A_F I_{t-1}^{\alpha} l_t^{1-\alpha} \equiv y_t^F(I_{t-1},l_t)$ denoting formal-sector income, 
+$A_U I_{t-1}^{\gamma} (1-l_t)^{1-\gamma} \equiv y_t^U(I_{t-1},l_t)$ denoting informal-sector income. 
+Here $A_F, A_U > 0$ and $\alpha, \gamma \in (0,1)$.
+
+A potential concern is that the model allows the child to allocate a fractional share of time across sectors, which may appear unrealistic, since labor markets often operate on the extensive margin—individuals typically work either in the formal or the informal sector, but not simultaneously in both. This assumption, however, is justified by interpreting $l_t$ not as a literal division of hours, but as a \emph{mixed strategy} over the discrete choice between formal and informal employment. Under this interpretation, $l_t$ represents the probability of working in the formal sector, and the resulting labor income corresponds to the expected income under such a mixed strategy. This reconciles the continuous choice in the model with the underlying dichotomy of sectoral employment.
+
+
+\medskip
+
+\noindent
+
+Given human capital $I_{t-1}$, the child chooses $l_t$ to maximize $y_t$.\footnote{This is equivalent to maximizing a standard utility function because the utility specifications commonly used in the literature are strictly increasing in income.} 
+The first-order condition is
+\begin{equation}
+(1-\alpha)A_F I_{t-1}^\alpha\, l_t^{-\alpha}
+=
+(1-\gamma)A_U I_{t-1}^\gamma\, (1-l_t)^{-\gamma},
+\label{eq:foc_l}
+\end{equation}
+if we let $C \equiv \frac{(1-\alpha)A_F}{(1-\gamma)A_U}>0$, the FOC can be rewritten as
+\[
+\frac{l_t^\alpha}{(1-l_t)^\gamma}
+=
+C\, I_{t-1}^{\alpha-\gamma}.
+\]
+
+An interior solution exists and is unique.\footnote{For any $I_{t-1}>0$, the left-hand side is continuous and strictly increasing in $l_t\in(0,1)$; it approaches $0$ as $l_t\to 0^+$ and diverges to $+\infty$ as $l_t\to 1^-$. These boundary behaviors, together with monotonicity, imply by the intermediate value theorem that the equation has exactly one solution in $(0,1)$.} 
+We denote this solution by $l_t^*(I_{t-1})$.
+
+
+To understand how the fraction of time allocated to formal work varies with parental investment, we differentiate the FOC implicitly.\footnote{Implicit differentiation proceeds as follows. Consider $G(l_t,I_{t-1}) \equiv \frac{l_t^\alpha}{(1-l_t)^\gamma} - C I_{t-1}^{\alpha-\gamma} = 0$,
+which defines $l_t^*(I_{t-1})$ implicitly. By the implicit function theorem,  
+\[
+\frac{dl_t^*}{dI_{t-1}}
+= -\frac{\partial G/\partial I_{t-1}}{\partial G/\partial l_t},
+\]
+provided $\partial G/\partial l_t\neq 0$, which holds here because the left-hand side is strictly increasing in $l_t$. Computing these derivatives yields the expression reported in the main text.}  
+Implicit differentiation yields:
+\[
+\frac{d l_t^*(I_{t-1})}{d I_{t-1}}
+=
+\frac{
+C(\alpha-\gamma)\,I_{t-1}^{\alpha-\gamma-1}
+}{
+\alpha\,l_t^{\alpha-1}(1-l_t)^{-\gamma}
++
+\gamma\,l_t^\alpha(1-l_t)^{-\gamma-1}
+},
+\]
+where \(l_t\) inside the expression denotes the optimal value \(l_t^*(I_{t-1})\).
+
+To determine the sign of this derivative, we introduce the assumption 
+$\alpha > \gamma$, which implies that formal-sector income grows faster with 
+parental investment than informal-sector income. Under this condition, the 
+numerator in the expression is strictly positive and 
+$\frac{d l^*(I_{t-1})}{d I_{t-1}} > 0$, so higher parental investment increases 
+the child's optimal allocation of time to the formal sector.
+
+\section*{Parent Problem}
+
+The parent receives income $y_{t-1}$ and allocates it between consumption $c_{t-1}$ and investment $I_{t-1}$ in order to maximize the altruistic utility function $U=\log(c_{t-1})+\phi\,\log\!\left(y_t\right)$, where $\phi\in(0,1)$ measures the strength of parental altruism and $y_t$ denotes the child’s optimal income generated by the optimal time allocation $l_t^*(I_{t-1})$.
+
+Substituting the budget constraint $y_{t-1} =c_{t-1} + I_{t-1}$, the parent’s problem can be written directly as a choice over $I_{t-1}$:
+\[
+U
+=
+\log\!\left(y_{t-1}-I_{t-1}\right)
++
+\phi\,\log\!\left(
+y_t\big(I_{t-1},\, l_t^*(I_{t-1})\big)
+\right).
+\]
+
+The utility function $U$ is strictly concave in $I_{t-1}$. The term $\log(y_{t-1}-I_{t-1})$ is strictly concave, and the second term, $\log\!\left(y_t(I_{t-1},l_t^*(I_{t-1}))\right)$, is also strictly concave because the composite mapping $I_{t-1} \mapsto y_t(I_{t-1},l_t^*(I_{t-1}))$ is strictly concave.\footnote{Formally, concavity follows from two ingredients.  
+(i) For fixed $l_t$, each sectoral income term $A_F I_{t-1}^{\alpha}l_t^{1-\alpha}$ and $A_U I_{t-1}^{\gamma}(1-l_t)^{1-\gamma}$ is strictly concave in $I_{t-1}$ because $\alpha,\gamma\in(0,1)$.  
+(ii) The optimal time allocation $l_t^*(I_{t-1})$ is a continuously differentiable increasing function of $I_{t-1}$; therefore the envelope theorem implies that $y_t(I_{t-1},l_t^*(I_{t-1}))$ inherits the strict concavity of the underlying sectoral production terms. Since the logarithm is strictly increasing and concave, composing it with a strictly concave function preserves strict concavity.} 
+
+
+An interior optimum $I_{t-1}^*(y_{t-1})$ therefore satisfies
+\begin{equation}
+\frac{1}{y_{t-1} - I_{t-1}}
+=
+\phi \frac{1}{y_{t}(I_{t-1})}
+\frac{dy_{t}}{dI_{t-1}}(I_{t-1}).
+\end{equation}
+
+The left-hand side is the marginal utility cost of diverting one additional unit of income away from parental consumption, while the right-hand side is the marginal utility gain derived from increasing the child’s income, scaled by the altruism parameter $\phi$.
+
+
+It has been established that greater parental investment encourages the child to allocate more time to the formal sector. We now extend this result to show that an increase in parental income leads to higher investment in the child, which in turn induces the child to spend more time in the formal sector.
+
+
+Let the interior optimum $I_{t-1}^*(y_{t-1})$ be defined by the first-order condition
+\[
+F(I_{t-1},y_{t-1})
+\equiv
+-\frac{1}{y_{t-1}-I_{t-1}}
++ \phi\frac{y_t'(I_{t-1})}{y_t(I_{t-1})}
+=0,
+\]
+where $y_t(I_{t-1})$ denotes the child's income evaluated at $l_t^*(I_{t-1})$.
+
+By the Implicit Function Theorem, we can decompose how parental investment responds to an increase in income as $\frac{d I_{t-1}^*(y_{t-1})}{dy_{t-1}} =-\frac{\partial F/\partial y_{t-1}}{\partial F/\partial I_{t-1}}$, and we obtain that $\partial F/\partial y_{t-1}>0$ and $\partial F/\partial I_{t-1}<0$.\footnote{
+The partial derivative with respect to income is $\partial F/\partial y_{t-1}=(y_{t-1}-I_{t-1})^{-2}>0$.  
+For $\partial F/\partial I_{t-1}$ we have
+$\partial F/\partial I_{t-1}=-(y_{t-1}-I_{t-1})^{-2} + \phi\,(y_{t} y_{t}'' - (y_{t}')^2)/y_{t}^2$.  
+Since $y_{t}'>0$ and $y_{t}''<0$ (child's income is concave in parental investment), it follows that $y_{t} y_{t}''-(y_{t}')^2<0$, making both terms negative and hence $\partial F/\partial I_{t-1}<0$.
+}
+Hence, an increase in parental income leads to higher investment in the child, 
+\[
+\frac{d I_{t-1}^*(y_{t-1})}{dy_{t-1}} > 0.
+\]
+
+
+Moreover, since we have previously shown that $\frac{d l_t^*(I_{t-1})}{d I_{t-1}}>0$, the total effect of parental income on the child's optimal formal labor share is also positive:
+\[
+\frac{d l_t^*}{d y_{t-1}}
+=
+\frac{d l_t^*}{d I_{t-1}}
+\cdot
+\frac{d I_{t-1}^*(y_{t-1})}{dy_{t-1}}
+>0.
+\]
+
+
+Thus, both parental investment and the child's formal-sector time allocation rise with parental income.
+
+To analyze the relationship between total parental income and the child's informal-sector income, we consider how changes in parental income affect the child's informal output. This effect can be obtained by differentiating the child's informal income with respect to parental income, taking into account the optimal parental investment and the child's allocation of time. The effect of parental income on informal output follows from the chain rule:
+\[
+\frac{d y_t^U}{d y_{t-1}}
+= \frac{\partial y_t^U}{\partial I_{t-1}}\frac{dI_{t-1}}{dy_{t-1}}
++ \frac{\partial y_t^U}{\partial l_t}\frac{dl}{dy_{t-1}}
+= A_U I_{t-1}^{\gamma-1}(1-l_t)^{-\gamma}
+\Big[\gamma(1-l_t)-I_{t-1}(1-\gamma)l_t'(I_{t-1})\Big]\frac{dI_{t-1}}{dy_{t-1}}.
+\]
+
+
+Since \(\frac{dI_{t-1}}{dy_{t-1}}>0\), the sign of \(\frac{d y_t^U}{dy_{t-1}}\) is determined by the bracketed term.  
+Using the child’s interior optimality condition, the bracketed term leads to the inequality
+\[
+(\alpha-\gamma)
+> \frac{\gamma}{1-\gamma}
+\left[\alpha\frac{1-l_t}{l_t}+\gamma\right],
+\tag{S}
+\]
+which ensures that \(\frac{d y_t^U}{dy_{t-1}}<0\).\footnote{The derivative \(l_t'(I_{t-1})\) is given by
+\[
+l_t'(I_{t-1}) = \frac{C(\alpha-\gamma)I_{t-1}^{\alpha-\gamma-1}}
+{\alpha l_t^{\alpha-1}(1-l_t)^{-\gamma} + \gamma l_t^{\alpha}(1-l_t)^{-\gamma-1}}.
+\]
+Plugging this into the bracketed term \(\gamma(1-l_t) - I_{t-1}(1-\gamma) l_t'(I_{t-1})\) and simplifying using the FOC \(\frac{l_t^\alpha}{(1-l_t)^\gamma} = C I_{t-1}^{\alpha-\gamma}\) yields inequality (S).}
+
+Because inequality (S) depends only on parameters and the ratio \(\frac{1-l_t}{l_t}\), there exists a unique threshold \(\bar l_t \in (0,1)\) where equality holds. This threshold separates two regimes:
+\begin{itemize}
+\item If \(l_t < \bar l_t\), the child still allocates substantial time to the informal sector, so reductions in informal hours induced by higher parental income are not strong enough to outweigh the productivity gains from greater human capital. Informal income may still rise.
+\item If \(l_t > \bar l_t\), the child already spends considerable time in the formal sector. Further increases in \(l_t\) sharply reduce informal hours, and the reallocation effect dominates. In this case, $\frac{d y_t^U}{dy_{t-1}} < 0$, so informal income falls with parental income.
+\end{itemize}
+
+
+
+The threshold \(\bar l_t\) summarizes how interior time allocation governs the response of informal income. The left-hand side of (S), \(\alpha-\gamma\), measures the advantage of formal relative to informal productivity in income with respect to parent investment. The right-hand side captures how sensitive informal production is to reductions in informal time, combining the relative size of the informal share \(\tfrac{1-l_t}{l_t}\) with the curvature parameter \(\gamma\). When the formal-sector advantage outweighs this sensitivity, informal income declines with parental income; otherwise, the productivity effect dominates. The resulting sign change arises purely from smooth interior substitution of time across sectors, without any discrete transitions.
+
+\section*{Covariance between the Child's Informal Income and Parental Income}
+Assume \(y_{t-1} \sim \operatorname{LogNormal}(\mu,\sigma^2)\), so that \(x = \ln y_{t-1} \sim N(\mu,\sigma^2)\), with the change of variable \(x = \ln y\), the expectations can be written as
+\[
+\mathbb{E}[y_t^U] = \int_{-\infty}^{\infty} g(x) f_X(x) dx, \qquad
+\mathbb{E}[y_t^U y_{t-1}] = \int_{-\infty}^{\infty} g(x) e^x f_X(x) dx,
+\]
+where  $ g(x) := y_t^U\big(I_{t-1}^*(e^x),\, l_t^*(I_{t-1}^*(e^x))\big)$  defines child informal income as a function of parental income through optimal investment and time allocation and $f_X(x)$ is the normal distribution density of $x\sim N(\mu,\sigma^2)$.
+
+
+Using a first-order (linear) approximation around \(\mu = \mathbb{E}[\ln y_{t-1}]\), \(g(x) \approx g(\mu) + g'(\mu)(x-\mu)\) with \(g'(\mu) = \left. \frac{dg}{dx} \right|_{x=\mu}\), we have by linearity of expectation $\mathbb{E}[y_t^U] \approx g(\mu) + g'(\mu)\,\mathbb{E}[x-\mu] = g(\mu)$ since \(\mathbb{E}[x-\mu]=0\).
+
+
+For the mixed moment, defining $\bar{y}_{t-1} = \mathbb{E}(y_{t-1}) = e^{\mu+\frac{\sigma^2}{2}}$ and using a first-order approximation we have:\footnote{Here we used that for \(x\sim N(\mu,\sigma^2)\) (so \(y_{t-1}\sim\text{LogNormal}(\mu,\sigma^2)\)), \(\mathbb{E}[e^x] = e^{\mu+\sigma^2/2}\) and \(\mathbb{E}[(x-\mu)e^x] = \sigma^2 e^{\mu+\sigma^2/2}\).}
+\[
+\mathbb{E}[y_t^U y_{t-1}] \approx g(\mu)\, \bar{y}_{t-1} + g'(\mu)\, \sigma^2 \bar{y}_{t-1}
+\]
+so that the covariance is simply $\operatorname{Cov}(y_t^U, y_{t-1}) \approx g'(\mu)\, \sigma^2 \bar{y}_{t-1}$. This gives an alternative expression for the covariance:\footnote{The factor $\bar{y}_{t-1}^2$ arises from combining the first-order approximation with the lognormal moments: $g'(\mu) = \bar{y}_{t-1}\, \left. \frac{d y_t^U}{d y_{t-1}} \right|_{y_{t-1} = \bar{y}_{t-1}}$ and $\mathbb{E}[e^X] = \bar{y}_{t-1}$, so $\operatorname{Cov}(y_t^U, y_{t-1}) \approx g'(\mu)\, \sigma^2 \bar{y}_{t-1} = \sigma^2 \, \bar{y}_{t-1}^2 \, \left. \frac{d y_t^U}{d y_{t-1}} \right|_{\bar{y}_{t-1}}$.}
+ \[  \operatorname{Cov}(y_t^U, y_{t-1}) \approx \left. \frac{d y_t^U}{d y_{t-1}} \right|_{\bar{y}_{t-1}} \, \sigma^2 \, \bar{y}_{t-1}^2   \] 
+ 
+ Finally, using the model-derived derivative of child informal income with respect to parental income and evaluating at the mean income value \(\bar{y}_{t-1}\), \(I_{t-1}(\bar{y}_{t-1})\), \(l_t(\bar{y}_{t-1})\), we obtain the first-order approximation of the covariance:
+\[
+\operatorname{Cov}(y_t^U, y_{t-1}) \approx \sigma^2 \,\bar{y}_{t-1}^2 \, 
+A_U I_{t-1}(\bar{y}_{t-1})^{\gamma-1} (1-l_t(\bar{y}_{t-1}))^{-\gamma} 
+\Big[\frac{\gamma}{1-\gamma} \alpha\frac{1-l_t(\bar{y}_{t-1})}{l_t(\bar{y}_{t-1})}+\gamma - (\alpha-\gamma) \Big] \frac{d I_{t-1}}{d y_{t-1}}
+.
+\]
+This provides a clear link between the covariance of child informal income and parental income and the structural parameters of the model.
+
+\begin{proposition}
+Assume that parental income $y_{t-1}$ follows a lognormal distribution with parameters $(\mu,\sigma)$, so that 
+$\bar y_{t-1} = e^{\mu+\sigma^2/2}$.  
+Let $\tilde y_{t-1}$ be the parental income level such that 
+$l^*(I_{t-1}^*(\tilde y_{t-1}))=\bar l$, the point at which $\frac{d y_t^U}{dy_{t-1}}=0$.  
+Under the first-order approximation of the covariance around the mean income,
+\[
+\operatorname{Cov}(y_t^U, y_{t-1}) \approx \sigma^2 \bar{y}_{t-1}^2 
+A_U I_{t-1}(\bar{y}_{t-1})^{\gamma-1} (1-l_t(\bar{y}_{t-1}))^{-\gamma}
+\Big[\tfrac{\gamma}{1-\gamma}\alpha\tfrac{1-l_t(\bar{y}_{t-1})}{l_t(\bar{y}_{t-1})}+\gamma-(\alpha-\gamma)\Big]
+\frac{d I_{t-1}}{d y_{t-1}}.
+\]
+
+The sign of the linearized covariance depends solely on the relative position of the mean income $\bar y_{t-1}$ with respect to $\tilde y_{t-1}$:
+\begin{itemize}
+  \item If $\bar y_{t-1}<\tilde y_{t-1}$, then, $\operatorname{Cov}(y_t^U, y_{t-1})>0$
+  \item If $\bar y_{t-1}>\tilde y_{t-1}$, then, $\operatorname{Cov}(y_t^U, y_{t-1})<0$
+\end{itemize}
+\end{proposition}
+
+For parental incomes below $\tilde y_{t-1}$, most households operate in the region where higher parental income raises both investment and the child's informal productivity. Hence, in the population the positive productivity channel dominates on average, generating a positive contribution to the covariance. 
+In contrast, when the mean income lies above $\tilde y_{t-1}$, most households are in the region where the child already allocates substantial time to the formal sector, so additional parental income shifts labor further away from informal work. In this case, the time-allocation channel dominates on average, making the covariance negative.
+
+\printbibliography
+\end{document}
