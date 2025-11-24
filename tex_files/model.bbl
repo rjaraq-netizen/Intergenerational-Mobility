@@ -1,0 +1,133 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{Becker_Tomes_1979}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=72e0824c9fba8f7f957b80cb8dbe85d2}{%
+           family={Becker},
+           familyi={B\bibinitperiod},
+           given={Gary\bibnamedelima S.},
+           giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fa8b13d48b1d0a585b37cfd0348fb188}{%
+           family={Tomes},
+           familyi={T\bibinitperiod},
+           given={Nigel},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {University of Chicago Press}%
+      }
+      \strng{namehash}{00fd0a6dfb9c5a835c996a57c3dc7f78}
+      \strng{fullhash}{00fd0a6dfb9c5a835c996a57c3dc7f78}
+      \strng{bibnamehash}{00fd0a6dfb9c5a835c996a57c3dc7f78}
+      \strng{authorbibnamehash}{00fd0a6dfb9c5a835c996a57c3dc7f78}
+      \strng{authornamehash}{00fd0a6dfb9c5a835c996a57c3dc7f78}
+      \strng{authorfullhash}{00fd0a6dfb9c5a835c996a57c3dc7f78}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The theory of inequality and intergenerational mobility presented in this essay assumes that each family maximizes a utility function spanning several generations. Utility depends on the consumption of parents and on the quantity and quality of their children. The income of children is raised when they receive more human and nonhuman capital from their parents. Their income is also raised by their "endowment" of genetically determined race, ability, and other characteristics, family reputation and "connections," and knowledge, skills, and goals provided by their family environment. The fortunes of children are linked to their parents not only through investments but also through these endowments acquired from parents (and other family members). The equilibrium income of children is determined by their market and endowed luck, the own income and endowment of parents, and the two parameters, the degree of inheritability and the propensity to invest in children. If these parameters are both less than unity, the distribution of income between families approaches a stationary distribution. The stationary coefficient of variation is greater, the larger the degree of in-heritability and the smaller the propensity to invest in children. Intergenerational mobility measures the effect of a family on the well-being of its children. We show that the family is more important when the degree of inheritability and the propensity to invest are larger. If both these parameters are less than unity, an increase in family income in one generation has negligible effects on the incomes of much later descendants. However, the incomes of children, grandchildren, and other early descendants could significantly increase; indeed, if the sum of these parameters exceeds unity, the changes in income rise for several generations before falling, and the maximum increase in income could exceed the initial increase.}
+      \field{issn}{00223808, 1537534X}
+      \field{journaltitle}{Journal of Political Economy}
+      \field{number}{6}
+      \field{title}{An Equilibrium Theory of the Distribution of Income and Intergenerational Mobility}
+      \field{urlday}{23}
+      \field{urlmonth}{11}
+      \field{urlyear}{2025}
+      \field{volume}{87}
+      \field{year}{1979}
+      \field{urldateera}{ce}
+      \field{pages}{1153\bibrangedash 1189}
+      \range{pages}{37}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/1833328
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/1833328
+      \endverb
+    \endentry
+    \entry{Solon_1999}{incollection}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e7467c3311ae98ee7c2d93b368c22a2e}{%
+           family={Solon},
+           familyi={S\bibinitperiod},
+           given={Gary},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=38104046316aaf803651690c49e29684}{%
+           family={Ashenfelter},
+           familyi={A\bibinitperiod},
+           given={Orley\bibnamedelima C.},
+           giveni={O\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=a9e88233ec6ce30d2d31e294961e3e76}{%
+           family={Card},
+           familyi={C\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{e7467c3311ae98ee7c2d93b368c22a2e}
+      \strng{fullhash}{e7467c3311ae98ee7c2d93b368c22a2e}
+      \strng{bibnamehash}{e7467c3311ae98ee7c2d93b368c22a2e}
+      \strng{authorbibnamehash}{e7467c3311ae98ee7c2d93b368c22a2e}
+      \strng{authornamehash}{e7467c3311ae98ee7c2d93b368c22a2e}
+      \strng{authorfullhash}{e7467c3311ae98ee7c2d93b368c22a2e}
+      \strng{editorbibnamehash}{ec08e6a0ac81747a350eaa2fe11c56cb}
+      \strng{editornamehash}{ec08e6a0ac81747a350eaa2fe11c56cb}
+      \strng{editorfullhash}{ec08e6a0ac81747a350eaa2fe11c56cb}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This chapter summarizes what has been learned from recent research on intergenerational transmission of earnings status. The chapter begins by using a simple theoretical model to highlight several key concepts. Then it reviews (and discusses the connections among) three related empirical literatures: on sibling correlations in earnings, on the intergenerational elasticity of offspring’s earnings with respect to parents’ earnings or income, and on neighborhood effects. © 1999 Elsevier Science B.V. All rights reserved.}
+      \field{booktitle}{Handbook of Labor Economics}
+      \field{issn}{1573-4463}
+      \field{series}{Handbook of Labor Economics}
+      \field{title}{Chapter 29 - Intergenerational Mobility in the Labor Market}
+      \field{volume}{3}
+      \field{year}{1999}
+      \field{pages}{1761\bibrangedash 1800}
+      \range{pages}{40}
+      \verb{doi}
+      \verb https://doi.org/10.1016/S1573-4463(99)03010-2
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S1573446399030102
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S1573446399030102
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
