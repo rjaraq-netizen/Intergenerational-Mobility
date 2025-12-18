@@ -1,22 +1,22 @@
-[0] Config.pm:328> INFO - This is Biber 2.21
-[0] Config.pm:331> INFO - Logfile is 'movi_kink.blg'
-[133] biber-MSWIN64:342> INFO - === 
-[175] Biber.pm:421> INFO - Reading 'movi_kink.bcf'
-[324] Biber.pm:1002> INFO - Found 16 citekeys in bib section 0
-[344] Biber.pm:4487> INFO - Processing section 0
-[357] Biber.pm:4678> INFO - Looking for bibtex file 'biblio.bib' for section 0
-[420] bibtex.pm:1713> INFO - LaTeX decoding ...
-[496] bibtex.pm:1519> INFO - Found BibTeX data source 'biblio.bib'
-[675] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[675] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[675] Biber.pm:4307> INFO - Sorting list 'nyt/global//global/global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[675] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
-[704] bbl.pm:676> INFO - Writing 'movi_kink.bbl' with encoding 'UTF-8'
-[720] bbl.pm:779> INFO - Output to movi_kink.bbl
-[721] Biber.pm:132> WARN - legacy month field 'Oct' in entry 'Afonso_2023' is not an integer - this will probably not sort properly.
-[721] Biber.pm:132> WARN - legacy month field 'September' in entry 'Corak_2013' is not an integer - this will probably not sort properly.
-[721] Biber.pm:132> WARN - legacy month field 'Dec' in entry 'BouchardSt-Amant2024' is not an integer - this will probably not sort properly.
-[721] Biber.pm:132> WARN - legacy month field 'August' in entry 'Saez_2010' is not an integer - this will probably not sort properly.
-[721] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\rober\AppData\Local\Temp\biber_tmp_iXbH\a9e03cb3043b9e2c02591da84105bb68_20276.utf8, line 184, warning: 11 characters of junk seen at toplevel
-[721] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\rober\AppData\Local\Temp\biber_tmp_iXbH\a9e03cb3043b9e2c02591da84105bb68_20276.utf8, line 324, warning: 3 characters of junk seen at toplevel
-[721] Biber.pm:134> INFO - WARNINGS: 6
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'movi_kink.blg'
+[104] biber:340> INFO - === Thu Dec 18, 2025, 14:17:12
+[157] Biber.pm:419> INFO - Reading 'movi_kink.bcf'
+[233] Biber.pm:979> INFO - Found 16 citekeys in bib section 0
+[247] Biber.pm:4419> INFO - Processing section 0
+[280] Biber.pm:4610> INFO - Looking for bibtex file 'biblio.bib' for section 0
+[285] bibtex.pm:1713> INFO - LaTeX decoding ...
+[345] bibtex.pm:1519> INFO - Found BibTeX data source 'biblio.bib'
+[563] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[563] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[563] Biber.pm:4239> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[563] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[597] bbl.pm:660> INFO - Writing 'movi_kink.bbl' with encoding 'UTF-8'
+[607] bbl.pm:763> INFO - Output to movi_kink.bbl
+[607] Biber.pm:131> WARN - legacy month field 'Oct' in entry 'Afonso_2023' is not an integer - this will probably not sort properly.
+[607] Biber.pm:131> WARN - legacy month field 'September' in entry 'Corak_2013' is not an integer - this will probably not sort properly.
+[608] Biber.pm:131> WARN - legacy month field 'Dec' in entry 'BouchardSt-Amant2024' is not an integer - this will probably not sort properly.
+[608] Biber.pm:131> WARN - legacy month field 'August' in entry 'Saez_2010' is not an integer - this will probably not sort properly.
+[608] Biber.pm:131> WARN - BibTeX subsystem: /tmp/biber_tmp_VEXY/a9e03cb3043b9e2c02591da84105bb68_3187.utf8, line 184, warning: 11 characters of junk seen at toplevel
+[608] Biber.pm:131> WARN - BibTeX subsystem: /tmp/biber_tmp_VEXY/a9e03cb3043b9e2c02591da84105bb68_3187.utf8, line 324, warning: 3 characters of junk seen at toplevel
+[608] Biber.pm:133> INFO - WARNINGS: 6
