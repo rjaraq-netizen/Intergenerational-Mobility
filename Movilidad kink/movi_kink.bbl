@@ -1,0 +1,860 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{Afonso_2023}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=b685bbfaf7f8a1a74ebc8e9cad14c960}{%
+           family={Afonso},
+           familyi={A\bibinitperiod},
+           given={Oscar},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3e0da9313af127ef3a9d4cc84ddb2e18}{%
+           family={Sequeira},
+           familyi={S\bibinitperiod},
+           given={Tiago},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8f34140cd80c99d58dbcc808987a5ce1}{%
+           family={Almeida},
+           familyi={A\bibinitperiod},
+           given={Derick},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{dd678f03013ba4c19d91a2f9c64336bf}
+      \strng{fullhash}{dd678f03013ba4c19d91a2f9c64336bf}
+      \strng{fullhashraw}{dd678f03013ba4c19d91a2f9c64336bf}
+      \strng{bibnamehash}{dd678f03013ba4c19d91a2f9c64336bf}
+      \strng{authorbibnamehash}{dd678f03013ba4c19d91a2f9c64336bf}
+      \strng{authornamehash}{dd678f03013ba4c19d91a2f9c64336bf}
+      \strng{authorfullhash}{dd678f03013ba4c19d91a2f9c64336bf}
+      \strng{authorfullhashraw}{dd678f03013ba4c19d91a2f9c64336bf}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper studies the impact of automation shocks on the technological-knowledge level, skill premium (or wage inequality), real prices, output, and economic growth. To highlight the economic mechanisms, we devise a task-based direct technical change model that allows us to analyze the determinants of the threshold task, the relative output and prices between sectors, intra- and inter-sectoral wage differences, wage polarization and economic growth rates. We observe that an increase in the efficiency of skilled or unskilled workers as well as a decrease in the efficiency of medium-skilled workers as possible result of automation always increase wage polarization as well as economic growth rates. In a quantitative exercise we also assess the change in the weight of routine and non-routine sectors in the economy. In this context, governments should implement policies to support the professional transition of medium-skilled workers to non-routinazable tasks.}
+      \field{issn}{1617-7134}
+      \field{journaltitle}{Journal of Economics}
+      \field{month}{10}
+      \field{number}{2}
+      \field{title}{Technological knowledge and wages: from skill premium to wage polarization}
+      \field{volume}{140}
+      \field{year}{2023}
+      \field{pages}{93\bibrangedash 119}
+      \range{pages}{27}
+      \verb{doi}
+      \verb 10.1007/s00712-023-00833-y
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s00712-023-00833-y
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s00712-023-00833-y
+      \endverb
+    \endentry
+    \entry{Autor_2020}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=3e9e4236efb9d339f6608030d0cca439}{%
+           family={Autor},
+           familyi={A\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8ed98663662c03115a1f8a6926baf48c}{%
+           family={Dorn},
+           familyi={D\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=2,uniquepart=given,hash=571c7bf71524e7f1a01a182010ad3b77}{%
+           family={Katz},
+           familyi={K\bibinitperiod},
+           given={Lawrence\bibnamedelima F},
+           giveni={L\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=2}}%
+        {{un=0,uniquepart=base,hash=a27888925092819d7d8236cd295d3129}{%
+           family={Patterson},
+           familyi={P\bibinitperiod},
+           given={Christina},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f70553b3e26946f6aa958883ea10f035}{%
+           family={Van\bibnamedelima Reenen},
+           familyi={V\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1505a38f60e3a0a99835d5663dd31a43}
+      \strng{fullhash}{1505a38f60e3a0a99835d5663dd31a43}
+      \strng{fullhashraw}{1505a38f60e3a0a99835d5663dd31a43}
+      \strng{bibnamehash}{1505a38f60e3a0a99835d5663dd31a43}
+      \strng{authorbibnamehash}{1505a38f60e3a0a99835d5663dd31a43}
+      \strng{authornamehash}{1505a38f60e3a0a99835d5663dd31a43}
+      \strng{authorfullhash}{1505a38f60e3a0a99835d5663dd31a43}
+      \strng{authorfullhashraw}{1505a38f60e3a0a99835d5663dd31a43}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The fall of labor’s share of GDP in the United States and many other countries in recent decades is well documented but its causes remain uncertain. Existing empirical assessments typically rely on industry or macro data, obscuring heterogeneity among firms. In this article, we analyze micro panel data from the U.S. Economic Census since 1982 and document empirical patterns to assess a new interpretation of the fall in the labor share based on the rise of “superstar firms.” If globalization or technological changes push sales toward the most productive firms in each industry, product market concentration will rise as industries become increasingly dominated by superstar firms, which have high markups and a low labor share of value added. We empirically assess seven predictions of this hypothesis: (i) industry sales will increasingly concentrate in a small number of firms; (ii) industries where concentration rises most will have the largest declines in the labor share; (iii) the fall in the labor share will be driven largely by reallocation rather than a fall in the unweighted mean labor share across all firms; (iv) the between-firm reallocation component of the fall in the labor share will be greatest in the sectors with the largest increases in market concentration; (v) the industries that are becoming more concentrated will exhibit faster growth of productivity; (vi) the aggregate markup will rise more than the typical firm’s markup; and (vii) these patterns should be observed not only in U.S. firms but also internationally. We find support for all of these predictions.}
+      \field{issn}{0033-5533}
+      \field{journaltitle}{The Quarterly Journal of Economics}
+      \field{month}{02}
+      \field{number}{2}
+      \field{title}{The Fall of the Labor Share and the Rise of Superstar Firms*}
+      \field{volume}{135}
+      \field{year}{2020}
+      \field{pages}{645\bibrangedash 709}
+      \range{pages}{65}
+      \verb{doi}
+      \verb 10.1093/qje/qjaa004
+      \endverb
+      \verb{eprint}
+      \verb https://academic.oup.com/qje/article-pdf/135/2/645/32994954/qjaa004.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1093/qje/qjaa004
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1093/qje/qjaa004
+      \endverb
+    \endentry
+    \entry{Becker_2018}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=72e0824c9fba8f7f957b80cb8dbe85d2}{%
+           family={Becker},
+           familyi={B\bibinitperiod},
+           given={Gary\bibnamedelima S.},
+           giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fdf5013c4b6adb570f774dc5710909a5}{%
+           family={Kominers},
+           familyi={K\bibinitperiod},
+           given={Scott\bibnamedelima Duke},
+           giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2459a19cc6b1187b64ff667577c741d9}{%
+           family={Murphy},
+           familyi={M\bibinitperiod},
+           given={Kevin\bibnamedelima M.},
+           giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cee5b4641f85170c12ab5a3c742c6158}{%
+           family={Spenkuch},
+           familyi={S\bibinitperiod},
+           given={Jörg\bibnamedelima L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{48b007d6ce2d7d2f61ba80dbb530b26b}
+      \strng{fullhash}{48b007d6ce2d7d2f61ba80dbb530b26b}
+      \strng{fullhashraw}{48b007d6ce2d7d2f61ba80dbb530b26b}
+      \strng{bibnamehash}{48b007d6ce2d7d2f61ba80dbb530b26b}
+      \strng{authorbibnamehash}{48b007d6ce2d7d2f61ba80dbb530b26b}
+      \strng{authornamehash}{48b007d6ce2d7d2f61ba80dbb530b26b}
+      \strng{authorfullhash}{48b007d6ce2d7d2f61ba80dbb530b26b}
+      \strng{authorfullhashraw}{48b007d6ce2d7d2f61ba80dbb530b26b}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We study the link between market forces, cross-sectional inequality, and intergenerational mobility. Emphasizing complementarities in the production of human capital, we show that wealthy parents invest, on average, more in their offspring than poorer ones. As a result, economic status persists across generations even in a world with perfect capital markets and without differences in innate ability. In fact, under certain conditions, successive generations of the same family may cease to regress toward the mean. We also consider how short- and long-run mobility are affected by changes in the returns to human capital.}
+      \field{journaltitle}{Journal of Political Economy}
+      \field{number}{S1}
+      \field{title}{A Theory of Intergenerational Mobility}
+      \field{volume}{126}
+      \field{year}{2018}
+      \field{pages}{S7\bibrangedash S25}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1086/698759
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1086/698759
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1086/698759
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1086/698759
+      \endverb
+    \endentry
+    \entry{Becker_Tomes_1979}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=72e0824c9fba8f7f957b80cb8dbe85d2}{%
+           family={Becker},
+           familyi={B\bibinitperiod},
+           given={Gary\bibnamedelima S.},
+           giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fa8b13d48b1d0a585b37cfd0348fb188}{%
+           family={Tomes},
+           familyi={T\bibinitperiod},
+           given={Nigel},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {University of Chicago Press}%
+      }
+      \strng{namehash}{00fd0a6dfb9c5a835c996a57c3dc7f78}
+      \strng{fullhash}{00fd0a6dfb9c5a835c996a57c3dc7f78}
+      \strng{fullhashraw}{00fd0a6dfb9c5a835c996a57c3dc7f78}
+      \strng{bibnamehash}{00fd0a6dfb9c5a835c996a57c3dc7f78}
+      \strng{authorbibnamehash}{00fd0a6dfb9c5a835c996a57c3dc7f78}
+      \strng{authornamehash}{00fd0a6dfb9c5a835c996a57c3dc7f78}
+      \strng{authorfullhash}{00fd0a6dfb9c5a835c996a57c3dc7f78}
+      \strng{authorfullhashraw}{00fd0a6dfb9c5a835c996a57c3dc7f78}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The theory of inequality and intergenerational mobility presented in this essay assumes that each family maximizes a utility function spanning several generations. Utility depends on the consumption of parents and on the quantity and quality of their children. The income of children is raised when they receive more human and nonhuman capital from their parents. Their income is also raised by their "endowment" of genetically determined race, ability, and other characteristics, family reputation and "connections," and knowledge, skills, and goals provided by their family environment. The fortunes of children are linked to their parents not only through investments but also through these endowments acquired from parents (and other family members). The equilibrium income of children is determined by their market and endowed luck, the own income and endowment of parents, and the two parameters, the degree of inheritability and the propensity to invest in children. If these parameters are both less than unity, the distribution of income between families approaches a stationary distribution. The stationary coefficient of variation is greater, the larger the degree of in-heritability and the smaller the propensity to invest in children. Intergenerational mobility measures the effect of a family on the well-being of its children. We show that the family is more important when the degree of inheritability and the propensity to invest are larger. If both these parameters are less than unity, an increase in family income in one generation has negligible effects on the incomes of much later descendants. However, the incomes of children, grandchildren, and other early descendants could significantly increase; indeed, if the sum of these parameters exceeds unity, the changes in income rise for several generations before falling, and the maximum increase in income could exceed the initial increase.}
+      \field{issn}{00223808, 1537534X}
+      \field{journaltitle}{Journal of Political Economy}
+      \field{number}{6}
+      \field{title}{An Equilibrium Theory of the Distribution of Income and Intergenerational Mobility}
+      \field{urlday}{23}
+      \field{urlmonth}{11}
+      \field{urlyear}{2025}
+      \field{volume}{87}
+      \field{year}{1979}
+      \field{urldateera}{ce}
+      \field{pages}{1153\bibrangedash 1189}
+      \range{pages}{37}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/1833328
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/1833328
+      \endverb
+    \endentry
+    \entry{Behar_2025}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8f17e9210eac40fee1feede1792e5c95}{%
+           family={Behar},
+           familyi={B\bibinitperiod},
+           given={Alberto},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8f17e9210eac40fee1feede1792e5c95}
+      \strng{fullhash}{8f17e9210eac40fee1feede1792e5c95}
+      \strng{fullhashraw}{8f17e9210eac40fee1feede1792e5c95}
+      \strng{bibnamehash}{8f17e9210eac40fee1feede1792e5c95}
+      \strng{authorbibnamehash}{8f17e9210eac40fee1feede1792e5c95}
+      \strng{authornamehash}{8f17e9210eac40fee1feede1792e5c95}
+      \strng{authorfullhash}{8f17e9210eac40fee1feede1792e5c95}
+      \strng{authorfullhashraw}{8f17e9210eac40fee1feede1792e5c95}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{I develop a model of endogenous skill-biased technical change in developing countries. The endogenous response to a rise in skill supply counters the traditional substitution effect and dampens supply’s role in reducing wage inequality. The model reinforces consensus estimates of the elasticity of substitution between more/less educated workers by reconciling dispersed existing estimates. It also rationalizes estimates that were hitherto deemed implausible or theory-inconsistent. I produce new estimates for developing countries with a new global panel and with Latin American data (that facilitates analysis of dynamics). Many estimated elasticity values are almost 2. This sheds new light on a parameter that is crucial for inequality, growth, and other key macroeconomic questions.}
+      \field{issn}{0304-3878}
+      \field{journaltitle}{Journal of Development Economics}
+      \field{title}{The elasticity of substitution between skilled and unskilled labor in developing countries: A directed technical change perspective}
+      \field{volume}{174}
+      \field{year}{2025}
+      \field{pages}{103411}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.jdeveco.2024.103411
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0304387824001603
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0304387824001603
+      \endverb
+      \keyw{Skill-biased technical change,Elasticity of substitution,Skill premium,Inequality,Growth accounting}
+    \endentry
+    \entry{BouchardSt-Amant2024}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=adb4c8f56791e916fccb7e7daaa163f6}{%
+           family={Bouchard\bibnamedelima St-Amant},
+           familyi={B\bibinitperiod\bibinitdelim S\bibinithyphendelim A\bibinitperiod},
+           given={Pier-André},
+           giveni={P\bibinithyphendelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=12ee1abb3fe3bff5ca213398a72a191b}{%
+           family={Marceau},
+           familyi={M\bibinitperiod},
+           given={Nicolas},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=141387346b690311d1a9d5304ec85570}{%
+           family={Garon},
+           familyi={G\bibinitperiod},
+           given={Jean-Denis},
+           giveni={J\bibinithyphendelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{fa047b920ace085f105d9cfcd10c5b9d}
+      \strng{fullhash}{fa047b920ace085f105d9cfcd10c5b9d}
+      \strng{fullhashraw}{fa047b920ace085f105d9cfcd10c5b9d}
+      \strng{bibnamehash}{fa047b920ace085f105d9cfcd10c5b9d}
+      \strng{authorbibnamehash}{fa047b920ace085f105d9cfcd10c5b9d}
+      \strng{authornamehash}{fa047b920ace085f105d9cfcd10c5b9d}
+      \strng{authorfullhash}{fa047b920ace085f105d9cfcd10c5b9d}
+      \strng{authorfullhashraw}{fa047b920ace085f105d9cfcd10c5b9d}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Empirical findings suggest a positive correlation between inequality and social immobility, a phenomenon coined the Gatsby curve. This paper answers a simple question: When do Gatsby curves exist? We build a theoretical n-income environment in which parental investment and education improve the economic prospects of children. Gatsbian economies and Gatsby curves are formally defined, and we characterize the conditions under which they arise. A Gatsby curve arises when immobility (Trace of the transition matrix) and inequality (Gini coefficient) both change in the same direction following a change in an exogenous variable (an income level, the level of education).When an exogenous variable changes, the impact on inequality depends on a standard direct effect and on an indirect (composition) effect which accounts for the changes in the proportions of individuals with various incomes. We show that following an increase in some high income, immobility and inequality both increase if the indirect effect goes in the same direction as the direct effect. Thus, in such a case, the economy moves up a Gatsby curve. We also demonstrate that if the indirect effect goes in the same direction as the direct effect, and if education is a substitute to parental investment, then an increase in education leads to the economy moving down a Gatsby curve where it experiences both lower inequality and immobility. Finally, we show that an economy may go from being Gatsbian to non-Gatsbian, and vice versa.}
+      \field{issn}{1573-8701}
+      \field{journaltitle}{The Journal of Economic Inequality}
+      \field{month}{12}
+      \field{number}{4}
+      \field{title}{Uncovering Gatsby Curves}
+      \field{volume}{22}
+      \field{year}{2024}
+      \field{pages}{833\bibrangedash 864}
+      \range{pages}{32}
+      \verb{doi}
+      \verb 10.1007/s10888-023-09619-0
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s10888-023-09619-0
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s10888-023-09619-0
+      \endverb
+    \endentry
+    \entry{Burtless_1978}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=4c3af13e55ec91cad4d66346fd456142}{%
+           family={Burtless},
+           familyi={B\bibinitperiod},
+           given={Gary},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=6b05590b027efa53665c79a23d66dacf}{%
+           family={Hausman},
+           familyi={H\bibinitperiod},
+           given={Jerry},
+           giveni={J\bibinitperiod},
+           givenun=1}}%
+      }
+      \strng{namehash}{479906061e5ff4c62c755a47b9a24e2e}
+      \strng{fullhash}{479906061e5ff4c62c755a47b9a24e2e}
+      \strng{fullhashraw}{479906061e5ff4c62c755a47b9a24e2e}
+      \strng{bibnamehash}{479906061e5ff4c62c755a47b9a24e2e}
+      \strng{authorbibnamehash}{479906061e5ff4c62c755a47b9a24e2e}
+      \strng{authornamehash}{479906061e5ff4c62c755a47b9a24e2e}
+      \strng{authorfullhash}{479906061e5ff4c62c755a47b9a24e2e}
+      \strng{authorfullhashraw}{479906061e5ff4c62c755a47b9a24e2e}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Political Economy}
+      \field{number}{6}
+      \field{title}{The Effect of Taxation on Labor Supply: Evaluating the Gary Negative Income Tax Experiments}
+      \field{volume}{86}
+      \field{year}{1978}
+      \field{pages}{1103\bibrangedash 30}
+      \range{pages}{31}
+      \verb{urlraw}
+      \verb https://EconPapers.repec.org/RePEc:ucp:jpolec:v:86:y:1978:i:6:p:1103-30
+      \endverb
+      \verb{url}
+      \verb https://EconPapers.repec.org/RePEc:ucp:jpolec:v:86:y:1978:i:6:p:1103-30
+      \endverb
+    \endentry
+    \entry{Corak_2013}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=17dfd8b100e514392abb82c209868a88}{%
+           family={Corak},
+           familyi={C\bibinitperiod},
+           given={Miles},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{17dfd8b100e514392abb82c209868a88}
+      \strng{fullhash}{17dfd8b100e514392abb82c209868a88}
+      \strng{fullhashraw}{17dfd8b100e514392abb82c209868a88}
+      \strng{bibnamehash}{17dfd8b100e514392abb82c209868a88}
+      \strng{authorbibnamehash}{17dfd8b100e514392abb82c209868a88}
+      \strng{authornamehash}{17dfd8b100e514392abb82c209868a88}
+      \strng{authorfullhash}{17dfd8b100e514392abb82c209868a88}
+      \strng{authorfullhashraw}{17dfd8b100e514392abb82c209868a88}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Economic Perspectives}
+      \field{month}{9}
+      \field{number}{3}
+      \field{title}{Income Inequality, Equality of Opportunity, and Intergenerational Mobility}
+      \field{volume}{27}
+      \field{year}{2013}
+      \field{pages}{79\bibrangedash 102}
+      \range{pages}{24}
+      \verb{doi}
+      \verb 10.1257/jep.27.3.79
+      \endverb
+      \verb{urlraw}
+      \verb https://www.aeaweb.org/articles?id=10.1257/jep.27.3.79
+      \endverb
+      \verb{url}
+      \verb https://www.aeaweb.org/articles?id=10.1257/jep.27.3.79
+      \endverb
+    \endentry
+    \entry{Hausman_1985}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=1,uniquepart=given,hash=efa8edfd650dfd234af154959e067af8}{%
+           family={Hausman},
+           familyi={H\bibinitperiod},
+           given={Jerry\bibnamedelima A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=1}}%
+      }
+      \strng{namehash}{efa8edfd650dfd234af154959e067af8}
+      \strng{fullhash}{efa8edfd650dfd234af154959e067af8}
+      \strng{fullhashraw}{efa8edfd650dfd234af154959e067af8}
+      \strng{bibnamehash}{efa8edfd650dfd234af154959e067af8}
+      \strng{authorbibnamehash}{efa8edfd650dfd234af154959e067af8}
+      \strng{authornamehash}{efa8edfd650dfd234af154959e067af8}
+      \strng{authorfullhash}{efa8edfd650dfd234af154959e067af8}
+      \strng{authorfullhashraw}{efa8edfd650dfd234af154959e067af8}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Handbook of Public Economics}
+      \field{title}{Taxes and Labor Supply}
+      \field{volume}{1}
+      \field{year}{1985}
+      \field{pages}{213\bibrangedash 263}
+      \range{pages}{51}
+    \endentry
+    \entry{Murphy_1993}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=d601477de775b6ef301d8f3e0aa13ef0}{%
+           family={Juhn},
+           familyi={J\bibinitperiod},
+           given={Chinhui},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2459a19cc6b1187b64ff667577c741d9}{%
+           family={Murphy},
+           familyi={M\bibinitperiod},
+           given={Kevin\bibnamedelima M.},
+           giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ba8b32be93458a6d781ce5d30d2fa80f}{%
+           family={Pierce},
+           familyi={P\bibinitperiod},
+           given={Brooks},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {University of Chicago Press}%
+      }
+      \strng{namehash}{b36f90712f45d0c3b9523ea84ac7a388}
+      \strng{fullhash}{b36f90712f45d0c3b9523ea84ac7a388}
+      \strng{fullhashraw}{b36f90712f45d0c3b9523ea84ac7a388}
+      \strng{bibnamehash}{b36f90712f45d0c3b9523ea84ac7a388}
+      \strng{authorbibnamehash}{b36f90712f45d0c3b9523ea84ac7a388}
+      \strng{authornamehash}{b36f90712f45d0c3b9523ea84ac7a388}
+      \strng{authorfullhash}{b36f90712f45d0c3b9523ea84ac7a388}
+      \strng{authorfullhashraw}{b36f90712f45d0c3b9523ea84ac7a388}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Using data from the March Current Population Survey, we document an increase over the past 30 years in wage inequality for males. Between 1963 and 1989, real average weekly wages for the least skilled workers (as measured by the tenth percentile of the wage distribution) declined by about 5 percent, whereas wages for the most skilled workers (as measured by the ninetieth percentile of the wage distribution) rose by about 40 percent. We find that the trend toward increased wage inequality is apparent within narrowly defined education and labor market experience groups. Our interpretation is that much of the increase in wage inequality for males over the last 20 years is due to increased returns to the components of skill other than years of schooling and years of labor market experience. Our primary explanation for the general rise in returns to skill is that the demand for skill rose in the United States over this period.}
+      \field{issn}{00223808, 1537534X}
+      \field{journaltitle}{Journal of Political Economy}
+      \field{number}{3}
+      \field{title}{Wage Inequality and the Rise in Returns to Skill}
+      \field{urlday}{17}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{volume}{101}
+      \field{year}{1993}
+      \field{urldateera}{ce}
+      \field{pages}{410\bibrangedash 442}
+      \range{pages}{33}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/2138770
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/2138770
+      \endverb
+    \endentry
+    \entry{Katz_1992}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=2,uniquepart=given,hash=571c7bf71524e7f1a01a182010ad3b77}{%
+           family={Katz},
+           familyi={K\bibinitperiod},
+           given={Lawrence\bibnamedelima F.},
+           giveni={L\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=2}}%
+        {{un=0,uniquepart=base,hash=2459a19cc6b1187b64ff667577c741d9}{%
+           family={Murphy},
+           familyi={M\bibinitperiod},
+           given={Kevin\bibnamedelima M.},
+           giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3ae85e2216f1f09eb3dc959db00be2ac}
+      \strng{fullhash}{3ae85e2216f1f09eb3dc959db00be2ac}
+      \strng{fullhashraw}{3ae85e2216f1f09eb3dc959db00be2ac}
+      \strng{bibnamehash}{3ae85e2216f1f09eb3dc959db00be2ac}
+      \strng{authorbibnamehash}{3ae85e2216f1f09eb3dc959db00be2ac}
+      \strng{authornamehash}{3ae85e2216f1f09eb3dc959db00be2ac}
+      \strng{authorfullhash}{3ae85e2216f1f09eb3dc959db00be2ac}
+      \strng{authorfullhashraw}{3ae85e2216f1f09eb3dc959db00be2ac}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A simple supply and demand framework is used to analyze changes in the U. S. wage structure from 1963 to 1987. Rapid secular growth in the demand for more-educated workers, “more-skilled” workers, and females appears to be the driving force behind observed changes in the wage structure. Measured changes in the allocation of labor between industries and occupations strongly favored college graduates and females throughout the period. Movements in the college wage premium over this period appear to be strongly related to fluctuations in the rate of growth of the supply of college graduates.}
+      \field{issn}{0033-5533}
+      \field{journaltitle}{The Quarterly Journal of Economics}
+      \field{month}{02}
+      \field{number}{1}
+      \field{title}{Changes in Relative Wages, 1963–1987: Supply and Demand Factors*}
+      \field{volume}{107}
+      \field{year}{1992}
+      \field{pages}{35\bibrangedash 78}
+      \range{pages}{44}
+      \verb{doi}
+      \verb 10.2307/2118323
+      \endverb
+      \verb{eprint}
+      \verb https://academic.oup.com/qje/article-pdf/107/1/35/5429219/107-1-35.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.2307/2118323
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.2307/2118323
+      \endverb
+    \endentry
+    \entry{Krusell_2000}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=8b0641dea388438dc1762be628be0d0f}{%
+           family={Krusell},
+           familyi={K\bibinitperiod},
+           given={Per},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d5c63c2b0682b7f90b06a5cab4499ab2}{%
+           family={Ohanian},
+           familyi={O\bibinitperiod},
+           given={Lee\bibnamedelima E.},
+           giveni={L\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f3b09d08b89748d667e8d2fa1a539d37}{%
+           family={Ríos-Rull},
+           familyi={R\bibinithyphendelim R\bibinitperiod},
+           given={José-Víctor},
+           giveni={J\bibinithyphendelim V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0a5a837fc5db64a717ef5f2881870194}{%
+           family={Violante},
+           familyi={V\bibinitperiod},
+           given={Giovanni\bibnamedelima L.},
+           giveni={G\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {[Wiley, Econometric Society]}%
+      }
+      \strng{namehash}{7f988f9705304289c5790839ddd0b33d}
+      \strng{fullhash}{7f988f9705304289c5790839ddd0b33d}
+      \strng{fullhashraw}{7f988f9705304289c5790839ddd0b33d}
+      \strng{bibnamehash}{7f988f9705304289c5790839ddd0b33d}
+      \strng{authorbibnamehash}{7f988f9705304289c5790839ddd0b33d}
+      \strng{authornamehash}{7f988f9705304289c5790839ddd0b33d}
+      \strng{authorfullhash}{7f988f9705304289c5790839ddd0b33d}
+      \strng{authorfullhashraw}{7f988f9705304289c5790839ddd0b33d}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The supply and price of skilled labor relative to unskilled labor have changed dramatically over the postwar period. The relative quantity of skilled labor has increased substantially, and the skill premium, which is the wage of skilled labor relative to that of unskilled labor, has grown significantly since 1980. Many studies have found that accounting for the increase in the skill premium on the basis of observable variables is difficult and have concluded implicitly that latent skill-biased technological change must be the main factor responsible. This paper examines that view systematically. We develop a framework that provides a simple, explicit economic mechanism for understanding skill-biased technological change in terms of observable variables, and we use the framework to evaluate the fraction of variation in the skill premium that can be accounted for by changes in observed factor quantities. We find that with capital-skill complementarity, changes in observed inputs alone can account for most of the variations in the skill premium over the last 30 years.}
+      \field{issn}{00129682, 14680262}
+      \field{journaltitle}{Econometrica}
+      \field{number}{5}
+      \field{title}{Capital-Skill Complementarity and Inequality: A Macroeconomic Analysis}
+      \field{urlday}{17}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{volume}{68}
+      \field{year}{2000}
+      \field{urldateera}{ce}
+      \field{pages}{1029\bibrangedash 1053}
+      \range{pages}{25}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/2999442
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/2999442
+      \endverb
+    \endentry
+    \entry{Saez_2010}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f040f5aac2c176810fed8b44b9c401a4}{%
+           family={Saez},
+           familyi={S\bibinitperiod},
+           given={Emmanuel},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f040f5aac2c176810fed8b44b9c401a4}
+      \strng{fullhash}{f040f5aac2c176810fed8b44b9c401a4}
+      \strng{fullhashraw}{f040f5aac2c176810fed8b44b9c401a4}
+      \strng{bibnamehash}{f040f5aac2c176810fed8b44b9c401a4}
+      \strng{authorbibnamehash}{f040f5aac2c176810fed8b44b9c401a4}
+      \strng{authornamehash}{f040f5aac2c176810fed8b44b9c401a4}
+      \strng{authorfullhash}{f040f5aac2c176810fed8b44b9c401a4}
+      \strng{authorfullhashraw}{f040f5aac2c176810fed8b44b9c401a4}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Economic Journal: Economic Policy}
+      \field{month}{8}
+      \field{number}{3}
+      \field{title}{Do Taxpayers Bunch at Kink Points?}
+      \field{volume}{2}
+      \field{year}{2010}
+      \field{pages}{180\bibrangedash 212}
+      \range{pages}{33}
+      \verb{doi}
+      \verb 10.1257/pol.2.3.180
+      \endverb
+      \verb{urlraw}
+      \verb https://www.aeaweb.org/articles?id=10.1257/pol.2.3.180
+      \endverb
+      \verb{url}
+      \verb https://www.aeaweb.org/articles?id=10.1257/pol.2.3.180
+      \endverb
+    \endentry
+    \entry{Smith_2019}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=892bcbf9fb91b1348837862cbf71f80f}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b959b817d7c67ae93fd77d8ec376d3df}{%
+           family={Yagan},
+           familyi={Y\bibinitperiod},
+           given={Danny},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0c77ec0c2f1c248c1ce8111764ecbb62}{%
+           family={Zidar},
+           familyi={Z\bibinitperiod},
+           given={Owen},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9b81e7882778f3acfd3d430a21366088}{%
+           family={Zwick},
+           familyi={Z\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8a22455455a3e0aaf33acc9b51fb80d5}
+      \strng{fullhash}{8a22455455a3e0aaf33acc9b51fb80d5}
+      \strng{fullhashraw}{8a22455455a3e0aaf33acc9b51fb80d5}
+      \strng{bibnamehash}{8a22455455a3e0aaf33acc9b51fb80d5}
+      \strng{authorbibnamehash}{8a22455455a3e0aaf33acc9b51fb80d5}
+      \strng{authornamehash}{8a22455455a3e0aaf33acc9b51fb80d5}
+      \strng{authorfullhash}{8a22455455a3e0aaf33acc9b51fb80d5}
+      \strng{authorfullhashraw}{8a22455455a3e0aaf33acc9b51fb80d5}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{How important is human capital at the top of the U.S. income distribution? A primary source of top income is private “pass-through” business profit, which can include entrepreneurial labor income for tax reasons. This article asks whether top pass-through profit mostly reflects human capital, defined as all inalienable factors embodied in business owners, rather than financial capital. Tax data linking 11 million firms to their owners show that top pass-through profit accrues to working-age owners of closely held mid-market firms in skill-intensive industries. Pass-through profit falls by three-quarters after owner retirement or premature death. Classifying three-quarters of pass-through profit as human capital income, we find that the typical top earner derives most of her income from human capital, not financial capital. Growth in pass-through profit is explained by both rising productivity and a rising share of value added accruing to owners.}
+      \field{issn}{0033-5533}
+      \field{journaltitle}{The Quarterly Journal of Economics}
+      \field{month}{07}
+      \field{number}{4}
+      \field{title}{Capitalists in the Twenty-First Century*}
+      \field{volume}{134}
+      \field{year}{2019}
+      \field{pages}{1675\bibrangedash 1745}
+      \range{pages}{71}
+      \verb{doi}
+      \verb 10.1093/qje/qjz020
+      \endverb
+      \verb{eprint}
+      \verb https://academic.oup.com/qje/article-pdf/134/4/1675/32666241/qjz020.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1093/qje/qjz020
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1093/qje/qjz020
+      \endverb
+    \endentry
+    \entry{Solon_1999}{incollection}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e7467c3311ae98ee7c2d93b368c22a2e}{%
+           family={Solon},
+           familyi={S\bibinitperiod},
+           given={Gary},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=38104046316aaf803651690c49e29684}{%
+           family={Ashenfelter},
+           familyi={A\bibinitperiod},
+           given={Orley\bibnamedelima C.},
+           giveni={O\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=a9e88233ec6ce30d2d31e294961e3e76}{%
+           family={Card},
+           familyi={C\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{e7467c3311ae98ee7c2d93b368c22a2e}
+      \strng{fullhash}{e7467c3311ae98ee7c2d93b368c22a2e}
+      \strng{fullhashraw}{e7467c3311ae98ee7c2d93b368c22a2e}
+      \strng{bibnamehash}{e7467c3311ae98ee7c2d93b368c22a2e}
+      \strng{authorbibnamehash}{e7467c3311ae98ee7c2d93b368c22a2e}
+      \strng{authornamehash}{e7467c3311ae98ee7c2d93b368c22a2e}
+      \strng{authorfullhash}{e7467c3311ae98ee7c2d93b368c22a2e}
+      \strng{authorfullhashraw}{e7467c3311ae98ee7c2d93b368c22a2e}
+      \strng{editorbibnamehash}{ec08e6a0ac81747a350eaa2fe11c56cb}
+      \strng{editornamehash}{ec08e6a0ac81747a350eaa2fe11c56cb}
+      \strng{editorfullhash}{ec08e6a0ac81747a350eaa2fe11c56cb}
+      \strng{editorfullhashraw}{ec08e6a0ac81747a350eaa2fe11c56cb}
+      \field{extraname}{1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This chapter summarizes what has been learned from recent research on intergenerational transmission of earnings status. The chapter begins by using a simple theoretical model to highlight several key concepts. Then it reviews (and discusses the connections among) three related empirical literatures: on sibling correlations in earnings, on the intergenerational elasticity of offspring’s earnings with respect to parents’ earnings or income, and on neighborhood effects. © 1999 Elsevier Science B.V. All rights reserved.}
+      \field{booktitle}{Handbook of Labor Economics}
+      \field{issn}{1573-4463}
+      \field{series}{Handbook of Labor Economics}
+      \field{title}{Chapter 29 - Intergenerational Mobility in the Labor Market}
+      \field{volume}{3}
+      \field{year}{1999}
+      \field{pages}{1761\bibrangedash 1800}
+      \range{pages}{40}
+      \verb{doi}
+      \verb https://doi.org/10.1016/S1573-4463(99)03010-2
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S1573446399030102
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S1573446399030102
+      \endverb
+    \endentry
+    \entry{Solon_2004}{inbook}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e7467c3311ae98ee7c2d93b368c22a2e}{%
+           family={Solon},
+           familyi={S\bibinitperiod},
+           given={Gary},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=bdeb98853bef3a6f66d40df231503d51}{%
+           family={Corak},
+           familyi={C\bibinitperiod},
+           given={MilesEditor},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{e7467c3311ae98ee7c2d93b368c22a2e}
+      \strng{fullhash}{e7467c3311ae98ee7c2d93b368c22a2e}
+      \strng{fullhashraw}{e7467c3311ae98ee7c2d93b368c22a2e}
+      \strng{bibnamehash}{e7467c3311ae98ee7c2d93b368c22a2e}
+      \strng{authorbibnamehash}{e7467c3311ae98ee7c2d93b368c22a2e}
+      \strng{authornamehash}{e7467c3311ae98ee7c2d93b368c22a2e}
+      \strng{authorfullhash}{e7467c3311ae98ee7c2d93b368c22a2e}
+      \strng{authorfullhashraw}{e7467c3311ae98ee7c2d93b368c22a2e}
+      \strng{editorbibnamehash}{bdeb98853bef3a6f66d40df231503d51}
+      \strng{editornamehash}{bdeb98853bef3a6f66d40df231503d51}
+      \strng{editorfullhash}{bdeb98853bef3a6f66d40df231503d51}
+      \strng{editorfullhashraw}{bdeb98853bef3a6f66d40df231503d51}
+      \field{extraname}{2}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Generational Income Mobility in North America and Europe}
+      \field{title}{A model of intergenerational mobility variation over time and place}
+      \field{year}{2004}
+      \field{pages}{38\bibrangedash 47}
+      \range{pages}{10}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

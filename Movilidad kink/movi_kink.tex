@@ -1,0 +1,793 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb, amsthm, geometry, setspace, graphicx,appendix,xcolor,tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage[style=authoryear, hyperref=auto,dashed=false,maxnames=99,labelnumber=true,defernumbers=false,sorting=nyt,backend=biber]{biblatex}
+\addbibresource{biblio.bib}
+\newtheorem{proposition}{Proposition}
+\usepackage{enumitem}
+\setlist[itemize]{itemsep=0pt, topsep=2pt}
+\geometry{margin=2.5cm}
+\setstretch{1.2}
+
+\begin{document}
+\title{Intergenerational Theoretical Model with Formal and Informal Employment}
+\maketitle 
+
+
+\section{Introducción}
+
+\begin{tikzpicture}[xscale=1.3, yscale=0.75]
+
+
+% Parameters
+%------------------------------------------------
+\def\rone{-0.60}   % very low first slope
+\def\rtwo{1.80}    % very high second slope
+\def\Ibar{4}
+\def\e{1}
+
+\def\IL{2}
+\def\IH{6}
+
+% Technology
+\def\yone(#1){(1+\rone)*(#1)+\e}
+\def\ytwo(#1){(1+\rtwo)*(#1)+\e-(\rtwo-\rone)*\Ibar}
+
+%------------------------------------------------
+% Axes
+%------------------------------------------------
+\draw[->] (0,0) -- (8.5,0) node[below] {$I_{t-1}$};
+\draw[->] (0,0) -- (0,7.5) node[left] {$y_t$};
+
+%------------------------------------------------
+% Child income (technology)
+%------------------------------------------------
+\draw[thick,blue]
+  plot[domain=0:\Ibar] (\x,{\yone(\x)});
+\draw[thick,blue]
+  plot[domain=\Ibar:7.8] (\x,{\ytwo(\x)});
+
+\node[blue] at (6.8,4.3) {$y_t(I)$};
+
+%------------------------------------------------
+% Kink
+%------------------------------------------------
+\filldraw[black] (\Ibar,{\yone(\Ibar)}) circle (2pt);
+\draw[dashed] (\Ibar,0) -- (\Ibar,{\yone(\Ibar)});
+\node[below] at (\Ibar,0) {$\bar I$};
+
+%------------------------------------------------
+% Double tangency points
+%------------------------------------------------
+\filldraw[red] (\IL,{\yone(\IL)}) circle (2pt);
+\node[below left] at (\IL,{\yone(\IL)}) {$I_L$};
+
+\filldraw[red] (\IH,{\ytwo(\IH)}) circle (2pt);
+\node[below right] at (\IH,{\ytwo(\IH)}) {$I_H$};
+
+%------------------------------------------------
+% Convex indifference curve (lowered but still convex)
+%------------------------------------------------
+\draw[thick,dashed]
+  plot[smooth,domain=0.7:7.6]
+  (\x,{
+     0.3*(\x-\IL)^2
+     + (1+\rone)*(\x-\IL)
+     + \yone(\IL)
+  });
+
+\node at (5.7,6.9) {Curva de indiferencia $U=\bar U$};
+
+%------------------------------------------------
+% Tangency guides
+%------------------------------------------------
+% At I_L
+\draw[dotted]
+  (\IL-1.1,{\yone(\IL)-(1+\rone)})
+  --
+  (\IL+1.1,{\yone(\IL)+(1+\rone)});
+
+% At I_H
+\draw[dotted]
+  (\IH-1.1,{\ytwo(\IH)-(1+\rtwo)})
+  --
+  (\IH+1.1,{\ytwo(\IH)+(1+\rtwo)});
+
+\end{tikzpicture}
+
+
+Condicion donde las funciones de utilidad indirecta son iguales:
+
+$$(\frac{y_{t-1}+\frac{e_t}{1+r_2}}{y_{t-1}+\frac{e_t}{1+r_1}})^\alpha (\frac{(1+r_2)y_{t-1}+e_t}{(1+r_1)y_{t-1}+e_t})^{1-\alpha}=1$$
+
+Si usamos que $\ln(a+b) \approx \ln a + \frac{b}{a}$ cuando $b<<a$
+
+$$\ln(1+r_2) + \frac{e_t}{(1+r_2)y_{t-1}}\sim \ln (1+r_1)+\frac{e_t}{(1+r_1)y_{t-1}}$$
+Usando la aproximacion $\ln(1+r)=r$
+$$r_2 + \frac{e_t}{(1+r_2)y_{t-1}}\sim r_1+\frac{e_t}{(1+r_1)y_{t-1}}$$
+$$r_2 -r_1 \sim +\frac{e_t}{(1+r_1)y_{t-1}}- \frac{e_t}{(1+r_2)y_{t-1}}$$
+
+\begin{equation}
+\ln\frac{1+r_2}{1+r_1}
+\;\approx\;
+\frac{r_2 - r_1}{(1+r_1)(1+r_2)}.
+\end{equation}
+
+\begin{equation}
+y_{t-1}^*
+\;\approx\;
+\frac{e_t}{(1+r_1)(1+r_2)}.
+\end{equation}
+
+Desde comienzos de los años ochenta, una extensa literatura documenta un aumento sustantivo en la desigualdad salarial en economías desarrolladas y en desarrollo. En particular, los salarios de los trabajadores altamente calificados han crecido de manera desproporcionada, mientras que los de menor calificación se han estancado o disminuido (véase, por ejemplo, \textcite{Katz_1992}, \textcite{Murphy_1993} y \textcite{Krusell_2000}). Un resultado clave, enfatizado por \textcite{Murphy_1993}, es que este aumento en la desigualdad se observa incluso dentro de grupos definidos por educación y experiencia, lo que sugiere que no responde únicamente a diferencias continuas en escolaridad, sino a cambios en los retornos asociados a componentes específicos del capital humano.
+
+Un primer canal que sustenta este mecanismo es la emergencia de economías tipo superstars. La globalización y el cambio tecnológico han desplazado la demanda hacia firmas altamente productivas e intensivas en capital humano especializado, generando elevados markups y una menor participación del trabajo en el valor agregado \parencite{Autor_2020}. En este contexto, el acceso a determinados segmentos del mercado laboral —más que incrementos marginales en habilidades— determina saltos significativos en los ingresos, de modo que pequeñas diferencias en capital humano solo se traducen en grandes diferencias salariales una vez superados ciertos umbrales.
+
+Un segundo canal, particularmente relevante, es que los ingresos en la cola superior reflejan predominantemente retornos al capital humano y no al capital financiero. Utilizando datos administrativos que vinculan firmas con sus propietarios, \textcite{Smith_2019} muestran que una fracción sustantiva del ingreso de los principales perceptores proviene de utilidades empresariales asociadas a habilidades inalienables y trabajo emprendedor. Estos retornos aumentan no solo por mayores niveles de productividad individual, sino también por una mayor apropiación del valor agregado una vez que los individuos acceden a posiciones de control o liderazgo económico.
+
+Finalmente, una extensa literatura documenta que el cambio tecnológico y la automatización refuerzan el sesgo hacia habilidades altas y amplifican la polarización salarial \parencite{Afonso_2023,Behar_2025}. En nuestro marco, estos fenómenos se manifiestan a través de la reasignación sectorial: a bajos niveles de capital humano, el ingreso informal domina y presenta retornos limitados, mientras que, una vez alcanzados ciertos niveles de inversión, el ingreso formal pasa a predominar y se remunera a un precio significativamente mayor. Como resultado, la relación entre capital humano e ingresos es convexa en sentido agregado, pero está caracterizada por cambios discretos en los retornos y no por una elasticidad creciente y suave.
+
+Esta evidencia es consistente con la idea de que los retornos al capital humano no aumentan de manera suave y proporcional a lo largo de la distribución de habilidades, sino que presentan cambios discretos asociados al acceso a determinados segmentos del mercado laboral. En particular, la entrada a ocupaciones altamente especializadas, al sector formal o a posiciones de control económico puede implicar saltos significativos en los ingresos, más allá de incrementos marginales en habilidades observables. En este sentido, las diferencias salariales reflejan no solo cantidades acumuladas de capital humano, sino también la existencia de umbrales que determinan su valorización en el mercado.
+
+El aumento en los retornos al capital humano, especialmente en los tramos altos de la distribución de ingresos, puede tener efectos importantes tanto sobre la movilidad intergeneracional como sobre la desigualdad económica. La evidencia empírica, reflejada en la denominada Great Gatsby Curve, muestra que economías con mayor persistencia intergeneracional tienden a ser más desiguales (\parencite{Corak_2013,BouchardSt-Amant2024}). Este patrón sugiere que la estructura de los retornos al capital humano, especialmente cuando crece en los tramos altos de ingreso, puede generar desigualdad contemporánea y, a su vez, afectar la transmisión de ventajas económicas entre generaciones. 
+
+En este contexto, \textcite{Solon_2004} muestra que aumentos globales en los retornos al capital humano en la generacion de los hijos, en conjunto con un mayor nivel de desigualdad,  incrementan la elasticidad intergeneracional del ingreso, siguiendo la teoria de la curva de Gatsby. Sin embargo, en su enfoque no evaluan el impacto el cambio de la tasa de retornos del capital humano en la desigualdad por medio de la transmision intergeneracional, sino que asumen un aumento exógeno de la desigualdad y ademas la inmobilidad economica se produce independientemente de si los padres anticipan o no el cambio en los retornos, sin un rol explícito para las decisiones de inversión parental como mecanismo generador de desigualdad y persistencia.
+
+Siguiendo un enfoque similar al planteado por \textcite{Becker_2018}, nuestro modelo también genera implicancias comparables: el ingreso del hijo es convexo respecto al capital humano parental y se observan dinastías económicas, donde los padres con mayores ingresos tienden a invertir más en sus hijos que los padres de menores ingresos, reduciendo así la movilidad económica en los tramos altos. La diferencia clave radica en el origen de estas implicancias. \textcite{Becker_2018} argumentan que existen complementariedades en la producción de capital humano, es decir, que el capital humano parental aumenta la productividad no solo en el mercado laboral, sino también en la producción del capital humano de los hijos. En contraste, nuestro modelo sugiere que las implicancias de ingresos convexos en el capital humano y la formación de élites económicas surgen de diferencias en los retornos del capital humano a partir de ciertos niveles de ingreso.
+
+Esta distinción también se refleja en los efectos sobre la movilidad intergeneracional. En \textcite{Becker_2018}, los cambios en la tasa de retorno del capital humano en el mercado simplemente expanden la distribución de ingresos sin afectar la elasticidad intergeneracional de ingresos (IGE), dado que, al aumentar la tasa, todas las familias incrementan proporcionalmente sus inversiones en los hijos. En contraste, en nuestro modelo los retornos del capital humano varían según tramos específicos de ingreso, de modo que un cambio en un tramo, manteniendo constantes los demás, sí afecta tanto la distribución de ingresos como la IGE, en línea con la Great Gatsby Curve.
+
+Así, mientras que para \textcite{Becker_2018} un componente central de la Gatsby Curve son las complementariedades parentales, centradas en la elasticidad de transmisión que impacta simultáneamente la distribución de ingresos y la movilidad, en nuestro enfoque lo esencial son las diferencias en los retornos de mercado del capital humano a lo largo de la distribución de ingresos. De hecho, mientras que su modelo plantea que un aumento en la desigualdad salarial puede, pero no necesariamente, ir acompañado de menor movilidad intergeneracional, nuestro modelo sostiene que la desigualdad de ingresos está directamente asociada a una reducción de la movilidad entre generaciones.
+
+
+
+
+Proponemos un modelo teórico de movilidad intergeneracional inspirado en el trabajo seminal de \textcite{Becker_Tomes_1979} y en las simplificaciones introducidas por \textcite{Solon_1999}. A diferencia de estos enfoques, nuestro modelo permite que los retornos al capital humano invertido por los padres varíen a lo largo del nivel ingresos, reflejando cambios discretos en la valoración del capital humano en el mercado laboral. 
+
+Como resultado, el problema de inversión parental presenta no convexidades asociadas a la presencia de regímenes de retornos diferenciados al capital humano. En particular, el padre enfrenta un régimen de bajos retornos para niveles reducidos de inversión y un régimen de altos retornos una vez que se supera un determinado umbral. En este contexto, existe un nivel de ingreso del padre donde es indiferente entre realizar una inversión que lo mantiene en el régimen de bajos retornos y una inversión que le permite acceder al régimen de altos retornos. Dado este punto de indiferencia, los niveles intermedios de inversión entre ambos regímenes resultan estrictamente dominados y no son elegidos en equilibrio.  Esta estructura existe un punto de bifurcacion donde  pequeñas variaciones en el ingreso del padre pueden inducir ajustes discretos y de gran magnitud en la inversión en capital humano del hijo.
+
+
+Este mecanismo es conceptualmente análogo al que surge en modelos clásicos de impuestos no lineales \parencite{Burtless_1978,Hausman_1985}, como el programa de impuesto negativo a la renta (NIT). En dichos modelos, la introducción de transferencias con tasas marginales discontinuas genera conjuntos presupuestarios no convexos, de modo que existen intervalos de horas trabajadas que nunca contienen un óptimo global bajo curvas de indiferencia convexas. \footnote{ Esto es diferente a los modelos de Bunching \parencite{Saez_2010}, dado que bajo impuestos progresivos con tasas marginales crecientes generan conjuntos presupuestarios convexos, los cuales poseen una unica solución global, la que puede estar junto en el kink de tasas marginales, mientras que en conjuntos presupuestarios no convexos el kink no constituye una solucion global bajo ninguna configuracion de parametros asumiendo curvas de indiferencia convexas.}
+De manera similar, en nuestro marco la presencia de umbrales en los retornos al capital humano implica que ciertos niveles intermedios de inversión parental están estrictamente dominados, concentrando las decisiones en regímenes de baja o alta inversión. Este patrón contribuye a la formación de dinastías económicas y a una reducción de la movilidad intergeneracional, particularmente en los tramos altos de la distribución de ingresos.
+
+
+\section{Modelo}
+
+Considere una familia representativa con dos generaciones: un padre que vive en el periodo $t-1$ y un hijo que vive en el periodo $t$. El padre recibe un ingreso $y_{t-1}$, que asigna entre consumo $c_{t-1} \ge 0$ e inversión en el capital humano del hijo $I_{t-1}$. Por lo tanto, la restricción presupuestaria es
+\[
+c_{t-1} + I_{t-1} = y_{t-1}.
+\]
+
+La productividad del hijo depende del stock total de capital humano disponible en su adultez, dado por $I_{t-1} + e_t$, donde $e_t$ corresponde al capital humano heredado. Este componente heredado captura cultura, conexiones y otros elementos no monetarios que dependen tanto del padre como del propio esfuerzo del hijo en el desarrollo de su dotación.
+
+En el modelo no se explicita la decisión del hijo respecto de la asignación de su tiempo entre distintos tipos de empleo. En su lugar, se adopta un enfoque de forma reducida en el cual las funciones de ingreso del hijo incorporan implícitamente el resultado de dicha asignación óptima, condicionada al nivel total de capital humano.
+Este procedimiento es análogo al uso de funciones de utilidad indirecta: en lugar de resolver de manera explícita el problema de maximización subyacente, esto es, la elección de horas trabajadas en sectores con productividades heterogéneas, se trabaja con expresiones de ingreso que resumen el comportamiento óptimo resultante, dadas la tecnología productiva y la estructura de incentivos.
+Un modelo que desarrolla explícitamente la decisión del hijo y muestra cómo la asignación de horas emerge endógenamente a partir de diferencias en los retornos relativos se presenta en el Apéndice \ref{app:modelo_hijo}. Dicho modelo, sin embargo, no replica la presencia de economías de tipo ``superestrellas''' ni los retornos convexos del capital humano sobre el ingreso formal. En el cuerpo principal, esta elección se incorpora de manera indirecta en la especificación de los ingresos, lo que permite mantener la tractabilidad analítica sin perder el mecanismo económico relevante.
+
+El ingreso en el sector formal se especifica como:
+\[
+y_t^F = \gamma_F I_{t-1} + \pi_e e_t + k H_t^h,
+\]
+donde $\gamma_F > 0$ y $\pi_e > 0$ representan los retornos lineales al capital humano invertido del padre y al capital humano heredado en el sector formal, respectivamente. El término $k H_t^h$, con $k > 0$ y $h > 1$, introduce convexidad y captura las ventajas crecientes del capital humano en empleos formales, asociadas a complementariedades y rendimientos crecientes a la habilidad.
+
+El ingreso en el sector informal se define como:
+\[
+y_t^U = \gamma_U I_{t-1} + (1-\pi_e)e_t - k H_t^h,
+\]
+donde $\gamma_U > 0$ denota el retorno lineal al capital humano en el sector informal. El término $-k H_t^h$ refleja que, a mayores niveles de habilidad, la contribución del sector informal disminuye, por efectos de  menor productividad marginal en actividades de baja calificación en conjunto de costos de oportunidad crecientes.
+
+Dada esta estructura, existe un nivel de capital humano a partir del cual el ingreso informal deja de contribuir al ingreso total. En particular, $y_t^U$ es positivo solo hasta un cierto umbral de capital humano y es nulo más allá de dicho punto. Esto genera dos regímenes de ingresos bien definidos.
+
+Cuando $y_t^U > 0$, el ingreso total está dado por:
+\[
+y_t = y_t^F + y_t^U = (\gamma_F + \gamma_U) I_{t-1} + e_t.
+\]
+Nótese que los términos no lineales $k H_t^h$ y $-k H_t^h$ se cancelan exactamente, dando lugar a una función de ingreso lineal en $I_{t-1}$ y $e_t$.
+
+Cuando el nivel de capital humano es suficientemente alto como para que el hijo no trabaje en el sector informal $y_t^U$, el ingreso total coincide con el ingreso formal:
+\[
+y_t = y_t^F = \gamma_F I_{t-1} + \pi_e e_t + k H_t^h,
+\]
+que es una función convexa en $H_t$ debido a $h > 1$.
+
+El umbral de capital humano $H_t^*$ que separa ambos regímenes se define implícitamente por la condición:
+\[
+\gamma_U I_{t-1} + (1-\pi_e)e_t = k H_t^h.
+\]
+Dado que $H_t = I_{t-1} + e_t$, esta ecuación determina una frontera en el espacio $(I_{t-1}, e_t)$.
+
+En el caso particular en que $\gamma_U = 1-\pi_e = \alpha$, el ingreso informal puede escribirse como:
+\[
+y_t^U = \alpha H_t - k H_t^h,
+\]
+y el umbral se simplifica a:
+\[
+\alpha H_t^* = k (H_t^*)^h
+\quad \Rightarrow \quad
+(H_t^*)^{h-1} = \frac{\alpha}{k}
+\quad \Rightarrow \quad
+H_t^* = \left( \frac{\alpha}{k} \right)^{\frac{1}{h-1}}.
+\]
+
+
+\begin{proposition}[Propiedades del umbral]
+\begin{enumerate}
+    \item $H_t^*$ es creciente en $\alpha$: mayores retornos en el sector informal retrasan la especialización.
+    \item $H_t^*$ es decreciente en $k$: una mayor ventaja comparativa del sector formal acelera la especialización.
+    \item $H_t^*$ es decreciente en $h$: una mayor convexidad en las ventajas del sector formal reduce el umbral.
+\end{enumerate}
+\end{proposition}
+
+La función de ingreso total es continua y se define por partes:
+
+\[
+y_t(I_{t-1}, e_t) =
+\begin{cases}
+(\gamma_F + \gamma_U) I_{t-1} + e_t & \text{si } H_t \leq \left( \frac{\alpha}{k} \right)^{\frac{1}{h-1}} \\
+\gamma_F I_{t-1} + \pi_e e_t + k (I_{t-1} + e_t)^h & \text{en caso contrario}
+\end{cases}
+\]
+
+
+\section{Implicaciones para la acumulación de capital humano}
+
+La endogeneidad de la participación sectorial introduce un mecanismo de \textbf{retroalimentación positiva}: una vez que el individuo supera el umbral $H_t^*$, su ingreso se vuelve convexo en $H_t$, lo que puede incrementar los incentivos para acumular más capital humano, reforzando la especialización en el sector formal.
+
+Este marco explica cómo diferencias iniciales en capital humano pueden amplificarse a través de la elección sectorial endógena, contribuyendo a la persistencia de desigualdades laborales y a la segmentación entre sectores formal e informal.
+
+
+El parámetro $h>1$ mide el \textit{grado de no linealidad} asociado a la reasignación de tiempo entre sectores. El término $k(I_{t-1}+e_t)^h$ es convexo en el capital humano total y aparece con signo positivo en el ingreso formal y con signo negativo en el ingreso informal. Esto refleja que, a mayores niveles de habilidades, el trabajo formal se vuelve crecientemente más rentable, mientras que las oportunidades en el sector informal se reducen. De este modo, el ingreso formal es convexo y el ingreso informal es cóncavo en $I_{t-1}+e_t$.
+
+Esta estructura genera una cancelación exacta entre los componentes no lineales, lo que implica que el ingreso total del hijo depende únicamente de los términos lineales:
+\[
+y_t(I_{t-1}) = (\gamma_F + \gamma_U) I_{t-1} + e_t.
+\]
+
+Los parámetros $\gamma_F$ y $\gamma_U$ representan los retornos lineales del capital humano en los sectores formal e informal, respectivamente. Su suma, $\gamma_F + \gamma_U = 1 + r$, determina el rendimiento total de la inversión parental en capital humano. Los términos no lineales, por lo tanto, afectan únicamente la composición sectorial del ingreso, pero no el ingreso agregado del hijo.
+
+Bajo esta condición, el retorno marginal relevante para el problema del padre es completamente lineal, lo que induce una relación lineal entre los ingresos del padre y los del hijo. Esta propiedad es consistente con la tradición de modelos de movilidad intergeneracional, como \textcite{Becker_Tomes_1979}, \textcite{Solon_1999} y \textcite{Solon_2004}, donde el ingreso del hijo se modela como una función lineal de la inversión parental y del capital humano heredado.
+
+En síntesis, el modelo permite introducir comportamientos no lineales en cada componente sectorial del ingreso sin abandonar la linealidad del ingreso total. Esto facilita el análisis del canal de reasignación sectorial, preservando la estructura lineal necesaria para derivar expresiones cerradas y comparables de medidas empíricas de movilidad, como la medicion de la elasticidad de ingreso intergeneracional IGE o la estimación rank--rank.
+
+\section{Inversión parental con ingresos lineales y convexos}
+
+El padre elige la inversión en capital humano del hijo $I_{t-1}$ con el objetivo de maximizar su utilidad, la cual depende de su consumo presente y del ingreso futuro del hijo, anticipado completamente al momento de decidir:\footnote{Este supuesto se relaja más adelante permitiendo shocks posteriores al momento de inversión, sin alterar cualitativamente los resultados.}
+\[
+U_{t-1}
+=
+\alpha \log(y_{t-1}-I_{t-1})
++
+(1-\alpha)\log y_t,
+\qquad \alpha\in(0,1).
+\]
+
+El capital humano total del hijo en la adultez está dado por
+\[
+H_t = I_{t-1}+e_t,
+\]
+donde $e_t$ representa la dotación heredada. El ingreso del hijo presenta dos regímenes. Para niveles bajos de capital humano, el ingreso es lineal. Para niveles suficientemente altos, el ingreso coincide con el ingreso formal y exhibe retornos convexos:
+\[
+y_t(I_{t-1},e_t)
+=
+\gamma_F I_{t-1} + \pi_e e_t + k H_t^h,
+\qquad h>1.
+\]
+
+El umbral que separa ambos regímenes está definido implícitamente por
+\[
+\gamma_F I_{t-1} + \pi_e e_t = k (I_{t-1}+e_t)^h.
+\]
+
+\subsection{Caso benchmark: retornos lineales}
+
+Cuando $k=0$, el ingreso del hijo es estrictamente lineal:
+\[
+y_t^{(0)} = \gamma_F I_{t-1} + \pi_e e_t.
+\]
+
+La condición de primer orden del problema del padre es
+\[
+-\frac{\alpha}{y_{t-1}-I_{t-1}}
++
+(1-\alpha)\frac{\gamma_F}{\gamma_F I_{t-1}+\pi_e e_t}
+=0,
+\]
+cuya solución cerrada es
+\[
+I_{t-1}^L
+=
+\alpha y_{t-1}
+-
+\frac{(1-\alpha)\pi_e e_t}{\gamma_F}.
+\]
+
+Esta expresión caracteriza la inversión óptima siempre que la solución se ubique en el tramo lineal del ingreso, es decir, cuando
+\[
+I_{t-1}^L + e_t < H_t^*.
+\]
+
+\subsection{Ingresos convexos como perturbación local}
+
+Para valores pequeños de $k>0$, el ingreso del hijo puede escribirse como
+\[
+y_t
+=
+\underbrace{\gamma_F I_{t-1}+\pi_e e_t}_{y_t^{(0)}}
++
+k (I_{t-1}+e_t)^h.
+\]
+
+Aplicando una expansión de Taylor de primer orden de $\log y_t$ alrededor de $k=0$, se obtiene
+\[
+\log y_t
+=
+\log y_t^{(0)}
++
+k \frac{(I_{t-1}+e_t)^h}{\gamma_F I_{t-1}+\pi_e e_t}
++
+o(k).
+\]
+
+Sustituyendo esta expresión en la función de utilidad,
+\begin{align*}
+U_{t-1}
+&=
+\alpha \log(y_{t-1}-I_{t-1})
++
+(1-\alpha)\log(\gamma_F I_{t-1}+\pi_e e_t)
+\\
+&\quad
++
+(1-\alpha)
+k \frac{(I_{t-1}+e_t)^h}{\gamma_F I_{t-1}+\pi_e e_t}
++
+o(k).
+\end{align*}
+
+Denotemos por $U^{(0)}$ la utilidad del caso lineal y por $U^{(1)}$ el término de corrección asociado a la convexidad.
+
+\subsection{Corrección a la inversión óptima}
+
+La condición de primer orden expandida es
+\[
+\frac{\partial U^{(0)}}{\partial I_{t-1}}
++
+k \frac{\partial U^{(1)}}{\partial I_{t-1}}
+=0.
+\]
+
+Evaluando alrededor de $I_{t-1}^L$ y usando que
+\[
+\left.
+\frac{\partial U^{(0)}}{\partial I_{t-1}}
+\right|_{I_{t-1}^L}
+=0,
+\]
+se obtiene la aproximación de primer orden
+\[
+I_{t-1}^\ast
+=
+I_{t-1}^L
+-
+k
+\frac{
+\left.
+\frac{\partial U^{(1)}}{\partial I_{t-1}}
+\right|_{I_{t-1}^L}
+}{
+\left.
+\frac{\partial^2 U^{(0)}}{\partial I_{t-1}^2}
+\right|_{I_{t-1}^L}
+}
++
+o(k).
+\]
+
+La derivada del término de corrección es
+\[
+\frac{\partial U^{(1)}}{\partial I_{t-1}}
+=
+(1-\alpha)
+\frac{
+h(I_{t-1}+e_t)^{h-1}(\gamma_F I_{t-1}+\pi_e e_t)
+-
+\gamma_F (I_{t-1}+e_t)^h
+}{
+(\gamma_F I_{t-1}+\pi_e e_t)^2
+}.
+\]
+
+Dado que
+\[
+\left.
+\frac{\partial^2 U^{(0)}}{\partial I_{t-1}^2}
+\right|_{I_{t-1}^L}
+<0,
+\]
+y que el numerador es positivo para $h>1$ y niveles suficientemente altos de $I_{t-1}$, se sigue que
+\[
+I_{t-1}^\ast > I_{t-1}^L.
+\]
+
+\subsection{Empuje hacia el régimen convexo}
+
+El \emph{empuje} hacia mayores niveles de inversión ocurre cuando la solución lineal se ubica en una vecindad del umbral de convexidad, es decir, cuando
+\[
+I_{t-1}^L + e_t \lesssim H_t^*.
+\]
+
+En este caso, el beneficio marginal de invertir incorpora el acceso a retornos crecientes del capital humano, lo que amplifica el incentivo marginal y lleva al padre a sobreinvertir respecto al benchmark lineal. Formalmente, este empuje se caracteriza por
+\[
+\left.
+\frac{\partial U^{(1)}}{\partial I_{t-1}}
+\right|_{I_{t-1}^L}
+>0,
+\]
+lo que define endógenamente un subconjunto de familias —con mayor ingreso parental o mayor dotación heredada— para las cuales la política óptima de inversión deja de ser localmente lineal.
+
+
+\section{Impuestos}
+Suponemos que los individuos enfrentan un esquema impositivo de la forma
+\[
+T_t = \mu + s y^F_t + \Omega_t,
+\]
+con $\mu < 0$ y $s > 0$. Vemos que el esquema impositivo solo afecta el ingreso formal, puesto que el sistema no logra grabar ingresos en economías sombra como la 
+informal. 
+Asumimos que estos impuestos están incorporados en el sistema y no fueron anticipados en $t-1$ para ser aplicados en $t$; con esto, el propio ingreso de los padres ya ha sido modificado con el esquema impositivo.
+
+
+Además, suponemos que los padres \textit{no son conscientes del impacto comportamental} esto es, del componente no lineal que el capital humano puede generar sobre los ingresos formales de sus hijos cuando se introducen impuestos. En cambio, los padres forman expectativas únicamente a partir de los \textit{efectos lineales} de los retornos en ambos sectores, dejando fuera la complejidad asociada a la reasignación de tiempo y a la respuesta no lineal del ingreso laboral.
+
+% Sin embargo,tienen una creencia (belief) de que mayores ingresos del padre, mas aumenta la relevancia de los ingresos formales en el ingreso del hijo.\footnote{Tiene sentido, como los padres pueden no tienen información completa  de las preferencias de los hijos y como reaccionan a los impuestos como un desincentivo a trabajar e adquirir ingresos en el sector formal.}
+
+%$$b \in [0,1] \quad b(y_{t-1})'>0 \quad b(y_{t-1})''<0$$
+
+
+\[
+U_{t-1}
+= \alpha \log((1-s)y^F_{t-1}+y^U_{t-1}-\mu_{t-1}-\Omega_{t-1}-I_{t-1})
++ (1-\alpha)\log \mathrm{E}_{t-1}[y_t],
+\]
+
+Sea
+\[
+\mathrm{E}_{t-1}[y_t]
+= (1-s)(\gamma_F I_{t-1}+\pi_e e_t) 
+  + \gamma_U I_{t-1} 
+  + (1-\pi_e)e_t 
+  - \mu_t - \Omega_t.
+\]
+
+Agrupando los términos dependientes de $I_{t-1}$ y definiendo la esperanza del shock heredado, introducimos
+\[
+(1+r_\tau) \equiv (1-s)\gamma_F + \gamma_U,
+\qquad
+B \equiv (1 - s\pi_e)\,\mathrm{E}_{t-1}[e_t] - \mu_t - \Omega_t.
+\]
+
+Aquí, $(1+r_\tau)$ representa el retorno del capital humano en el componente lineal del ingreso del hijo después de impuestos. Enfatizamos este retorno lineal porque, aunque parte del ingreso gravado posee un componente no lineal, dicho componente no es percibido ni cuantificado por el padre. Bajo esta interpretación,
+\[
+\mathrm{E}_{t-1}[y_t] = (1+r_\tau) I_{t-1} + B.
+\]
+
+
+La utilidad del padre es
+\[
+U_{t-1}
+= \alpha \log\big((1-s)y^F_{t-1} + y^U_{t-1} - \mu_{t-1} - \Omega_{t-1} - I_{t-1}\big)
++ (1-\alpha)\log\big((1+r_\tau) I_{t-1} + B\big).
+\]
+
+Diferenciando respecto a \(I_{t-1}\) y igualando a cero:
+\[
+\frac{\partial U_{t-1}}{\partial I_{t-1}}
+= -\frac{\alpha}{(1-s)y^F_{t-1} + y^U_{t-1} - \mu_{t-1} - \Omega_{t-1} - I_{t-1}}
++ (1-\alpha)\frac{(1+r_\tau)}{(1+r_\tau) I_{t-1} + B}
+=0.
+\]
+Multiplicando y reordenando obtenemos
+\[
+(1-\alpha)(1+r_\tau)\Big((1-s)y^F_{t-1} + y^U_{t-1} - \mu_{t-1} - \Omega_{t-1} - I_{t-1}\Big)
+= \alpha\big((1+r_\tau ) I_{t-1} + B\big).
+\]
+Pasando los términos con \(I_{t-1}\) al mismo lado,
+\[
+(1-\alpha)(1+r_\tau)\big((1-s)y^F_{t-1} + y^U_{t-1} - \mu_{t-1} - \Omega_{t-1}\big) - \alpha B
+= (1+r_\tau) I_{t-1}.
+\]
+Luego la solución cerrada es
+\[
+\boxed{%
+I_{t-1}^\ast
+=
+(1-\alpha)\big((1-s)y^F_{t-1} + y^U_{t-1} - \mu_{t-1} - \Omega_{t-1}\big)
+- \frac{\alpha}{(1+r_\tau)}\,B
+}
+\]
+
+Recordar que el ingreso del hijo es 
+\[
+y_t(I_{t-1}) 
+= (1-s)[\underbrace{\gamma_F I_{t-1} + \pi_e e_t + k(I_{t-1} + e_t)^h}_{y_t^F}]
+\;+\;
+\underbrace{\gamma_U I_{t-1} + (1-\pi_e)e_t - k(I_{t-1} + e_t)^h}_{y_t^U} -\mu_t-\Omega_{t}
+\]
+
+$$D = (1-s)y^F_{t-1}+y^U_{t-1}-\mu_{t-1}-\Omega_{t-1}$$
+
+La FOC para este caso es : 
+
+$$(1-\alpha)((1+r_\tau)-skh(I_{t-1}+e_t)^{h-1})(D-I_{t-1})=\alpha ((1+r_\tau)I_{t-1}+B-sk(I_{t-1}+e_t)^h)$$
+
+Partimos de la condición de primer orden cuando el padre observa el ingreso total del hijo:
+\[
+f(I_{t-1},k)\equiv 
+(1-\alpha)\Big((1+r_\tau)-s k h (I_{t-1}+e_t)^{h-1}\Big)(D-I_{t-1})
+-\alpha\Big((1+r_\tau) I_{t-1} + B - s k (I_{t-1}+e_t)^h\Big)=0.
+\]
+
+Sea \(I_{t-1}^{\mathrm{lin}}\equiv I_{t-1}^\ast\) la solución cerrada obtenida en el caso lineal \(k=0\):
+\[
+I_{t-1}^{\mathrm{lin}}
+= (1-\alpha)D - \frac{\alpha}{1+r_\tau}B.
+\]
+
+Queremos una aproximación de primer orden de la solución observada:
+\[
+I_{t-1}^{\mathrm{obs}} \approx I_{t-1}^{\mathrm{lin}} + \Delta I_{t-1}.
+\]
+
+Usamos la expansión de Taylor de primer orden alrededor de \((I_{t-1},k)=(I_{t-1}^{\mathrm{lin}},0)\):
+\[
+f(I_{t-1}^{\mathrm{lin}}+\Delta I_{t-1},k)
+\approx 
+f(I_{t-1}^{\mathrm{lin}},0)
++ f_{I}(I_{t-1}^{\mathrm{lin}},0)\,\Delta I_{t-1}
++ k\, f_{k}(I_{t-1}^{\mathrm{lin}},0)
+=0.
+\]
+
+Dado que \(f(I_{t-1}^{\mathrm{lin}},0)=0\), se obtiene:
+\[
+\Delta I_{t-1} \approx -\,\frac{k\, f_{k}(I_{t-1}^{\mathrm{lin}},0)}{f_{I}(I_{t-1}^{\mathrm{lin}},0)}.
+\]
+
+Calculamos las derivadas parciales.
+
+Primero, la derivada respecto de \(k\):
+\[
+f_k(I_{t-1},0)
+= -s(1-\alpha)h (I_{t-1}+e_t)^{h-1}(D-I_{t-1})
+\;+\;
+\alpha s (I_{t-1}+e_t)^h.
+\]
+
+Segundo, la derivada respecto de \(I_{t-1}\) en \(k=0\):
+\[
+f_I(I_{t-1},0)
+= -(1+r_\tau).
+\]
+
+Por lo tanto,
+\[
+\boxed{
+\Delta I_{t-1} \approx 
+\frac{k}{1+r_\tau}\,\Big[
+-s(1-\alpha)h (I_{t-1}^{\mathrm{lin}}+e_t)^{h-1}(D-I_{t-1}^{\mathrm{lin}})
++ \alpha s (I_{t-1}^{\mathrm{lin}}+e_t)^h
+\Big].
+}
+\]
+
+Así, la solución aproximada para la inversión cuando el padre observa completamente el ingreso del hijo es:
+\[
+\boxed{
+I_{t-1}^{\mathrm{obs}}
+\approx 
+I_{t-1}^{\mathrm{lin}}
++
+\frac{k s}{1+r_\tau}\Big[
+-(1-\alpha)h (I_{t-1}^{\mathrm{lin}}+e_t)^{h-1}(D-I_{t-1}^{\mathrm{lin}})
++ \alpha (I_{t-1}^{\mathrm{lin}}+e_t)^h
+\Big].
+}
+\]
+
+El padre, al no observar completamente el desincentivo en el ingreso formal generado por los impuestos, podía haber subestimado o sobreestimado la inversión óptima. Una vez que reconoce el efecto no lineal, entiende que el ingreso del hijo cae más de lo que anticipaba.
+
+Cuando el padre se preocupa mucho por su propio consumo (alto $\alpha$), esa caída inesperada en el ingreso del hijo también lo perjudica indirectamente: significa menos bienestar total para el hogar y, en la práctica, menos recursos disponibles para sostener su propio nivel de consumo. Por ello, al descubrir que el hijo está siendo más afectado por los impuestos de lo previsto, el padre corrige aumentando su inversión. La inversión se vuelve una forma de proteger tanto el ingreso del hijo como su propio bienestar.
+
+En cambio, un padre más altruista (bajo $\alpha$) ya estaba invirtiendo mucho desde el principio. Para él, lo relevante es que el componente no lineal de los impuestos \emph{desincentiva la generación de ingresos formales}, precisamente el tipo de ingreso que se vuelve más importante a medida que la inversión aumenta. Esto reduce la rentabilidad marginal de invertir, por lo que la corrección va en sentido contrario: invierte menos. El desincentivo tributario actúa como una fuerza que modera la inversión óptima cuando el padre es altamente altruista.
+
+En resumen:
+\[
+\begin{cases}
+\text{Si } \alpha \text{ es alto:} & \text{el padre incrementa } I_{t-1} \text{ para compensar la caída no anticipada de ingresos del hijo},\\[4pt]
+\text{Si } \alpha \text{ es bajo:} & \text{el padre reduce } I_{t-1} \text{ porque la tributación no lineal disminuye su rentabilidad}.
+\end{cases}
+\]
+
+
+\printbibliography
+
+\appendix
+\renewcommand{\thesection}{\Alph{section}} % Secciones en letras (A, B, C...)
+\renewcommand{\thesubsection}{\Alph{section}.\arabic{subsection}}
+
+\section{Modelo intergeneracional con eleccion del hijo}
+\label{app:modelo_hijo}
+Consider a representative family with two generations: a parent in period $t-1$ and a child in period $t$. 
+The parent receives income $y_{t-1}$ and allocates it between consumption and an investment $I_{t-1} \ge 0$ in the child’s human capital.
+
+Once the child reaches adulthood, they allocate their unit of time between the formal and informal (underground) sectors. Let $l_t \in [0,1]$ denote the fraction of time devoted to formal work; the remaining $1 - l_t$ is supplied to the informal sector.
+
+The child chooses $l_t$ to maximize total labor income,
+\[
+y_t(I_{t-1}, l_t)
+= A_F I_{t-1}^{\alpha} l_t^{\,1-\alpha}
+  + A_U I_{t-1}^{\gamma} (1-l_t)^{\,1-\gamma} ,
+\]
+with $A_F I_{t-1}^{\alpha} l_t^{1-\alpha} \equiv y_t^F(I_{t-1},l_t)$ denoting formal-sector income, 
+$A_U I_{t-1}^{\gamma} (1-l_t)^{1-\gamma} \equiv y_t^U(I_{t-1},l_t)$ denoting informal-sector income. 
+Here $A_F, A_U > 0$ and $\alpha, \gamma \in (0,1)$.
+
+A potential concern is that the model allows the child to allocate a fractional share of time across sectors, which may appear unrealistic, since labor markets often operate on the extensive margin—individuals typically work either in the formal or the informal sector, but not simultaneously in both. This assumption, however, is justified by interpreting $l_t$ not as a literal division of hours, but as a \emph{mixed strategy} over the discrete choice between formal and informal employment. Under this interpretation, $l_t$ represents the probability of working in the formal sector, and the resulting labor income corresponds to the expected income under such a mixed strategy. This reconciles the continuous choice in the model with the underlying dichotomy of sectoral employment.
+
+
+\medskip
+
+\noindent
+
+Given human capital $I_{t-1}$, the child chooses $l_t$ to maximize $y_t$.\footnote{This is equivalent to maximizing a standard utility function because the utility specifications commonly used in the literature are strictly increasing in income.} 
+The first-order condition is
+\begin{equation}
+(1-\alpha)A_F I_{t-1}^\alpha\, l_t^{-\alpha}
+=
+(1-\gamma)A_U I_{t-1}^\gamma\, (1-l_t)^{-\gamma},
+\label{eq:foc_l}
+\end{equation}
+if we let $C \equiv \frac{(1-\alpha)A_F}{(1-\gamma)A_U}>0$, the FOC can be rewritten as
+\[
+\frac{l_t^\alpha}{(1-l_t)^\gamma}
+=
+C\, I_{t-1}^{\alpha-\gamma}.
+\]
+
+An interior solution exists and is unique.\footnote{For any $I_{t-1}>0$, the left-hand side is continuous and strictly increasing in $l_t\in(0,1)$; it approaches $0$ as $l_t\to 0^+$ and diverges to $+\infty$ as $l_t\to 1^-$. These boundary behaviors, together with monotonicity, imply by the intermediate value theorem that the equation has exactly one solution in $(0,1)$.} 
+We denote this solution by $l_t^*(I_{t-1})$.
+
+
+To understand how the fraction of time allocated to formal work varies with parental investment, we differentiate the FOC implicitly.\footnote{Implicit differentiation proceeds as follows. Consider $G(l_t,I_{t-1}) \equiv \frac{l_t^\alpha}{(1-l_t)^\gamma} - C I_{t-1}^{\alpha-\gamma} = 0$,
+which defines $l_t^*(I_{t-1})$ implicitly. By the implicit function theorem,  
+\[
+\frac{dl_t^*}{dI_{t-1}}
+= -\frac{\partial G/\partial I_{t-1}}{\partial G/\partial l_t},
+\]
+provided $\partial G/\partial l_t\neq 0$, which holds here because the left-hand side is strictly increasing in $l_t$. Computing these derivatives yields the expression reported in the main text.}  
+Implicit differentiation yields:
+\[
+\frac{d l_t^*(I_{t-1})}{d I_{t-1}}
+=
+\frac{
+C(\alpha-\gamma)\,I_{t-1}^{\alpha-\gamma-1}
+}{
+\alpha\,l_t^{\alpha-1}(1-l_t)^{-\gamma}
++
+\gamma\,l_t^\alpha(1-l_t)^{-\gamma-1}
+},
+\]
+where \(l_t\) inside the expression denotes the optimal value \(l_t^*(I_{t-1})\).
+
+To determine the sign of this derivative, we introduce the assumption 
+$\alpha > \gamma$, which implies that formal-sector income grows faster with 
+parental investment than informal-sector income. Under this condition, the 
+numerator in the expression is strictly positive and 
+$\frac{d l^*(I_{t-1})}{d I_{t-1}} > 0$, so higher parental investment increases 
+the child's optimal allocation of time to the formal sector.
+
+\subsection{Parent Problem}
+
+The parent receives income $y_{t-1}$ and allocates it between consumption $c_{t-1}$ and investment $I_{t-1}$ in order to maximize the altruistic utility function $U=\log(c_{t-1})+\phi\,\log\!\left(y_t\right)$, where $\phi\in(0,1)$ measures the strength of parental altruism and $y_t$ denotes the child’s optimal income generated by the optimal time allocation $l_t^*(I_{t-1})$.
+
+Substituting the budget constraint $y_{t-1} =c_{t-1} + I_{t-1}$, the parent’s problem can be written directly as a choice over $I_{t-1}$:
+\[
+U
+=
+\log\!\left(y_{t-1}-I_{t-1}\right)
++
+\phi\,\log\!\left(
+y_t\big(I_{t-1},\, l_t^*(I_{t-1})\big)
+\right).
+\]
+
+The utility function $U$ is strictly concave in $I_{t-1}$. The term $\log(y_{t-1}-I_{t-1})$ is strictly concave, and the second term, $\log\!\left(y_t(I_{t-1},l_t^*(I_{t-1}))\right)$, is also strictly concave because the composite mapping $I_{t-1} \mapsto y_t(I_{t-1},l_t^*(I_{t-1}))$ is strictly concave.\footnote{Formally, concavity follows from two ingredients.  
+(i) For fixed $l_t$, each sectoral income term $A_F I_{t-1}^{\alpha}l_t^{1-\alpha}$ and $A_U I_{t-1}^{\gamma}(1-l_t)^{1-\gamma}$ is strictly concave in $I_{t-1}$ because $\alpha,\gamma\in(0,1)$.  
+(ii) The optimal time allocation $l_t^*(I_{t-1})$ is a continuously differentiable increasing function of $I_{t-1}$; therefore the envelope theorem implies that $y_t(I_{t-1},l_t^*(I_{t-1}))$ inherits the strict concavity of the underlying sectoral production terms. Since the logarithm is strictly increasing and concave, composing it with a strictly concave function preserves strict concavity.} 
+
+
+An interior optimum $I_{t-1}^*(y_{t-1})$ therefore satisfies
+\begin{equation}
+\frac{1}{y_{t-1} - I_{t-1}}
+=
+\phi \frac{1}{y_{t}(I_{t-1})}
+\frac{dy_{t}}{dI_{t-1}}(I_{t-1}).
+\end{equation}
+
+The left-hand side is the marginal utility cost of diverting one additional unit of income away from parental consumption, while the right-hand side is the marginal utility gain derived from increasing the child’s income, scaled by the altruism parameter $\phi$.
+
+
+It has been established that greater parental investment encourages the child to allocate more time to the formal sector. We now extend this result to show that an increase in parental income leads to higher investment in the child, which in turn induces the child to spend more time in the formal sector.
+
+
+Let the interior optimum $I_{t-1}^*(y_{t-1})$ be defined by the first-order condition
+\[
+F(I_{t-1},y_{t-1})
+\equiv
+-\frac{1}{y_{t-1}-I_{t-1}}
++ \phi\frac{y_t'(I_{t-1})}{y_t(I_{t-1})}
+=0,
+\]
+where $y_t(I_{t-1})$ denotes the child's income evaluated at $l_t^*(I_{t-1})$.
+
+By the Implicit Function Theorem, we can decompose how parental investment responds to an increase in income as $\frac{d I_{t-1}^*(y_{t-1})}{dy_{t-1}} =-\frac{\partial F/\partial y_{t-1}}{\partial F/\partial I_{t-1}}$, and we obtain that $\partial F/\partial y_{t-1}>0$ and $\partial F/\partial I_{t-1}<0$.\footnote{
+The partial derivative with respect to income is $\partial F/\partial y_{t-1}=(y_{t-1}-I_{t-1})^{-2}>0$.  
+For $\partial F/\partial I_{t-1}$ we have
+$\partial F/\partial I_{t-1}=-(y_{t-1}-I_{t-1})^{-2} + \phi\,(y_{t} y_{t}'' - (y_{t}')^2)/y_{t}^2$.  
+Since $y_{t}'>0$ and $y_{t}''<0$ (child's income is concave in parental investment), it follows that $y_{t} y_{t}''-(y_{t}')^2<0$, making both terms negative and hence $\partial F/\partial I_{t-1}<0$.
+}
+Hence, an increase in parental income leads to higher investment in the child, 
+\[
+\frac{d I_{t-1}^*(y_{t-1})}{dy_{t-1}} > 0.
+\]
+
+
+Moreover, since we have previously shown that $\frac{d l_t^*(I_{t-1})}{d I_{t-1}}>0$, the total effect of parental income on the child's optimal formal labor share is also positive:
+\[
+\frac{d l_t^*}{d y_{t-1}}
+=
+\frac{d l_t^*}{d I_{t-1}}
+\cdot
+\frac{d I_{t-1}^*(y_{t-1})}{dy_{t-1}}
+>0.
+\]
+
+
+Thus, both parental investment and the child's formal-sector time allocation rise with parental income.
+
+To analyze the relationship between total parental income and the child's informal-sector income, we consider how changes in parental income affect the child's informal output. This effect can be obtained by differentiating the child's informal income with respect to parental income, taking into account the optimal parental investment and the child's allocation of time. The effect of parental income on informal output follows from the chain rule:
+\[
+\frac{d y_t^U}{d y_{t-1}}
+= \frac{\partial y_t^U}{\partial I_{t-1}}\frac{dI_{t-1}}{dy_{t-1}}
++ \frac{\partial y_t^U}{\partial l_t}\frac{dl}{dy_{t-1}}
+= A_U I_{t-1}^{\gamma-1}(1-l_t)^{-\gamma}
+\Big[\gamma(1-l_t)-I_{t-1}(1-\gamma)l_t'(I_{t-1})\Big]\frac{dI_{t-1}}{dy_{t-1}}.
+\]
+
+
+Since \(\frac{dI_{t-1}}{dy_{t-1}}>0\), the sign of \(\frac{d y_t^U}{dy_{t-1}}\) is determined by the bracketed term.  
+Using the child’s interior optimality condition, the bracketed term leads to the inequality
+\[
+(\alpha-\gamma)
+> \frac{\gamma}{1-\gamma}
+\left[\alpha\frac{1-l_t}{l_t}+\gamma\right],
+\tag{S}
+\]
+which ensures that \(\frac{d y_t^U}{dy_{t-1}}<0\).\footnote{The derivative \(l_t'(I_{t-1})\) is given by
+\[
+l_t'(I_{t-1}) = \frac{C(\alpha-\gamma)I_{t-1}^{\alpha-\gamma-1}}
+{\alpha l_t^{\alpha-1}(1-l_t)^{-\gamma} + \gamma l_t^{\alpha}(1-l_t)^{-\gamma-1}}.
+\]
+Plugging this into the bracketed term \(\gamma(1-l_t) - I_{t-1}(1-\gamma) l_t'(I_{t-1})\) and simplifying using the FOC \(\frac{l_t^\alpha}{(1-l_t)^\gamma} = C I_{t-1}^{\alpha-\gamma}\) yields inequality (S).}
+
+Because inequality (S) depends only on parameters and the ratio \(\frac{1-l_t}{l_t}\), there exists a unique threshold \(\bar l_t \in (0,1)\) where equality holds. This threshold separates two regimes:
+\begin{itemize}
+\item If \(l_t < \bar l_t\), the child still allocates substantial time to the informal sector, so reductions in informal hours induced by higher parental income are not strong enough to outweigh the productivity gains from greater human capital. Informal income may still rise.
+\item If \(l_t > \bar l_t\), the child already spends considerable time in the formal sector. Further increases in \(l_t\) sharply reduce informal hours, and the reallocation effect dominates. In this case, $\frac{d y_t^U}{dy_{t-1}} < 0$, so informal income falls with parental income.
+\end{itemize}
+
+
+
+The threshold \(\bar l_t\) summarizes how interior time allocation governs the response of informal income. The left-hand side of (S), \(\alpha-\gamma\), measures the advantage of formal relative to informal productivity in income with respect to parent investment. The right-hand side captures how sensitive informal production is to reductions in informal time, combining the relative size of the informal share \(\tfrac{1-l_t}{l_t}\) with the curvature parameter \(\gamma\). When the formal-sector advantage outweighs this sensitivity, informal income declines with parental income; otherwise, the productivity effect dominates. The resulting sign change arises purely from smooth interior substitution of time across sectors, without any discrete transitions.
+
+\end{document}
