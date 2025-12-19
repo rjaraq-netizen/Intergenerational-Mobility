@@ -166,30 +166,120 @@ Como se ilustra en la Figura~\ref{fig:kink}, la aplicacion de un kink en el reto
 
 La productividad del hijo depende del stock total de capital humano disponible en su adultez, dado por $I_{t-1}+e_t+v_t$, donde $e_t$ corresponde al capital humano heredado. Este componente heredado captura cultura, conexiones y otros elementos no monetarios que dependen tanto del padre como del propio esfuerzo del hijo en el desarrollo de su dotación. El componente $v_t$ surge de una suerte de mercado, independiente de $e_t$.
 
-\[
-y_{t-1} = (1+r)I_{t-1}+e_t+v_t+(r'-r)\max\{0,I_{t+1}+e_t+v_t - y^*\}
-\]
 
 
 \section{Implicaciones para la acumulación de capital humano}
 
-La endogeneidad de la participación sectorial introduce un mecanismo de \textbf{retroalimentación positiva}: una vez que el individuo supera el umbral $H_t^*$, su ingreso se vuelve convexo en $H_t$, lo que puede incrementar los incentivos para acumular más capital humano, reforzando la especialización en el sector formal.
+Considere una familia con dos generaciones. El padre vive en el periodo $t-1$ y decide cómo asignar su ingreso $y_{t-1}$ entre consumo propio e inversión en el capital humano de su hijo $I_{t-1|}$, quien vive en el periodo $t$. 
+Tenemos en cuenta que el ingreso del hijo presenta puntos en los cuales el precio del capital humano cambia de manera discreta desde una tasa $r$,  a una tasa  $r'$ a partir de una inversion de capital humano $\bar{I}$. En este caso $e_t$ son componentes heredados del capital humano.
 
-Este marco explica cómo diferencias iniciales en capital humano pueden amplificarse a través de la elección sectorial endógena, contribuyendo a la persistencia de desigualdades laborales y a la segmentación entre sectores formal e informal.
-
-
-El parámetro $h>1$ mide el \textit{grado de no linealidad} asociado a la reasignación de tiempo entre sectores. El término $k(I_{t-1}+e_t)^h$ es convexo en el capital humano total y aparece con signo positivo en el ingreso formal y con signo negativo en el ingreso informal. Esto refleja que, a mayores niveles de habilidades, el trabajo formal se vuelve crecientemente más rentable, mientras que las oportunidades en el sector informal se reducen. De este modo, el ingreso formal es convexo y el ingreso informal es cóncavo en $I_{t-1}+e_t$.
-
-Esta estructura genera una cancelación exacta entre los componentes no lineales, lo que implica que el ingreso total del hijo depende únicamente de los términos lineales:
 \[
-y_t(I_{t-1}) = (\gamma_F + \gamma_U) I_{t-1} + e_t.
+y_{t} = (1+r)I_{t-1}+e_t+(r'-r)\max\{0,I_{t+1}- \bar{I}\}
 \]
 
-Los parámetros $\gamma_F$ y $\gamma_U$ representan los retornos lineales del capital humano en los sectores formal e informal, respectivamente. Su suma, $\gamma_F + \gamma_U = 1 + r$, determina el rendimiento total de la inversión parental en capital humano. Los términos no lineales, por lo tanto, afectan únicamente la composición sectorial del ingreso, pero no el ingreso agregado del hijo.
+Siguiendo el modelo simplificado de \textcite{Solon_1999}, el padre maximiza su utilidad en consumo y en el ingreso del hijo, ponderados por un factor de relevancia 
 
-Bajo esta condición, el retorno marginal relevante para el problema del padre es completamente lineal, lo que induce una relación lineal entre los ingresos del padre y los del hijo. Esta propiedad es consistente con la tradición de modelos de movilidad intergeneracional, como \textcite{Becker_Tomes_1979}, \textcite{Solon_1999} y \textcite{Solon_2004}, donde el ingreso del hijo se modela como una función lineal de la inversión parental y del capital humano heredado.
+$$\alpha \log (c_{t-1}) + (1-\alpha)\log y_t$$
 
-En síntesis, el modelo permite introducir comportamientos no lineales en cada componente sectorial del ingreso sin abandonar la linealidad del ingreso total. Esto facilita el análisis del canal de reasignación sectorial, preservando la estructura lineal necesaria para derivar expresiones cerradas y comparables de medidas empíricas de movilidad, como la medicion de la elasticidad de ingreso intergeneracional IGE o la estimación rank--rank.
+Como mostramos en la seccion anterior, el proceso de cambios distretos en los retornos del capital humano en conjunto con utilidades concavas en el consumo e ingreso del hijo , implican curvas de indiferencia convexas. y una situacion en la que para los padres no es optimo invertir en el punto (y su vecindad) donde se genera el cambio de paradigma en las tasas de retornos. Este elemento introduce una no linealidad en la tecnología de transmisión intergeneracional de ingresos. 
+
+Las soluciones locales del problema del padre abogan a obtener la inversion optima de cada segmento de la relacion lineal entre los ingresos del hijo y la inversion en capital humano, asumiendo que dicha relacion se mantiene por todo el dominio de inversion.  
+Obviamente para ser un candidato a solucion global, la inversion optima de cada segmento debe estar en el dominio del segmento manifestado en la relacion lineal de ingresos. Una vez se tienen los candidatos a optimo global, se comparan las funciones de utilidad indirecta de cada candidato. 
+
+Aunque es mas util seguir el proceso de encontrar el punto de ingresos del padre en el que el agente esta indiferente entre invertir en el regimen bajo y en el regimen alto. 
+
+
+Dado un régimen tecnológico con retorno constante $\rho\in\{r,r'\}$, el padre resuelve el siguiente problema local:
+\[
+\max_{I\in[0,y_{t-1}]}
+\;
+\alpha \log(y_{t-1}-I)
++
+(1-\alpha)\log\big((1+\rho)I+e_t\big).
+\]
+
+La condición de primer orden está dada por
+\[
+\frac{\alpha}{y_{t-1}-I}
+=
+\frac{(1-\alpha)(1+\rho)}{(1+\rho)I+e_t},
+\]
+de donde se obtiene la inversión óptima local
+\[
+I^*(\rho)
+=
+(1-\alpha)y_{t-1}
+-
+\frac{\alpha}{1+\rho}e_t.
+\]
+
+Evaluando la función objetivo en $I^*(\rho)$ y utilizando la condición de primer orden, la utilidad indirecta asociada al régimen $\rho$ puede escribirse como
+\[
+V(\rho)
+=
+\log\big((1+\rho)y_{t-1}+e_t\big)
+-
+\alpha\log(1+\rho)
++
+\alpha\log\alpha
++
+(1-\alpha)\log(1-\alpha).
+\]
+El último término es constante en $\rho$ y, por lo tanto, irrelevante para la comparación entre regímenes.
+
+
+El padre es indiferente entre invertir bajo el régimen de bajo retorno $r$ y el de alto retorno $r'>r$ cuando
+\[
+V(r)=V(r').
+\]
+Utilizando la expresión cerrada para la utilidad indirecta, esta condición puede escribirse como
+\[
+\log\frac{(1+r')y_{t-1}+e_t}{(1+r)y_{t-1}+e_t}
+=
+\alpha
+\log\frac{1+r'}{1+r}.
+\tag{IC}
+\]
+
+Exponenciando ambos lados de \eqref{IC} se obtiene
+\[
+\frac{(1+r')y_{t-1}+e_t}{(1+r)y_{t-1}+e_t}
+=
+\left(\frac{1+r'}{1+r}\right)^{\alpha}.
+\]
+
+Multiplicando y reordenando términos:
+\[
+(1+r')y_{t-1}+e_t
+=
+\left(\frac{1+r'}{1+r}\right)^{\alpha}
+\big[(1+r)y_{t-1}+e_t\big].
+\]
+
+Agrupando los términos en $y_{t-1}$:
+\[
+\Big[(1+r')-(1+r)\Big(\tfrac{1+r'}{1+r}\Big)^{\alpha}\Big]y_{t-1}
+=
+e_t\Big[\Big(\tfrac{1+r'}{1+r}\Big)^{\alpha}-1\Big].
+\]
+
+Por lo tanto, el nivel de ingreso del padre que lo deja indiferente entre ambos regímenes está dado por
+\[
+\boxed{
+y_{t-1}^{\text{ind}}(e_t)
+=
+\frac{
+e_t\Big[\big(\tfrac{1+r'}{1+r}\big)^{\alpha}-1\Big]
+}{
+(1+r')-(1+r)\big(\tfrac{1+r'}{1+r}\big)^{\alpha}
+}
+}
+\]
+
+Dado que $r'>r$ y $\alpha\in(0,1)$, el numerador y el denominador de la expresión anterior son estrictamente positivos, lo que garantiza que $y_{t-1}^{\text{ind}}(e_t)>0$. En consecuencia, para $y_{t-1}<y_{t-1}^{\text{ind}}(e_t)$ el padre prefiere invertir bajo el régimen de bajo retorno, mientras que para $y_{t-1}>y_{t-1}^{\text{ind}}(e_t)$ resulta óptimo saltar discretamente al régimen de alto retorno. Este mecanismo introduce una discontinuidad en la inversión óptima y genera una no linealidad en la tecnología de transmisión intergeneracional de ingresos.
+
+
+
 
 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.8)  19 DEC 2025 03:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.8)  19 DEC 2025 04:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -915,27 +915,36 @@ LaTeX Warning: No \author given.
 
 [6]
 
+LaTeX Warning: Reference `IC' on page 7 undefined on input line 244.
+
+
+
 [7]
-Overfull \hbox (3.6373pt too wide) in paragraph at lines 199--199
+
+[8]
+Overfull \hbox (3.6373pt too wide) in paragraph at lines 289--289
 [][]\OT1/cmr/m/n/12 Katz, Lawrence F. and Kevin M. Mur-phy (Feb. 1992). ``Chang
 es in Rel-a-tive Wages, 1963{1987:
  []
 
 
-Overfull \hbox (7.2175pt too wide) in paragraph at lines 199--199
+Overfull \hbox (7.2175pt too wide) in paragraph at lines 289--289
 [][]\OT1/cmr/m/n/12 Krusell, Per, Lee E. Oha-nian, Jos^^Se-V^^S^^Pctor R^^S^^Po
 s-Rull, and Gio-vanni L. Vi-olante (2000). ``Capital-
  []
 
 
 
-[8]
+[9]
 
-[9] (movi_kink.aux)
+[10] (movi_kink.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-10-09>
  ***********
+
+
+LaTeX Warning: There were undefined references.
 
 
 Package biblatex Warning: Please rerun LaTeX.
@@ -946,26 +955,28 @@ Package logreq Info: Writing requests to 'movi_kink.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32686 strings out of 468080
- 781214 string characters out of 5442607
- 1694779 words of memory out of 5000000
- 60894 multiletter control sequences out of 15000+600000
+ 32685 strings out of 468080
+ 781196 string characters out of 5442607
+ 1693753 words of memory out of 5000000
+ 60893 multiletter control sequences out of 15000+600000
  637639 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,8n,87p,2036b,1477s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <E:/Miktex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><E:/Miktex/fonts/type1/p
-ublic/amsfonts/cm/cmcsc10.pfb><E:/Miktex/fonts/type1/public/amsfonts/cm/cmmi12.
-pfb><E:/Miktex/fonts/type1/public/amsfonts/cm/cmmi6.pfb><E:/Miktex/fonts/type1/
-public/amsfonts/cm/cmmi8.pfb><E:/Miktex/fonts/type1/public/amsfonts/cm/cmr10.pf
-b><E:/Miktex/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/Miktex/fonts/type1/pu
-blic/amsfonts/cm/cmr17.pfb><E:/Miktex/fonts/type1/public/amsfonts/cm/cmr6.pfb><
-E:/Miktex/fonts/type1/public/amsfonts/cm/cmr7.pfb><E:/Miktex/fonts/type1/public
-/amsfonts/cm/cmr8.pfb><E:/Miktex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/
-Miktex/fonts/type1/public/amsfonts/cm/cmsy8.pfb><E:/Miktex/fonts/type1/public/a
-msfonts/cm/cmti12.pfb><E:/Miktex/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on movi_kink.pdf (9 pages, 210268 bytes).
+ublic/amsfonts/cm/cmcsc10.pfb><E:/Miktex/fonts/type1/public/amsfonts/cm/cmex10.
+pfb><E:/Miktex/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E:/Miktex/fonts/type1
+/public/amsfonts/cm/cmmi6.pfb><E:/Miktex/fonts/type1/public/amsfonts/cm/cmmi8.p
+fb><E:/Miktex/fonts/type1/public/amsfonts/cm/cmr10.pfb><E:/Miktex/fonts/type1/p
+ublic/amsfonts/cm/cmr12.pfb><E:/Miktex/fonts/type1/public/amsfonts/cm/cmr17.pfb
+><E:/Miktex/fonts/type1/public/amsfonts/cm/cmr6.pfb><E:/Miktex/fonts/type1/publ
+ic/amsfonts/cm/cmr7.pfb><E:/Miktex/fonts/type1/public/amsfonts/cm/cmr8.pfb><E:/
+Miktex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/Miktex/fonts/type1/public/
+amsfonts/cm/cmsy6.pfb><E:/Miktex/fonts/type1/public/amsfonts/cm/cmsy8.pfb><E:/M
+iktex/fonts/type1/public/amsfonts/cm/cmti12.pfb><E:/Miktex/fonts/type1/public/a
+msfonts/cm/cmtt12.pfb>
+Output written on movi_kink.pdf (10 pages, 233906 bytes).
 PDF statistics:
- 110 PDF objects out of 1000 (max. 8388607)
+ 123 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

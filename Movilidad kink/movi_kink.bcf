@@ -2394,9 +2394,7 @@
     <bcf:citekey order="16" intorder="1">Burtless_1978</bcf:citekey>
     <bcf:citekey order="16" intorder="2">Hausman_1985</bcf:citekey>
     <bcf:citekey order="17" intorder="1">Saez_2010</bcf:citekey>
-    <bcf:citekey order="18" intorder="1">Becker_Tomes_1979</bcf:citekey>
-    <bcf:citekey order="19" intorder="1">Solon_1999</bcf:citekey>
-    <bcf:citekey order="20" intorder="1">Solon_2004</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">Solon_1999</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
