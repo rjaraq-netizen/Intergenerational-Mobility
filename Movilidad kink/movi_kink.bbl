@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.2 $
+% $ biblatex bbl format version 3.3 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -18,8 +18,8 @@
 
 
 \refsection{0}
-  \datalist[entry]{nyt/global//global/global}
-    \entry{Afonso_2023}{article}{}
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{Afonso_2023}{article}{}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=b685bbfaf7f8a1a74ebc8e9cad14c960}{%
            family={Afonso},
@@ -42,10 +42,12 @@
       }
       \strng{namehash}{dd678f03013ba4c19d91a2f9c64336bf}
       \strng{fullhash}{dd678f03013ba4c19d91a2f9c64336bf}
+      \strng{fullhashraw}{dd678f03013ba4c19d91a2f9c64336bf}
       \strng{bibnamehash}{dd678f03013ba4c19d91a2f9c64336bf}
       \strng{authorbibnamehash}{dd678f03013ba4c19d91a2f9c64336bf}
       \strng{authornamehash}{dd678f03013ba4c19d91a2f9c64336bf}
       \strng{authorfullhash}{dd678f03013ba4c19d91a2f9c64336bf}
+      \strng{authorfullhashraw}{dd678f03013ba4c19d91a2f9c64336bf}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{extradatescope}{labelyear}
@@ -72,7 +74,7 @@
       \verb https://doi.org/10.1007/s00712-023-00833-y
       \endverb
     \endentry
-    \entry{Autor_2020}{article}{}
+    \entry{Autor_2020}{article}{}{}
       \name{author}{5}{}{%
         {{un=0,uniquepart=base,hash=3e9e4236efb9d339f6608030d0cca439}{%
            family={Autor},
@@ -107,10 +109,12 @@
       }
       \strng{namehash}{1505a38f60e3a0a99835d5663dd31a43}
       \strng{fullhash}{1505a38f60e3a0a99835d5663dd31a43}
+      \strng{fullhashraw}{1505a38f60e3a0a99835d5663dd31a43}
       \strng{bibnamehash}{1505a38f60e3a0a99835d5663dd31a43}
       \strng{authorbibnamehash}{1505a38f60e3a0a99835d5663dd31a43}
       \strng{authornamehash}{1505a38f60e3a0a99835d5663dd31a43}
       \strng{authorfullhash}{1505a38f60e3a0a99835d5663dd31a43}
+      \strng{authorfullhashraw}{1505a38f60e3a0a99835d5663dd31a43}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{extradatescope}{labelyear}
@@ -140,7 +144,7 @@
       \verb https://doi.org/10.1093/qje/qjaa004
       \endverb
     \endentry
-    \entry{Becker_2018}{article}{}
+    \entry{Becker_2018}{article}{}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=72e0824c9fba8f7f957b80cb8dbe85d2}{%
            family={Becker},
@@ -169,10 +173,12 @@
       }
       \strng{namehash}{48b007d6ce2d7d2f61ba80dbb530b26b}
       \strng{fullhash}{48b007d6ce2d7d2f61ba80dbb530b26b}
+      \strng{fullhashraw}{48b007d6ce2d7d2f61ba80dbb530b26b}
       \strng{bibnamehash}{48b007d6ce2d7d2f61ba80dbb530b26b}
       \strng{authorbibnamehash}{48b007d6ce2d7d2f61ba80dbb530b26b}
       \strng{authornamehash}{48b007d6ce2d7d2f61ba80dbb530b26b}
       \strng{authorfullhash}{48b007d6ce2d7d2f61ba80dbb530b26b}
+      \strng{authorfullhashraw}{48b007d6ce2d7d2f61ba80dbb530b26b}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
       \field{extradatescope}{labelyear}
@@ -200,7 +206,7 @@
       \verb https://doi.org/10.1086/698759
       \endverb
     \endentry
-    \entry{Becker_Tomes_1979}{article}{}
+    \entry{Becker_Tomes_1979}{article}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=72e0824c9fba8f7f957b80cb8dbe85d2}{%
            family={Becker},
@@ -220,10 +226,12 @@
       }
       \strng{namehash}{00fd0a6dfb9c5a835c996a57c3dc7f78}
       \strng{fullhash}{00fd0a6dfb9c5a835c996a57c3dc7f78}
+      \strng{fullhashraw}{00fd0a6dfb9c5a835c996a57c3dc7f78}
       \strng{bibnamehash}{00fd0a6dfb9c5a835c996a57c3dc7f78}
       \strng{authorbibnamehash}{00fd0a6dfb9c5a835c996a57c3dc7f78}
       \strng{authornamehash}{00fd0a6dfb9c5a835c996a57c3dc7f78}
       \strng{authorfullhash}{00fd0a6dfb9c5a835c996a57c3dc7f78}
+      \strng{authorfullhashraw}{00fd0a6dfb9c5a835c996a57c3dc7f78}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
       \field{extradatescope}{labelyear}
@@ -250,7 +258,7 @@
       \verb http://www.jstor.org/stable/1833328
       \endverb
     \endentry
-    \entry{Behar_2025}{article}{}
+    \entry{Behar_2025}{article}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=8f17e9210eac40fee1feede1792e5c95}{%
            family={Behar},
@@ -261,10 +269,12 @@
       }
       \strng{namehash}{8f17e9210eac40fee1feede1792e5c95}
       \strng{fullhash}{8f17e9210eac40fee1feede1792e5c95}
+      \strng{fullhashraw}{8f17e9210eac40fee1feede1792e5c95}
       \strng{bibnamehash}{8f17e9210eac40fee1feede1792e5c95}
       \strng{authorbibnamehash}{8f17e9210eac40fee1feede1792e5c95}
       \strng{authornamehash}{8f17e9210eac40fee1feede1792e5c95}
       \strng{authorfullhash}{8f17e9210eac40fee1feede1792e5c95}
+      \strng{authorfullhashraw}{8f17e9210eac40fee1feede1792e5c95}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
       \field{extradatescope}{labelyear}
@@ -290,7 +300,7 @@
       \endverb
       \keyw{Skill-biased technical change,Elasticity of substitution,Skill premium,Inequality,Growth accounting}
     \endentry
-    \entry{BouchardSt-Amant2024}{article}{}
+    \entry{BouchardSt-Amant2024}{article}{}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=adb4c8f56791e916fccb7e7daaa163f6}{%
            family={Bouchard\bibnamedelima St-Amant},
@@ -313,10 +323,12 @@
       }
       \strng{namehash}{fa047b920ace085f105d9cfcd10c5b9d}
       \strng{fullhash}{fa047b920ace085f105d9cfcd10c5b9d}
+      \strng{fullhashraw}{fa047b920ace085f105d9cfcd10c5b9d}
       \strng{bibnamehash}{fa047b920ace085f105d9cfcd10c5b9d}
       \strng{authorbibnamehash}{fa047b920ace085f105d9cfcd10c5b9d}
       \strng{authornamehash}{fa047b920ace085f105d9cfcd10c5b9d}
       \strng{authorfullhash}{fa047b920ace085f105d9cfcd10c5b9d}
+      \strng{authorfullhashraw}{fa047b920ace085f105d9cfcd10c5b9d}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
       \field{extradatescope}{labelyear}
@@ -343,7 +355,7 @@
       \verb https://doi.org/10.1007/s10888-023-09619-0
       \endverb
     \endentry
-    \entry{Burtless_1978}{article}{}
+    \entry{Burtless_1978}{article}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=4c3af13e55ec91cad4d66346fd456142}{%
            family={Burtless},
@@ -360,10 +372,12 @@
       }
       \strng{namehash}{479906061e5ff4c62c755a47b9a24e2e}
       \strng{fullhash}{479906061e5ff4c62c755a47b9a24e2e}
+      \strng{fullhashraw}{479906061e5ff4c62c755a47b9a24e2e}
       \strng{bibnamehash}{479906061e5ff4c62c755a47b9a24e2e}
       \strng{authorbibnamehash}{479906061e5ff4c62c755a47b9a24e2e}
       \strng{authornamehash}{479906061e5ff4c62c755a47b9a24e2e}
       \strng{authorfullhash}{479906061e5ff4c62c755a47b9a24e2e}
+      \strng{authorfullhashraw}{479906061e5ff4c62c755a47b9a24e2e}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
       \field{extradatescope}{labelyear}
@@ -384,7 +398,7 @@
       \verb https://EconPapers.repec.org/RePEc:ucp:jpolec:v:86:y:1978:i:6:p:1103-30
       \endverb
     \endentry
-    \entry{Corak_2013}{article}{}
+    \entry{Corak_2013}{article}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=17dfd8b100e514392abb82c209868a88}{%
            family={Corak},
@@ -395,10 +409,12 @@
       }
       \strng{namehash}{17dfd8b100e514392abb82c209868a88}
       \strng{fullhash}{17dfd8b100e514392abb82c209868a88}
+      \strng{fullhashraw}{17dfd8b100e514392abb82c209868a88}
       \strng{bibnamehash}{17dfd8b100e514392abb82c209868a88}
       \strng{authorbibnamehash}{17dfd8b100e514392abb82c209868a88}
       \strng{authornamehash}{17dfd8b100e514392abb82c209868a88}
       \strng{authorfullhash}{17dfd8b100e514392abb82c209868a88}
+      \strng{authorfullhashraw}{17dfd8b100e514392abb82c209868a88}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{extradatescope}{labelyear}
@@ -423,7 +439,7 @@
       \verb https://www.aeaweb.org/articles?id=10.1257/jep.27.3.79
       \endverb
     \endentry
-    \entry{Hausman_1985}{article}{}
+    \entry{Hausman_1985}{article}{}{}
       \name{author}{1}{}{%
         {{un=1,uniquepart=given,hash=efa8edfd650dfd234af154959e067af8}{%
            family={Hausman},
@@ -434,10 +450,12 @@
       }
       \strng{namehash}{efa8edfd650dfd234af154959e067af8}
       \strng{fullhash}{efa8edfd650dfd234af154959e067af8}
+      \strng{fullhashraw}{efa8edfd650dfd234af154959e067af8}
       \strng{bibnamehash}{efa8edfd650dfd234af154959e067af8}
       \strng{authorbibnamehash}{efa8edfd650dfd234af154959e067af8}
       \strng{authornamehash}{efa8edfd650dfd234af154959e067af8}
       \strng{authorfullhash}{efa8edfd650dfd234af154959e067af8}
+      \strng{authorfullhashraw}{efa8edfd650dfd234af154959e067af8}
       \field{sortinit}{H}
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
       \field{extradatescope}{labelyear}
@@ -451,7 +469,7 @@
       \field{pages}{213\bibrangedash 263}
       \range{pages}{51}
     \endentry
-    \entry{Murphy_1993}{article}{}
+    \entry{Murphy_1993}{article}{}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=d601477de775b6ef301d8f3e0aa13ef0}{%
            family={Juhn},
@@ -477,10 +495,12 @@
       }
       \strng{namehash}{b36f90712f45d0c3b9523ea84ac7a388}
       \strng{fullhash}{b36f90712f45d0c3b9523ea84ac7a388}
+      \strng{fullhashraw}{b36f90712f45d0c3b9523ea84ac7a388}
       \strng{bibnamehash}{b36f90712f45d0c3b9523ea84ac7a388}
       \strng{authorbibnamehash}{b36f90712f45d0c3b9523ea84ac7a388}
       \strng{authornamehash}{b36f90712f45d0c3b9523ea84ac7a388}
       \strng{authorfullhash}{b36f90712f45d0c3b9523ea84ac7a388}
+      \strng{authorfullhashraw}{b36f90712f45d0c3b9523ea84ac7a388}
       \field{sortinit}{J}
       \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
       \field{extradatescope}{labelyear}
@@ -507,7 +527,7 @@
       \verb http://www.jstor.org/stable/2138770
       \endverb
     \endentry
-    \entry{Katz_1992}{article}{}
+    \entry{Katz_1992}{article}{}{}
       \name{author}{2}{}{%
         {{un=2,uniquepart=given,hash=571c7bf71524e7f1a01a182010ad3b77}{%
            family={Katz},
@@ -524,10 +544,12 @@
       }
       \strng{namehash}{3ae85e2216f1f09eb3dc959db00be2ac}
       \strng{fullhash}{3ae85e2216f1f09eb3dc959db00be2ac}
+      \strng{fullhashraw}{3ae85e2216f1f09eb3dc959db00be2ac}
       \strng{bibnamehash}{3ae85e2216f1f09eb3dc959db00be2ac}
       \strng{authorbibnamehash}{3ae85e2216f1f09eb3dc959db00be2ac}
       \strng{authornamehash}{3ae85e2216f1f09eb3dc959db00be2ac}
       \strng{authorfullhash}{3ae85e2216f1f09eb3dc959db00be2ac}
+      \strng{authorfullhashraw}{3ae85e2216f1f09eb3dc959db00be2ac}
       \field{sortinit}{K}
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
       \field{extradatescope}{labelyear}
@@ -557,7 +579,7 @@
       \verb https://doi.org/10.2307/2118323
       \endverb
     \endentry
-    \entry{Krusell_2000}{article}{}
+    \entry{Krusell_2000}{article}{}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=8b0641dea388438dc1762be628be0d0f}{%
            family={Krusell},
@@ -589,10 +611,12 @@
       }
       \strng{namehash}{7f988f9705304289c5790839ddd0b33d}
       \strng{fullhash}{7f988f9705304289c5790839ddd0b33d}
+      \strng{fullhashraw}{7f988f9705304289c5790839ddd0b33d}
       \strng{bibnamehash}{7f988f9705304289c5790839ddd0b33d}
       \strng{authorbibnamehash}{7f988f9705304289c5790839ddd0b33d}
       \strng{authornamehash}{7f988f9705304289c5790839ddd0b33d}
       \strng{authorfullhash}{7f988f9705304289c5790839ddd0b33d}
+      \strng{authorfullhashraw}{7f988f9705304289c5790839ddd0b33d}
       \field{sortinit}{K}
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
       \field{extradatescope}{labelyear}
@@ -619,7 +643,7 @@
       \verb http://www.jstor.org/stable/2999442
       \endverb
     \endentry
-    \entry{Saez_2010}{article}{}
+    \entry{Saez_2010}{article}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=f040f5aac2c176810fed8b44b9c401a4}{%
            family={Saez},
@@ -630,10 +654,12 @@
       }
       \strng{namehash}{f040f5aac2c176810fed8b44b9c401a4}
       \strng{fullhash}{f040f5aac2c176810fed8b44b9c401a4}
+      \strng{fullhashraw}{f040f5aac2c176810fed8b44b9c401a4}
       \strng{bibnamehash}{f040f5aac2c176810fed8b44b9c401a4}
       \strng{authorbibnamehash}{f040f5aac2c176810fed8b44b9c401a4}
       \strng{authornamehash}{f040f5aac2c176810fed8b44b9c401a4}
       \strng{authorfullhash}{f040f5aac2c176810fed8b44b9c401a4}
+      \strng{authorfullhashraw}{f040f5aac2c176810fed8b44b9c401a4}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{extradatescope}{labelyear}
@@ -658,7 +684,7 @@
       \verb https://www.aeaweb.org/articles?id=10.1257/pol.2.3.180
       \endverb
     \endentry
-    \entry{Smith_2019}{article}{}
+    \entry{Smith_2019}{article}{}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=892bcbf9fb91b1348837862cbf71f80f}{%
            family={Smith},
@@ -687,10 +713,12 @@
       }
       \strng{namehash}{8a22455455a3e0aaf33acc9b51fb80d5}
       \strng{fullhash}{8a22455455a3e0aaf33acc9b51fb80d5}
+      \strng{fullhashraw}{8a22455455a3e0aaf33acc9b51fb80d5}
       \strng{bibnamehash}{8a22455455a3e0aaf33acc9b51fb80d5}
       \strng{authorbibnamehash}{8a22455455a3e0aaf33acc9b51fb80d5}
       \strng{authornamehash}{8a22455455a3e0aaf33acc9b51fb80d5}
       \strng{authorfullhash}{8a22455455a3e0aaf33acc9b51fb80d5}
+      \strng{authorfullhashraw}{8a22455455a3e0aaf33acc9b51fb80d5}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{extradatescope}{labelyear}
@@ -720,7 +748,7 @@
       \verb https://doi.org/10.1093/qje/qjz020
       \endverb
     \endentry
-    \entry{Solon_1999}{incollection}{}
+    \entry{Solon_1999}{incollection}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=e7467c3311ae98ee7c2d93b368c22a2e}{%
            family={Solon},
@@ -746,13 +774,16 @@
       }
       \strng{namehash}{e7467c3311ae98ee7c2d93b368c22a2e}
       \strng{fullhash}{e7467c3311ae98ee7c2d93b368c22a2e}
+      \strng{fullhashraw}{e7467c3311ae98ee7c2d93b368c22a2e}
       \strng{bibnamehash}{e7467c3311ae98ee7c2d93b368c22a2e}
       \strng{authorbibnamehash}{e7467c3311ae98ee7c2d93b368c22a2e}
       \strng{authornamehash}{e7467c3311ae98ee7c2d93b368c22a2e}
       \strng{authorfullhash}{e7467c3311ae98ee7c2d93b368c22a2e}
+      \strng{authorfullhashraw}{e7467c3311ae98ee7c2d93b368c22a2e}
       \strng{editorbibnamehash}{ec08e6a0ac81747a350eaa2fe11c56cb}
       \strng{editornamehash}{ec08e6a0ac81747a350eaa2fe11c56cb}
       \strng{editorfullhash}{ec08e6a0ac81747a350eaa2fe11c56cb}
+      \strng{editorfullhashraw}{ec08e6a0ac81747a350eaa2fe11c56cb}
       \field{extraname}{1}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
@@ -779,7 +810,7 @@
       \verb https://www.sciencedirect.com/science/article/pii/S1573446399030102
       \endverb
     \endentry
-    \entry{Solon_2004}{inbook}{}
+    \entry{Solon_2004}{inbook}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=e7467c3311ae98ee7c2d93b368c22a2e}{%
            family={Solon},
@@ -800,13 +831,16 @@
       }
       \strng{namehash}{e7467c3311ae98ee7c2d93b368c22a2e}
       \strng{fullhash}{e7467c3311ae98ee7c2d93b368c22a2e}
+      \strng{fullhashraw}{e7467c3311ae98ee7c2d93b368c22a2e}
       \strng{bibnamehash}{e7467c3311ae98ee7c2d93b368c22a2e}
       \strng{authorbibnamehash}{e7467c3311ae98ee7c2d93b368c22a2e}
       \strng{authornamehash}{e7467c3311ae98ee7c2d93b368c22a2e}
       \strng{authorfullhash}{e7467c3311ae98ee7c2d93b368c22a2e}
+      \strng{authorfullhashraw}{e7467c3311ae98ee7c2d93b368c22a2e}
       \strng{editorbibnamehash}{bdeb98853bef3a6f66d40df231503d51}
       \strng{editornamehash}{bdeb98853bef3a6f66d40df231503d51}
       \strng{editorfullhash}{bdeb98853bef3a6f66d40df231503d51}
+      \strng{editorfullhashraw}{bdeb98853bef3a6f66d40df231503d51}
       \field{extraname}{2}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
