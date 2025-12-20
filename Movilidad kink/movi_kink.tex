@@ -18,29 +18,6 @@
 \section{Introducción}
 
 
-Condicion donde las funciones de utilidad indirecta son iguales:
-
-$$(\frac{y_{t-1}+\frac{e_t}{1+r_2}}{y_{t-1}+\frac{e_t}{1+r_1}})^\alpha (\frac{(1+r_2)y_{t-1}+e_t}{(1+r_1)y_{t-1}+e_t})^{1-\alpha}=1$$
-
-Si usamos que $\ln(a+b) \approx \ln a + \frac{b}{a}$ cuando $b<<a$
-
-$$\ln(1+r_2) + \frac{e_t}{(1+r_2)y_{t-1}}\sim \ln (1+r_1)+\frac{e_t}{(1+r_1)y_{t-1}}$$
-Usando la aproximacion $\ln(1+r)=r$
-$$r_2 + \frac{e_t}{(1+r_2)y_{t-1}}\sim r_1+\frac{e_t}{(1+r_1)y_{t-1}}$$
-$$r_2 -r_1 \sim +\frac{e_t}{(1+r_1)y_{t-1}}- \frac{e_t}{(1+r_2)y_{t-1}}$$
-
-\begin{equation}
-\ln\frac{1+r_2}{1+r_1}
-\;\approx\;
-\frac{r_2 - r_1}{(1+r_1)(1+r_2)}.
-\end{equation}
-
-\begin{equation}
-y_{t-1}^*
-\;\approx\;
-\frac{e_t}{(1+r_1)(1+r_2)}.
-\end{equation}
-
 Desde comienzos de los años ochenta, una extensa literatura documenta un aumento sustantivo en la desigualdad salarial en economías desarrolladas y en desarrollo. En particular, los salarios de los trabajadores altamente calificados han crecido de manera desproporcionada, mientras que los de menor calificación se han estancado o disminuido (véase, por ejemplo, \textcite{Katz_1992}, \textcite{Murphy_1993} y \textcite{Krusell_2000}). Un resultado clave, enfatizado por \textcite{Murphy_1993}, es que este aumento en la desigualdad se observa incluso dentro de grupos definidos por educación y experiencia, lo que sugiere que no responde únicamente a diferencias continuas en escolaridad, sino a cambios en los retornos asociados a componentes específicos del capital humano.
 
 Un primer canal que sustenta este mecanismo es la emergencia de economías tipo superstars. La globalización y el cambio tecnológico han desplazado la demanda hacia firmas altamente productivas e intensivas en capital humano especializado, generando elevados markups y una menor participación del trabajo en el valor agregado \parencite{Autor_2020}. En este contexto, el acceso a determinados segmentos del mercado laboral —más que incrementos marginales en habilidades— determina saltos significativos en los ingresos, de modo que pequeñas diferencias en capital humano solo se traducen en grandes diferencias salariales una vez superados ciertos umbrales.
@@ -279,10 +256,511 @@ e_t\Big[\big(\tfrac{1+r'}{1+r}\big)^{\alpha}-1\Big]
 Dado que $r'>r$ y $\alpha\in(0,1)$, el numerador y el denominador de la expresión anterior son estrictamente positivos, lo que garantiza que $y_{t-1}^{\text{ind}}(e_t)>0$. En consecuencia, para $y_{t-1}<y_{t-1}^{\text{ind}}(e_t)$ el padre prefiere invertir bajo el régimen de bajo retorno, mientras que para $y_{t-1}>y_{t-1}^{\text{ind}}(e_t)$ resulta óptimo saltar discretamente al régimen de alto retorno. Este mecanismo introduce una discontinuidad en la inversión óptima y genera una no linealidad en la tecnología de transmisión intergeneracional de ingresos.
 
 
+Para que este nivel de ingreso actúe efectivamente como un umbral (\emph{binding}) de cambio de régimen, es necesario que, evaluado bajo el régimen de bajo retorno, la elección óptima de inversión alcance el punto de quiebre de la tecnología. En particular, el ingreso \(y_{t-1}^{\text{ind}}(e_t)\) debe ser lo suficientemente bajo como para que la inversión óptima en el primer segmento sea igual a \(\bar I\).
+
+Recordando que, bajo el régimen de bajo retorno, la inversión óptima viene dada por
+\[
+I^*(y_{t-1},e_t)
+=
+(1-\alpha)y_{t-1}-\frac{\alpha}{1+r}e_t,
+\]
+la condición para que el umbral \(y_{t-1}^{\text{ind}}(e_t)\) sea económicamente relevante es
+\[
+I^*\big(y_{t-1}^{\text{ind}}(e_t),e_t\big)\;\leq\;\bar I.
+\]
+
+Cuando esta condición se satisface, el padre se encuentra exactamente en el límite del primer segmento de la tecnología y el cruce en preferencias entre regímenes se traduce en un cambio efectivo de régimen de inversión. En caso contrario, si para \(y_{t-1}^{\text{ind}}(e_t)\) la inversión óptima bajo el régimen de bajo retorno excede \(\bar I\), el punto de indiferencia carece de contenido económico, ya que la restricción tecnológica no es vinculante y el padre ya estaría operando en el segmento de alto retorno.
 
 
+Con lo anterior, la tecnología de transmisión intergeneracional de ingresos puede escribirse en forma reducida reemplazando las inversiones óptimas en la ecuación de ingreso del hijo. Dado que la elección de régimen depende del nivel de ingreso del padre, se obtienen dos relaciones intergeneracionales distintas.
+
+\paragraph{Régimen de bajo retorno.}
+Para padres con ingresos por debajo del umbral de indiferencia,
+\(y_{t-1} \leq y_{t-1}^{\text{ind}}(e_t)\),
+la inversión óptima se realiza bajo el régimen de bajo retorno \(r\),
+\[
+I^*(r)
+=
+(1-\alpha)y_{t-1}
+-
+\frac{\alpha}{1+r}e_t.
+\]
+Sustituyendo en la ecuación de ingreso del hijo se obtiene
+\[
+\begin{aligned}
+y_t
+&=
+(1+r)I^*(r)+e_t \\
+&=
+(1+r)(1-\alpha)y_{t-1}
++
+\alpha e_t.
+\end{aligned}
+\]
+
+\paragraph{Régimen de alto retorno.}
+Para padres con ingresos superiores al umbral,
+\(y_{t-1} > y_{t-1}^{\text{ind}}(e_t)\),
+el óptimo global implica invertir bajo el régimen de alto retorno \(r'\),
+\[
+I^*(r')
+=
+(1-\alpha)y_{t-1}
+-
+\frac{\alpha}{1+r'}e_t.
+\]
+En este caso, el ingreso del hijo viene dado por
+\[
+\begin{aligned}
+y_t
+&=
+(1+r')I^*(r')+e_t \\
+&=
+(1+r')(1-\alpha)y_{t-1}
++
+\alpha e_t.
+\end{aligned}
+\]
+
+En consecuencia, la relación intergeneracional de ingresos adopta una forma no lineal y por tramos:
+\[
+y_t
+=
+\begin{cases}
+(1+r)(1-\alpha)y_{t-1}+\alpha e_t,
+& \text{si } y_{t-1}\leq y_{t-1}^{\text{ind}}(e_t), \\[0.4em]
+(1+r')(1-\alpha)y_{t-1}+\alpha e_t,
+& \text{si } y_{t-1}> y_{t-1}^{\text{ind}}(e_t).
+\end{cases}
+\]
+
+Esta expresión muestra que un cambio discreto en los retornos del capital humano se traduce en un quiebre en la pendiente de la curva de transmisión intergeneracional de ingresos, generando heterogeneidad en la persistencia intergeneracional según el nivel de ingreso del padre.
+
+\section{Implicaciones para la acumulación de capital humano}
+
+Considere una familia con dos generaciones. El padre vive en el periodo $t-1$ y decide cómo asignar su ingreso $y_{t-1}$ entre consumo propio e inversión en el capital humano de su hijo $I_{t-1}$, quien vive en el periodo $t$. El ingreso del hijo depende de la inversión parental y de una dotación heredada $e_t$, y presenta un cambio discreto en los retornos del capital humano una vez que el capital humano efectivo supera un umbral $h>0$.
+
+La tecnología de generación de ingresos del hijo está dada por
+\[
+y_t
+=
+(1+r)I_{t-1}
++
+e_t
++
+r'\max\{0,I_{t-1}+e_t-h\},
+\]
+donde $r'>0$ representa un retorno adicional que se aplica únicamente al excedente del capital humano efectivo por sobre el umbral $h$.
+
+Definiendo el umbral efectivo de inversión
+\[
+\bar I(e_t)\equiv h-e_t,
+\]
+la tecnología puede escribirse de manera equivalente por tramos como
+\[
+y_t =
+\begin{cases}
+(1+r)I_{t-1}+e_t,
+& \text{si } I_{t-1}\le \bar I(e_t), \\[0.4em]
+(1+r+r')I_{t-1}+(1+r')e_t,
+& \text{si } I_{t-1}> \bar I(e_t).
+\end{cases}
+\]
+
+Siguiendo el modelo simplificado de \textcite{Solon_1999}, el padre maximiza una función de utilidad logarítmica en consumo e ingreso del hijo,
+\[
+\alpha \log(c_{t-1})+(1-\alpha)\log y_t,
+\]
+donde $c_{t-1}=y_{t-1}-I_{t-1}$ y $\alpha\in(0,1)$.
+
+Debido a la concavidad de la utilidad y a la presencia de un quiebre en la tecnología, el problema del padre puede resolverse comparando soluciones locales en cada régimen tecnológico.
+
+\subsection*{Óptimos locales}
+
+\paragraph{Régimen de bajo retorno.}
+Cuando $I_{t-1}\le \bar I(e_t)$, el padre resuelve
+\[
+\max_{I\in[0,y_{t-1}]}
+\;
+\alpha\log(y_{t-1}-I)
++
+(1-\alpha)\log\big((1+r)I+e_t\big).
+\]
+La condición de primer orden es
+\[
+\frac{\alpha}{y_{t-1}-I}
+=
+\frac{(1-\alpha)(1+r)}{(1+r)I+e_t},
+\]
+de donde se obtiene la inversión óptima local
+\[
+I_L^*
+=
+(1-\alpha)y_{t-1}
+-
+\frac{\alpha}{1+r}e_t.
+\]
+
+\paragraph{Régimen de alto retorno.}
+Cuando $I_{t-1}>\bar I(e_t)$, el problema local es
+\[
+\max_{I\in[0,y_{t-1}]}
+\;
+\alpha\log(y_{t-1}-I)
++
+(1-\alpha)\log\big((1+r+r')I+(1+r')e_t\big).
+\]
+La condición de primer orden es
+\[
+\frac{\alpha}{y_{t-1}-I}
+=
+\frac{(1-\alpha)(1+r+r')}{(1+r+r')I+(1+r')e_t},
+\]
+lo que implica una inversión óptima local
+\[
+I_H^*
+=
+(1-\alpha)y_{t-1}
+-
+\frac{\alpha(1+r')}{1+r+r'}e_t.
+\]
+
+\subsection*{Comparación entre regímenes y umbral de indiferencia}
+
+Evaluando la utilidad en las soluciones óptimas y utilizando las condiciones de primer orden, las utilidades indirectas asociadas a cada régimen pueden escribirse como
+\[
+V_L
+=
+\log\big((1+r)y_{t-1}+e_t\big)
+-
+\alpha\log(1+r)
++
+C,
+\]
+\[
+V_H
+=
+\log\big((1+r+r')y_{t-1}+(1+r')e_t\big)
+-
+\alpha\log(1+r+r')
++
+C,
+\]
+donde $C=\alpha\log\alpha+(1-\alpha)\log(1-\alpha)$ es constante e irrelevante para la comparación.
+
+El padre es indiferente entre invertir bajo el régimen de bajo retorno y el de alto retorno cuando $V_L=V_H$, lo que implica
+\[
+\log\frac{(1+r+r')y_{t-1}+(1+r')e_t}{(1+r)y_{t-1}+e_t}
+=
+\alpha\log\frac{1+r+r'}{1+r}.
+\]
+
+Resolviendo esta expresión se obtiene el nivel de ingreso del padre que lo deja indiferente entre ambos regímenes:
+\[
+\boxed{
+y_{t-1}^{\text{ind}}(e_t)
+=
+\frac{
+e_t\Big[\big(\tfrac{1+r+r'}{1+r}\big)^{\alpha}-(1+r')\Big]
+}{
+(1+r+r')-(1+r)\big(\tfrac{1+r+r'}{1+r}\big)^{\alpha}
+}
+}
+\]
+
+Para que este nivel de ingreso actúe efectivamente como un umbral de cambio de régimen, es necesario que la inversión óptima bajo el régimen de bajo retorno no supere el punto de quiebre tecnológico. En particular, debe cumplirse
+\[
+I_L^*\big(y_{t-1}^{\text{ind}}(e_t),e_t\big)
+\le
+\bar I(e_t)=h-e_t.
+\]
+
+\subsection*{Relación intergeneracional de ingresos}
+
+Sustituyendo las inversiones óptimas en la tecnología de ingresos del hijo, se obtiene la siguiente relación intergeneracional por tramos:
+\[
+y_t
+=
+\begin{cases}
+(1+r)(1-\alpha)y_{t-1}+\alpha e_t,
+& \text{si } y_{t-1}\le y_{t-1}^{\text{ind}}(e_t), \\[0.4em]
+(1+r+r')(1-\alpha)y_{t-1}
++\alpha(1+r')e_t,
+& \text{si } y_{t-1}> y_{t-1}^{\text{ind}}(e_t).
+\end{cases}
+\]
+
+Esta expresión muestra que la transmisión intergeneracional de ingresos es no lineal y dependiente del historial: familias que parten con ingresos suficientemente altos acceden a un régimen de mayores retornos del capital humano, lo que amplifica la persistencia intergeneracional y genera heterogeneidad endógena en la movilidad económica.
 
 
+\subsection{Dinámica de largo plazo y dependencia del historial}
+
+Considérese dos dinastías, $i$ y $j$, idénticas en preferencias y tecnología, que difieren únicamente en sus condiciones iniciales. Denótese por
+\[
+y^{\text{ind}}(\bar e)
+\]
+el nivel de ingreso parental que deja indiferente al padre entre invertir en el régimen de bajo y alto retorno cuando la dotación heredada es constante e igual a $\bar e$.
+
+Las condiciones iniciales de ambas dinastías están dadas por
+\[
+y_0^i=\frac{3}{2}y^{\text{ind}}(\bar e),
+\qquad
+y_0^j=\frac{1}{2}y^{\text{ind}}(\bar e),
+\]
+de modo que la dinastía $i$ parte estrictamente por sobre el umbral de indiferencia, mientras que la dinastía $j$ parte por debajo.
+
+---
+
+\subsubsection*{Proceso de dotación heredada}
+
+La dotación heredada evoluciona de manera distinta para cada dinastía. Para la dinastía rica $i$, se asume una dotación constante en el tiempo:
+\[
+e_t^i=\bar e \qquad \forall t.
+\]
+
+En contraste, la dinastía pobre $j$ experimenta un crecimiento determinístico de su dotación heredada a una tasa $g>0$:
+\[
+e_t^j=(1+g)^t\bar e.
+\]
+
+Este supuesto captura la idea de que las familias inicialmente desfavorecidas pueden experimentar mejoras graduales en su entorno, redes o capital social, aun cuando partan de una posición inicial baja.
+
+---
+
+\subsubsection*{Trayectorias intergeneracionales}
+
+La relación intergeneracional de ingresos viene dada por
+\[
+y_t^k
+=
+\begin{cases}
+\beta_L y_{t-1}^k + \alpha e_t^k,
+& \text{si } y_{t-1}^k\le y^{\text{ind}}(e_t^k), \\[0.4em]
+\beta_H y_{t-1}^k + \alpha(1+r')e_t^k,
+& \text{si } y_{t-1}^k> y^{\text{ind}}(e_t^k),
+\end{cases}
+\quad k\in\{i,j\},
+\]
+donde
+\[
+\beta_L=(1+r)(1-\alpha),
+\qquad
+\beta_H=(1+r+r')(1-\alpha),
+\qquad
+\beta_H>\beta_L.
+\]
+
+---
+
+\paragraph{Dinastía rica.}
+Dado que $y_0^i>y^{\text{ind}}(\bar e)$ y $e_t^i=\bar e$ para todo $t$, la dinastía $i$ permanece en el régimen de alto retorno en todos los periodos. Su trayectoria satisface
+\[
+y_t^i
+=
+\beta_H y_{t-1}^i + \alpha(1+r')\bar e,
+\]
+lo que implica
+\[
+y_t^i
+=
+\beta_H^t y_0^i
++
+\alpha(1+r')\bar e
+\sum_{s=0}^{t-1}\beta_H^s.
+\]
+
+Si $\beta_H<1$, la dinastía converge a un estado estacionario alto; si $\beta_H\ge1$, su ingreso crece sin cota, amplificando permanentemente la ventaja inicial.
+
+---
+
+\paragraph{Dinastía pobre.}
+La dinastía $j$ parte en el régimen de bajo retorno y su dinámica inicial está dada por
+\[
+y_t^j
+=
+\beta_L y_{t-1}^j + \alpha e_t^j
+=
+\beta_L y_{t-1}^j + \alpha (1+g)^t\bar e.
+\]
+
+Iterando hacia adelante se obtiene
+\[
+y_t^j
+=
+\beta_L^t y_0^j
++
+\alpha\bar e
+\sum_{s=0}^{t-1}\beta_L^s(1+g)^{t-s}.
+\]
+
+Mientras $y_t^j\le y^{\text{ind}}(e_t^j)$, la dinastía permanece atrapada en el régimen de bajo retorno. El cruce al régimen alto ocurre, si es que ocurre, en el primer periodo $\tau$ tal que
+\[
+y_\tau^j>y^{\text{ind}}(e_\tau^j).
+\]
+
+---
+
+\subsubsection*{Comparación de largo plazo}
+
+Aun cuando la dinastía pobre experimenta un crecimiento exógeno de su dotación heredada, su capacidad de capitalizar dicho crecimiento es limitada mientras permanece en el régimen de bajo retorno. En contraste, la dinastía rica amplifica tanto su ventaja inicial como cualquier nivel dado de dotación heredada debido a la mayor pendiente de la relación intergeneracional.
+
+En particular, si el crecimiento de la dotación heredada satisface
+\[
+1+g \le \beta_H,
+\]
+entonces existe un conjunto no trivial de parámetros para el cual la dinastía pobre nunca alcanza el umbral de indiferencia, generándose una trampa de bajo ingreso intergeneracional. Por el contrario, solo si el crecimiento de la dotación heredada es suficientemente elevado, de modo que
+\[
+1+g>\beta_L,
+\]
+la dinastía pobre puede eventualmente cruzar el umbral y transitar hacia el régimen de alto retorno.
+
+---
+
+\subsubsection*{Interpretación}
+
+Este ejercicio muestra que la convergencia intergeneracional no depende únicamente de mejoras graduales en las dotaciones heredadas, sino críticamente del régimen tecnológico en el que opera cada familia. Condiciones iniciales desfavorables pueden persistir en el tiempo incluso cuando la dotación heredada crece, debido a la menor capacidad de acumulación intergeneracional en el régimen de bajo retorno. En consecuencia, la historia inicial de cada dinastía determina de manera endógena su trayectoria de largo plazo.
+
+
+\subsection{Dinámica local alrededor del umbral de indiferencia}
+
+Considérese nuevamente la relación intergeneracional de ingresos por tramos:
+\[
+y_t
+=
+\begin{cases}
+\beta_L y_{t-1}+\alpha e_t,
+& \text{si } y_{t-1}\le y^{\text{ind}}(e_t), \\[0.4em]
+\beta_H y_{t-1}+\alpha(1+r')e_t,
+& \text{si } y_{t-1}> y^{\text{ind}}(e_t),
+\end{cases}
+\]
+donde
+\[
+\beta_L=(1+r)(1-\alpha), 
+\qquad 
+\beta_H=(1+r+r')(1-\alpha),
+\qquad 
+\beta_H>\beta_L.
+\]
+
+Sea $\bar e$ una dotación heredada constante y defínase $y^{\text{ind}}(\bar e)$ como el nivel de ingreso parental que deja indiferente al agente entre invertir en el régimen de bajo y alto retorno.
+
+---
+
+\subsubsection*{Condiciones iniciales}
+
+Considérense dos dinastías, $i$ y $j$, idénticas en todo salvo por una diferencia arbitrariamente pequeña en sus condiciones iniciales:
+\[
+y_0^i
+=
+y^{\text{ind}}(\bar e),
+\qquad
+y_0^j
+=
+y^{\text{ind}}(\bar e)-\varepsilon,
+\qquad
+\varepsilon>0 \text{ pequeño}.
+\]
+
+Ambas enfrentan inicialmente la misma dotación heredada:
+\[
+e_0^i=e_0^j=\bar e.
+\]
+
+Por construcción, la dinastía $i$ opera en el régimen de alto retorno desde el periodo inicial, mientras que la dinastía $j$ parte en el régimen de bajo retorno.
+
+---
+
+\subsubsection*{Trayectorias determinísticas sin shocks}
+
+En ausencia de shocks o crecimiento adicional en la dotación heredada, las trayectorias vienen dadas por:
+
+\paragraph{Dinastía en el régimen alto.}
+\[
+y_t^i
+=
+\beta_H y_{t-1}^i + \alpha(1+r')\bar e,
+\]
+con solución cerrada:
+\[
+y_t^i
+=
+\beta_H^t y^{\text{ind}}(\bar e)
++
+\alpha(1+r')\bar e
+\sum_{s=0}^{t-1}\beta_H^s.
+\]
+
+\paragraph{Dinastía en el régimen bajo.}
+\[
+y_t^j
+=
+\beta_L y_{t-1}^j + \alpha\bar e,
+\]
+lo que implica:
+\[
+y_t^j
+=
+\beta_L^t\big(y^{\text{ind}}(\bar e)-\varepsilon\big)
++
+\alpha\bar e
+\sum_{s=0}^{t-1}\beta_L^s.
+\]
+
+Dado que $\beta_H>\beta_L$, la brecha entre ambas dinastías crece en el tiempo aun cuando $\varepsilon$ sea arbitrariamente pequeño.
+
+---
+
+\subsubsection*{Crecimiento compensatorio de la dotación heredada}
+
+Supóngase ahora que la dinastía $j$ experimenta un crecimiento exógeno de su dotación heredada a una tasa constante $g>0$, mientras que la dinastía $i$ mantiene $e_t^i=\bar e$:
+\[
+e_t^j=(1+g)^t\bar e.
+\]
+
+La dinámica de la dinastía $j$ pasa a ser:
+\[
+y_t^j
+=
+\beta_L y_{t-1}^j + \alpha(1+g)^t\bar e,
+\]
+con solución:
+\[
+y_t^j
+=
+\beta_L^t\big(y^{\text{ind}}(\bar e)-\varepsilon\big)
++
+\alpha\bar e
+\sum_{s=0}^{t-1}\beta_L^s(1+g)^{t-s}.
+\]
+
+La dinastía $j$ alcanza la trayectoria de la dinastía $i$ en el primer periodo $\tau$ tal que:
+\[
+y_\tau^j
+\ge
+y_\tau^i.
+\]
+
+---
+
+\subsubsection*{Condición mínima de crecimiento}
+
+Una condición necesaria para que la dinastía inicialmente desfavorecida pueda cerrar la brecha es que el crecimiento de la dotación heredada compense la menor pendiente intergeneracional:
+\[
+1+g \ge \frac{\beta_H}{\beta_L}.
+\]
+
+Si esta condición no se cumple, incluso una ventaja inicial infinitesimal para la dinastía $i$ genera divergencia permanente. En cambio, si
+\[
+1+g > \frac{\beta_H}{\beta_L},
+\]
+entonces existe un horizonte finito $\tau(\varepsilon)$ tal que la dinastía $j$ no solo cruza el umbral de indiferencia, sino que alcanza y eventualmente supera la trayectoria de la dinastía inicialmente favorecida.
+
+---
+
+\subsubsection*{Interpretación}
+
+Este ejercicio muestra que la dinámica intergeneracional es localmente inestable alrededor del umbral de indiferencia. Diferencias iniciales arbitrariamente pequeñas pueden generar trayectorias persistentemente divergentes, a menos que la dinastía inicialmente desfavorecida experimente un crecimiento suficientemente alto de su dotación heredada. En este sentido, la movilidad intergeneracional depende críticamente no solo de la magnitud de los shocks o del crecimiento futuro, sino también del régimen tecnológico en el que opera cada familia al inicio de la dinámica.
 
 
 \printbibliography
