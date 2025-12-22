@@ -2378,24 +2378,38 @@
     <bcf:citekey order="2" intorder="1">Murphy_1993</bcf:citekey>
     <bcf:citekey order="3" intorder="1">Krusell_2000</bcf:citekey>
     <bcf:citekey order="4" intorder="1">Murphy_1993</bcf:citekey>
-    <bcf:citekey order="5" intorder="1">Autor_2020</bcf:citekey>
-    <bcf:citekey order="6" intorder="1">Smith_2019</bcf:citekey>
-    <bcf:citekey order="7" intorder="1">Afonso_2023</bcf:citekey>
-    <bcf:citekey order="7" intorder="2">Behar_2025</bcf:citekey>
-    <bcf:citekey order="8" intorder="1">Corak_2013</bcf:citekey>
-    <bcf:citekey order="8" intorder="2">BouchardSt-Amant2024</bcf:citekey>
-    <bcf:citekey order="9" intorder="1">Solon_2004</bcf:citekey>
-    <bcf:citekey order="10" intorder="1">Becker_2018</bcf:citekey>
-    <bcf:citekey order="11" intorder="1">Becker_2018</bcf:citekey>
-    <bcf:citekey order="12" intorder="1">Becker_2018</bcf:citekey>
-    <bcf:citekey order="13" intorder="1">Becker_2018</bcf:citekey>
-    <bcf:citekey order="14" intorder="1">Becker_Tomes_1979</bcf:citekey>
-    <bcf:citekey order="15" intorder="1">Solon_1999</bcf:citekey>
-    <bcf:citekey order="16" intorder="1">Burtless_1978</bcf:citekey>
-    <bcf:citekey order="16" intorder="2">Hausman_1985</bcf:citekey>
-    <bcf:citekey order="17" intorder="1">Saez_2010</bcf:citekey>
-    <bcf:citekey order="18" intorder="1">Solon_1999</bcf:citekey>
-    <bcf:citekey order="19" intorder="1">Solon_1999</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">Rosen_1983</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">Autor_2020</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">Smith_2019</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">Afonso_2023</bcf:citekey>
+    <bcf:citekey order="8" intorder="2">Behar_2025</bcf:citekey>
+    <bcf:citekey order="8" intorder="3">Buera_2021</bcf:citekey>
+    <bcf:citekey order="8" intorder="4">Card_2002</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">Corak_2013</bcf:citekey>
+    <bcf:citekey order="9" intorder="2">BouchardSt-Amant2024</bcf:citekey>
+    <bcf:citekey order="9" intorder="3">Durlauf_2018</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">Black_2011</bcf:citekey>
+    <bcf:citekey order="10" intorder="2">Gregg_2019</bcf:citekey>
+    <bcf:citekey order="10" intorder="3">Durlauf_2018</bcf:citekey>
+    <bcf:citekey order="10" intorder="4">Durlauf_1996</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">Zimmerman_2019</bcf:citekey>
+    <bcf:citekey order="11" intorder="2">Murphy_1991</bcf:citekey>
+    <bcf:citekey order="11" intorder="3">Torvik_2002</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">Cunha_2007</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">Chetty_2014</bcf:citekey>
+    <bcf:citekey order="13" intorder="2">Chetty_2025</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">Solon_2004</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">Becker_2018</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">Becker_2018</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">Becker_2018</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">Becker_2018</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">Becker_Tomes_1979</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">Solon_1999</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">Burtless_1978</bcf:citekey>
+    <bcf:citekey order="21" intorder="2">Hausman_1985</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">Saez_2010</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">Solon_1999</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">Solon_1999</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
