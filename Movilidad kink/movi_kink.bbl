@@ -19,61 +19,6 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global/global}
-    \entry{Afonso_2023}{article}{}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=b685bbfaf7f8a1a74ebc8e9cad14c960}{%
-           family={Afonso},
-           familyi={A\bibinitperiod},
-           given={Oscar},
-           giveni={O\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=3e0da9313af127ef3a9d4cc84ddb2e18}{%
-           family={Sequeira},
-           familyi={S\bibinitperiod},
-           given={Tiago},
-           giveni={T\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=8f34140cd80c99d58dbcc808987a5ce1}{%
-           family={Almeida},
-           familyi={A\bibinitperiod},
-           given={Derick},
-           giveni={D\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{dd678f03013ba4c19d91a2f9c64336bf}
-      \strng{fullhash}{dd678f03013ba4c19d91a2f9c64336bf}
-      \strng{fullhashraw}{dd678f03013ba4c19d91a2f9c64336bf}
-      \strng{bibnamehash}{dd678f03013ba4c19d91a2f9c64336bf}
-      \strng{authorbibnamehash}{dd678f03013ba4c19d91a2f9c64336bf}
-      \strng{authornamehash}{dd678f03013ba4c19d91a2f9c64336bf}
-      \strng{authorfullhash}{dd678f03013ba4c19d91a2f9c64336bf}
-      \strng{authorfullhashraw}{dd678f03013ba4c19d91a2f9c64336bf}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{This paper studies the impact of automation shocks on the technological-knowledge level, skill premium (or wage inequality), real prices, output, and economic growth. To highlight the economic mechanisms, we devise a task-based direct technical change model that allows us to analyze the determinants of the threshold task, the relative output and prices between sectors, intra- and inter-sectoral wage differences, wage polarization and economic growth rates. We observe that an increase in the efficiency of skilled or unskilled workers as well as a decrease in the efficiency of medium-skilled workers as possible result of automation always increase wage polarization as well as economic growth rates. In a quantitative exercise we also assess the change in the weight of routine and non-routine sectors in the economy. In this context, governments should implement policies to support the professional transition of medium-skilled workers to non-routinazable tasks.}
-      \field{issn}{1617-7134}
-      \field{journaltitle}{Journal of Economics}
-      \field{month}{10}
-      \field{number}{2}
-      \field{title}{Technological knowledge and wages: from skill premium to wage polarization}
-      \field{volume}{140}
-      \field{year}{2023}
-      \field{pages}{93\bibrangedash 119}
-      \range{pages}{27}
-      \verb{doi}
-      \verb 10.1007/s00712-023-00833-y
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1007/s00712-023-00833-y
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1007/s00712-023-00833-y
-      \endverb
-    \endentry
     \entry{Autor_2020}{article}{}{}
       \name{author}{5}{}{%
         {{un=0,uniquepart=base,hash=3e9e4236efb9d339f6608030d0cca439}{%
@@ -143,6 +88,108 @@
       \verb{url}
       \verb https://doi.org/10.1093/qje/qjaa004
       \endverb
+    \endentry
+    \entry{Bandyopadhyay_2019}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=f844eed2e4f403d04b753bf9a159334c}{%
+           family={Bandyopadhyay},
+           familyi={B\bibinitperiod},
+           given={Debasis},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a7419735529dc16bd831f1e090dd09cb}{%
+           family={King},
+           familyi={K\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=498ee7dd781005b17d8005ccfca801e2}{%
+           family={Tang},
+           familyi={T\bibinitperiod},
+           given={Xueli},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{10a31bfac84d86f27c1b539d91c98395}
+      \strng{fullhash}{10a31bfac84d86f27c1b539d91c98395}
+      \strng{fullhashraw}{10a31bfac84d86f27c1b539d91c98395}
+      \strng{bibnamehash}{10a31bfac84d86f27c1b539d91c98395}
+      \strng{authorbibnamehash}{10a31bfac84d86f27c1b539d91c98395}
+      \strng{authornamehash}{10a31bfac84d86f27c1b539d91c98395}
+      \strng{authorfullhash}{10a31bfac84d86f27c1b539d91c98395}
+      \strng{authorfullhashraw}{10a31bfac84d86f27c1b539d91c98395}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We analyse the impact of human capital misallocation and redistribution on GDP, welfare, and TFP, in economies with financial market imperfections. We present an overlapping generations model in which the innate abilities of children are drawn from a probability distribution and where parents are unable to insure against these shocks or borrow against their child’s future incomes. The government has access to a redistributive tax and transfer system that can partially mitigate the effects of these missing markets. The steady state equilibrium of the model features closed form analytical solutions for the distributions of human capital, physical capital, and income, along with aggregate measures of TFP and welfare. We calibrate the model to the US economy and find that the misallocation, and its adverse effects on TFP and GDP, can be significant. However redistributive policies, aimed at mitigating the misallocation from these missing markets, have only small positive effects on TFP but large negative effects on GDP.}
+      \field{issn}{0164-0704}
+      \field{journaltitle}{Journal of Macroeconomics}
+      \field{title}{Human capital misallocation, redistributive policies, and TFP}
+      \field{volume}{60}
+      \field{year}{2019}
+      \field{pages}{309\bibrangedash 324}
+      \range{pages}{16}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.jmacro.2019.02.005
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S016407041930045X
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S016407041930045X
+      \endverb
+      \keyw{Heterogeneous agents,Misallocation,TFP,Redistribution}
+    \endentry
+    \entry{Bavaro_2022}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=46d7fc1fc83e315fc304159de1b25136}{%
+           family={Bavaro},
+           familyi={B\bibinitperiod},
+           given={Michele},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1d6936ab474345ec6666d7d2547d113a}{%
+           family={Patriarca},
+           familyi={P\bibinitperiod},
+           given={Fabrizio},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{485e1c64bdf4d03471ddf19c1714479e}
+      \strng{fullhash}{485e1c64bdf4d03471ddf19c1714479e}
+      \strng{fullhashraw}{485e1c64bdf4d03471ddf19c1714479e}
+      \strng{bibnamehash}{485e1c64bdf4d03471ddf19c1714479e}
+      \strng{authorbibnamehash}{485e1c64bdf4d03471ddf19c1714479e}
+      \strng{authornamehash}{485e1c64bdf4d03471ddf19c1714479e}
+      \strng{authorfullhash}{485e1c64bdf4d03471ddf19c1714479e}
+      \strng{authorfullhashraw}{485e1c64bdf4d03471ddf19c1714479e}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The aim of this paper is to investigate the interaction between two channels of intergenerational transmission of inequalities: parental income and networks. For this purpose, job referrals are introduced in an overlapping generations model of human capital accumulation with borrowing constraints. Although the exploitation of workers' networks through referrals can decrease the costs borne by firms and workers in the matching process, they also widen the opportunity gap between workers having parents with different educational levels. It is shown that when market inequalities are high, segregation effects may overcome the gains provided in the labour market by referrals. Even though referrals are exploited only in the educated segment of the labour market, the reduction of frictional costs may coexist with an overall negative effect on human capital accumulation.}
+      \field{issn}{0264-9993}
+      \field{journaltitle}{Economic Modelling}
+      \field{title}{Referrals, intergenerational mobility and human capital accumulation}
+      \field{volume}{110}
+      \field{year}{2022}
+      \field{pages}{105811}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.econmod.2022.105811
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0264999322000578
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0264999322000578
+      \endverb
+      \keyw{Intergenerational mobility,Networks,Referrals,Segregation}
     \endentry
     \entry{Becker_2018}{article}{}{}
       \name{author}{4}{}{%
@@ -257,48 +304,6 @@
       \verb{url}
       \verb http://www.jstor.org/stable/1833328
       \endverb
-    \endentry
-    \entry{Behar_2025}{article}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=8f17e9210eac40fee1feede1792e5c95}{%
-           family={Behar},
-           familyi={B\bibinitperiod},
-           given={Alberto},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{8f17e9210eac40fee1feede1792e5c95}
-      \strng{fullhash}{8f17e9210eac40fee1feede1792e5c95}
-      \strng{fullhashraw}{8f17e9210eac40fee1feede1792e5c95}
-      \strng{bibnamehash}{8f17e9210eac40fee1feede1792e5c95}
-      \strng{authorbibnamehash}{8f17e9210eac40fee1feede1792e5c95}
-      \strng{authornamehash}{8f17e9210eac40fee1feede1792e5c95}
-      \strng{authorfullhash}{8f17e9210eac40fee1feede1792e5c95}
-      \strng{authorfullhashraw}{8f17e9210eac40fee1feede1792e5c95}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{I develop a model of endogenous skill-biased technical change in developing countries. The endogenous response to a rise in skill supply counters the traditional substitution effect and dampens supply’s role in reducing wage inequality. The model reinforces consensus estimates of the elasticity of substitution between more/less educated workers by reconciling dispersed existing estimates. It also rationalizes estimates that were hitherto deemed implausible or theory-inconsistent. I produce new estimates for developing countries with a new global panel and with Latin American data (that facilitates analysis of dynamics). Many estimated elasticity values are almost 2. This sheds new light on a parameter that is crucial for inequality, growth, and other key macroeconomic questions.}
-      \field{issn}{0304-3878}
-      \field{journaltitle}{Journal of Development Economics}
-      \field{title}{The elasticity of substitution between skilled and unskilled labor in developing countries: A directed technical change perspective}
-      \field{volume}{174}
-      \field{year}{2025}
-      \field{pages}{103411}
-      \range{pages}{1}
-      \verb{doi}
-      \verb https://doi.org/10.1016/j.jdeveco.2024.103411
-      \endverb
-      \verb{urlraw}
-      \verb https://www.sciencedirect.com/science/article/pii/S0304387824001603
-      \endverb
-      \verb{url}
-      \verb https://www.sciencedirect.com/science/article/pii/S0304387824001603
-      \endverb
-      \keyw{Skill-biased technical change,Elasticity of substitution,Skill premium,Inequality,Growth accounting}
     \endentry
     \entry{Black_2011}{article}{}{}
       \name{author}{2}{}{%
@@ -554,6 +559,56 @@
       \verb https://doi.org/10.1086/342055
       \endverb
     \endentry
+    \entry{Lochner_2020}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=dc7895def97e1dc14c1c5b979511a04b}{%
+           family={Caucutt},
+           familyi={C\bibinitperiod},
+           given={Elizabeth\bibnamedelima M.},
+           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=623004be42b0570d3e07e6461095dc4a}{%
+           family={Lochner},
+           familyi={L\bibinitperiod},
+           given={Lance},
+           giveni={L\bibinitperiod},
+           givenun=1}}%
+      }
+      \strng{namehash}{82fb84f527cfdfa5c78fd8d9a4e9fc39}
+      \strng{fullhash}{82fb84f527cfdfa5c78fd8d9a4e9fc39}
+      \strng{fullhashraw}{82fb84f527cfdfa5c78fd8d9a4e9fc39}
+      \strng{bibnamehash}{82fb84f527cfdfa5c78fd8d9a4e9fc39}
+      \strng{authorbibnamehash}{82fb84f527cfdfa5c78fd8d9a4e9fc39}
+      \strng{authornamehash}{82fb84f527cfdfa5c78fd8d9a4e9fc39}
+      \strng{authorfullhash}{82fb84f527cfdfa5c78fd8d9a4e9fc39}
+      \strng{authorfullhashraw}{82fb84f527cfdfa5c78fd8d9a4e9fc39}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We develop a dynastic human capital investment framework to study the importance of family borrowing constraints and uninsured labor market risk, as well as the process of intergenerational ability transmission, in determining human capital investments in children at different ages. We calibrate our model to data from the Children of the National Longitudinal Survey of Youth. While the effects of relaxing any borrowing limit at a single stage are modest, eliminating all life-cycle borrowing limits dramatically increases investments, earnings, and intergenerational mobility. The impacts of policy changes at college-going ages are greater when anticipated earlier, and shifting subsidies to earlier ages increases aggregate welfare and human capital.}
+      \field{journaltitle}{Journal of Political Economy}
+      \field{number}{3}
+      \field{title}{Early and Late Human Capital Investments, Borrowing Constraints, and the Family}
+      \field{volume}{128}
+      \field{year}{2020}
+      \field{pages}{1065\bibrangedash 1147}
+      \range{pages}{83}
+      \verb{doi}
+      \verb 10.1086/704759
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1086/704759
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1086/704759
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1086/704759
+      \endverb
+    \endentry
     \entry{Chetty_2025}{article}{}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=7a853740afbc544905334cf607b3cd51}{%
@@ -610,70 +665,6 @@
       \verb https://doi.org/10.1093/qje/qjaf050
       \endverb
     \endentry
-    \entry{Chetty_2014}{article}{}{}
-      \name{author}{4}{}{%
-        {{un=0,uniquepart=base,hash=7a853740afbc544905334cf607b3cd51}{%
-           family={Chetty},
-           familyi={C\bibinitperiod},
-           given={Raj},
-           giveni={R\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=8dddc1bd4014bf50f037b3b8772994dd}{%
-           family={Hendren},
-           familyi={H\bibinitperiod},
-           given={Nathaniel},
-           giveni={N\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=363dcbd1a614bc00963eda898f3bd139}{%
-           family={Kline},
-           familyi={K\bibinitperiod},
-           given={Patrick},
-           giveni={P\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=f040f5aac2c176810fed8b44b9c401a4}{%
-           family={Saez},
-           familyi={S\bibinitperiod},
-           given={Emmanuel},
-           giveni={E\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{b58bec813ce5ad0b088d6d3f8e6fc2d3}
-      \strng{fullhash}{b58bec813ce5ad0b088d6d3f8e6fc2d3}
-      \strng{fullhashraw}{b58bec813ce5ad0b088d6d3f8e6fc2d3}
-      \strng{bibnamehash}{b58bec813ce5ad0b088d6d3f8e6fc2d3}
-      \strng{authorbibnamehash}{b58bec813ce5ad0b088d6d3f8e6fc2d3}
-      \strng{authornamehash}{b58bec813ce5ad0b088d6d3f8e6fc2d3}
-      \strng{authorfullhash}{b58bec813ce5ad0b088d6d3f8e6fc2d3}
-      \strng{authorfullhashraw}{b58bec813ce5ad0b088d6d3f8e6fc2d3}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{We use administrative records on the incomes of more than 40 million children and their parents to describe three features of intergenerational mobility in the United States. First, we characterize the joint distribution of parent and child income at the national level. The conditional expectation of child income given parent income is linear in percentile ranks. On average, a 10 percentile increase in parent income is associated with a 3.4 percentile increase in a child’s income. Second, intergenerational mobility varies substantially across areas within the United States. For example, the probability that a child reaches the top quintile of the national income distribution starting from a family in the bottom quintile is 4.4\% in Charlotte but 12.9\% in San Jose. Third, we explore the factors correlated with upward mobility. High mobility areas have (i) less residential segregation, (ii) less income inequality, (iii) better primary schools, (iv) greater social capital, and (v) greater family stability. Although our descriptive analysis does not identify the causal mechanisms that determine upward mobility, the publicly available statistics on intergenerational mobility developed here can facilitate research on such mechanisms.}
-      \field{issn}{0033-5533}
-      \field{journaltitle}{The Quarterly Journal of Economics}
-      \field{month}{09}
-      \field{number}{4}
-      \field{title}{Where is the land of Opportunity? The Geography of Intergenerational Mobility in the United States *}
-      \field{volume}{129}
-      \field{year}{2014}
-      \field{pages}{1553\bibrangedash 1623}
-      \range{pages}{71}
-      \verb{doi}
-      \verb 10.1093/qje/qju022
-      \endverb
-      \verb{eprint}
-      \verb https://academic.oup.com/qje/article-pdf/129/4/1553/30631636/qju022.pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1093/qje/qju022
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1093/qje/qju022
-      \endverb
-    \endentry
     \entry{Corak_2013}{article}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=17dfd8b100e514392abb82c209868a88}{%
@@ -713,53 +704,6 @@
       \endverb
       \verb{url}
       \verb https://www.aeaweb.org/articles?id=10.1257/jep.27.3.79
-      \endverb
-    \endentry
-    \entry{Cunha_2007}{article}{}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=95879561df1d4fe8a5a8dafde92a6aaa}{%
-           family={Cunha},
-           familyi={C\bibinitperiod},
-           given={Flavio},
-           giveni={F\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=31a1496cdbf5dc77b32758042c61ba9c}{%
-           family={Heckman},
-           familyi={H\bibinitperiod},
-           given={James},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{b1c6e837f5cad7ba70f57e20cd8ee583}
-      \strng{fullhash}{b1c6e837f5cad7ba70f57e20cd8ee583}
-      \strng{fullhashraw}{b1c6e837f5cad7ba70f57e20cd8ee583}
-      \strng{bibnamehash}{b1c6e837f5cad7ba70f57e20cd8ee583}
-      \strng{authorbibnamehash}{b1c6e837f5cad7ba70f57e20cd8ee583}
-      \strng{authornamehash}{b1c6e837f5cad7ba70f57e20cd8ee583}
-      \strng{authorfullhash}{b1c6e837f5cad7ba70f57e20cd8ee583}
-      \strng{authorfullhashraw}{b1c6e837f5cad7ba70f57e20cd8ee583}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{American Economic Review}
-      \field{month}{5}
-      \field{number}{2}
-      \field{title}{The Technology of Skill Formation}
-      \field{volume}{97}
-      \field{year}{2007}
-      \field{pages}{31\bibrangedash 47}
-      \range{pages}{17}
-      \verb{doi}
-      \verb 10.1257/aer.97.2.31
-      \endverb
-      \verb{urlraw}
-      \verb https://www.aeaweb.org/articles?id=10.1257/aer.97.2.31
-      \endverb
-      \verb{url}
-      \verb https://www.aeaweb.org/articles?id=10.1257/aer.97.2.31
       \endverb
     \endentry
     \entry{Durlauf_1996}{article}{}{}
@@ -1116,62 +1060,51 @@
       \verb http://www.jstor.org/stable/2999442
       \endverb
     \endentry
-    \entry{Murphy_1991}{article}{}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=2459a19cc6b1187b64ff667577c741d9}{%
-           family={Murphy},
-           familyi={M\bibinitperiod},
-           given={Kevin\bibnamedelima M.},
-           giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=73d7bf2d3105674f373111fc7356eec3}{%
-           family={Shleifer},
-           familyi={S\bibinitperiod},
-           given={Andrei},
+    \entry{Lochner_2011}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=1,uniquepart=given,hash=185de230d06858e647b7bbffecef9087}{%
+           family={Lochner},
+           familyi={L\bibinitperiod},
+           given={Lance\bibnamedelima J.},
+           giveni={L\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=c1163cb45f0c3aef69aea5a35c5ea556}{%
+           family={Monge-Naranjo},
+           familyi={M\bibinithyphendelim N\bibinitperiod},
+           given={Alexander},
            giveni={A\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=a1ba02aecca1ef85adf51c4af4c81a9e}{%
-           family={Vishny},
-           familyi={V\bibinitperiod},
-           given={Robert\bibnamedelima W.},
-           giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod},
-           givenun=0}}%
       }
-      \list{publisher}{1}{%
-        {Oxford University Press}%
-      }
-      \strng{namehash}{3462f78036e3da02b90e5c84b9831915}
-      \strng{fullhash}{3462f78036e3da02b90e5c84b9831915}
-      \strng{fullhashraw}{3462f78036e3da02b90e5c84b9831915}
-      \strng{bibnamehash}{3462f78036e3da02b90e5c84b9831915}
-      \strng{authorbibnamehash}{3462f78036e3da02b90e5c84b9831915}
-      \strng{authornamehash}{3462f78036e3da02b90e5c84b9831915}
-      \strng{authorfullhash}{3462f78036e3da02b90e5c84b9831915}
-      \strng{authorfullhashraw}{3462f78036e3da02b90e5c84b9831915}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \strng{namehash}{f3885c0698a5fc29c6d29af47b2d8b74}
+      \strng{fullhash}{f3885c0698a5fc29c6d29af47b2d8b74}
+      \strng{fullhashraw}{f3885c0698a5fc29c6d29af47b2d8b74}
+      \strng{bibnamehash}{f3885c0698a5fc29c6d29af47b2d8b74}
+      \strng{authorbibnamehash}{f3885c0698a5fc29c6d29af47b2d8b74}
+      \strng{authornamehash}{f3885c0698a5fc29c6d29af47b2d8b74}
+      \strng{authorfullhash}{f3885c0698a5fc29c6d29af47b2d8b74}
+      \strng{authorfullhashraw}{f3885c0698a5fc29c6d29af47b2d8b74}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{A country's most talented people typically organize production by others, so they can spread their ability advantage over a larger scale. when they start firms, they innovate and foster growth, but when they become rent seekers, they only redistribute wealth and reduce growth. Occupational choice depends on returns to ability and to scale in each sector, on market size, and on compensation contracts. In most countries, rent seeking rewards talent more than entrepreneurship does, leading to stagnation. Our evidence shows that countries with a higher proportion of engineering college majors grow faster; whereas countries with a higher proportion of law concentrators grow more slowly.}
-      \field{issn}{00335533, 15314650}
-      \field{journaltitle}{The Quarterly Journal of Economics}
-      \field{number}{2}
-      \field{title}{The Allocation of Talent: Implications for Growth}
-      \field{urlday}{22}
-      \field{urlmonth}{12}
-      \field{urlyear}{2025}
-      \field{volume}{106}
-      \field{year}{1991}
-      \field{urldateera}{ce}
-      \field{pages}{503\bibrangedash 530}
-      \range{pages}{28}
+      \field{journaltitle}{American Economic Review}
+      \field{month}{10}
+      \field{number}{6}
+      \field{title}{The Nature of Credit Constraints and Human Capital}
+      \field{volume}{101}
+      \field{year}{2011}
+      \field{pages}{2487\bibrangedash 2529}
+      \range{pages}{43}
+      \verb{doi}
+      \verb 10.1257/aer.101.6.2487
+      \endverb
       \verb{urlraw}
-      \verb http://www.jstor.org/stable/2937945
+      \verb https://www.aeaweb.org/articles?id=10.1257/aer.101.6.2487
       \endverb
       \verb{url}
-      \verb http://www.jstor.org/stable/2937945
+      \verb https://www.aeaweb.org/articles?id=10.1257/aer.101.6.2487
       \endverb
     \endentry
     \entry{Rosen_1983}{article}{}{}
@@ -1258,70 +1191,6 @@
       \endverb
       \verb{url}
       \verb https://www.aeaweb.org/articles?id=10.1257/pol.2.3.180
-      \endverb
-    \endentry
-    \entry{Smith_2019}{article}{}{}
-      \name{author}{4}{}{%
-        {{un=0,uniquepart=base,hash=892bcbf9fb91b1348837862cbf71f80f}{%
-           family={Smith},
-           familyi={S\bibinitperiod},
-           given={Matthew},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=b959b817d7c67ae93fd77d8ec376d3df}{%
-           family={Yagan},
-           familyi={Y\bibinitperiod},
-           given={Danny},
-           giveni={D\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=0c77ec0c2f1c248c1ce8111764ecbb62}{%
-           family={Zidar},
-           familyi={Z\bibinitperiod},
-           given={Owen},
-           giveni={O\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=9b81e7882778f3acfd3d430a21366088}{%
-           family={Zwick},
-           familyi={Z\bibinitperiod},
-           given={Eric},
-           giveni={E\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{8a22455455a3e0aaf33acc9b51fb80d5}
-      \strng{fullhash}{8a22455455a3e0aaf33acc9b51fb80d5}
-      \strng{fullhashraw}{8a22455455a3e0aaf33acc9b51fb80d5}
-      \strng{bibnamehash}{8a22455455a3e0aaf33acc9b51fb80d5}
-      \strng{authorbibnamehash}{8a22455455a3e0aaf33acc9b51fb80d5}
-      \strng{authornamehash}{8a22455455a3e0aaf33acc9b51fb80d5}
-      \strng{authorfullhash}{8a22455455a3e0aaf33acc9b51fb80d5}
-      \strng{authorfullhashraw}{8a22455455a3e0aaf33acc9b51fb80d5}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{How important is human capital at the top of the U.S. income distribution? A primary source of top income is private “pass-through” business profit, which can include entrepreneurial labor income for tax reasons. This article asks whether top pass-through profit mostly reflects human capital, defined as all inalienable factors embodied in business owners, rather than financial capital. Tax data linking 11 million firms to their owners show that top pass-through profit accrues to working-age owners of closely held mid-market firms in skill-intensive industries. Pass-through profit falls by three-quarters after owner retirement or premature death. Classifying three-quarters of pass-through profit as human capital income, we find that the typical top earner derives most of her income from human capital, not financial capital. Growth in pass-through profit is explained by both rising productivity and a rising share of value added accruing to owners.}
-      \field{issn}{0033-5533}
-      \field{journaltitle}{The Quarterly Journal of Economics}
-      \field{month}{07}
-      \field{number}{4}
-      \field{title}{Capitalists in the Twenty-First Century*}
-      \field{volume}{134}
-      \field{year}{2019}
-      \field{pages}{1675\bibrangedash 1745}
-      \range{pages}{71}
-      \verb{doi}
-      \verb 10.1093/qje/qjz020
-      \endverb
-      \verb{eprint}
-      \verb https://academic.oup.com/qje/article-pdf/134/4/1675/32666241/qjz020.pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1093/qje/qjz020
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1093/qje/qjz020
       \endverb
     \endentry
     \entry{Solon_1999}{incollection}{}{}
@@ -1429,49 +1298,6 @@
       \field{year}{2004}
       \field{pages}{38\bibrangedash 47}
       \range{pages}{10}
-    \endentry
-    \entry{Torvik_2002}{article}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=ee33f499a632409c3d5aa3ee01d2b08a}{%
-           family={Torvik},
-           familyi={T\bibinitperiod},
-           given={Ragnar},
-           giveni={R\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{ee33f499a632409c3d5aa3ee01d2b08a}
-      \strng{fullhash}{ee33f499a632409c3d5aa3ee01d2b08a}
-      \strng{fullhashraw}{ee33f499a632409c3d5aa3ee01d2b08a}
-      \strng{bibnamehash}{ee33f499a632409c3d5aa3ee01d2b08a}
-      \strng{authorbibnamehash}{ee33f499a632409c3d5aa3ee01d2b08a}
-      \strng{authornamehash}{ee33f499a632409c3d5aa3ee01d2b08a}
-      \strng{authorfullhash}{ee33f499a632409c3d5aa3ee01d2b08a}
-      \strng{authorfullhashraw}{ee33f499a632409c3d5aa3ee01d2b08a}
-      \field{sortinit}{T}
-      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{A new and very simple mechanism to explain why natural resource abundance may lower income and welfare is developed. In a model with rent seeking, a greater amount of natural resources increases the number of entrepreneurs engaged in rent seeking and reduces the number of entrepreneurs running productive firms. With a demand externality, it is shown that the drop in income as a result of this is higher than the increase in income from the natural resource. More natural resources thus lead to lower welfare.}
-      \field{issn}{0304-3878}
-      \field{journaltitle}{Journal of Development Economics}
-      \field{number}{2}
-      \field{title}{Natural resources, rent seeking and welfare}
-      \field{volume}{67}
-      \field{year}{2002}
-      \field{pages}{455\bibrangedash 470}
-      \range{pages}{16}
-      \verb{doi}
-      \verb https://doi.org/10.1016/S0304-3878(01)00195-X
-      \endverb
-      \verb{urlraw}
-      \verb https://www.sciencedirect.com/science/article/pii/S030438780100195X
-      \endverb
-      \verb{url}
-      \verb https://www.sciencedirect.com/science/article/pii/S030438780100195X
-      \endverb
-      \keyw{Rent seeking,Natural resources,Demand externalities}
     \endentry
     \entry{Zimmerman_2019}{article}{}{}
       \name{author}{1}{}{%
