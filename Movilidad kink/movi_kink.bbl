@@ -279,6 +279,7 @@
       \strng{authornamehash}{00fd0a6dfb9c5a835c996a57c3dc7f78}
       \strng{authorfullhash}{00fd0a6dfb9c5a835c996a57c3dc7f78}
       \strng{authorfullhashraw}{00fd0a6dfb9c5a835c996a57c3dc7f78}
+      \field{extraname}{1}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
       \field{extradatescope}{labelyear}
@@ -304,6 +305,107 @@
       \verb{url}
       \verb http://www.jstor.org/stable/1833328
       \endverb
+    \endentry
+    \entry{Becker_1986}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=72e0824c9fba8f7f957b80cb8dbe85d2}{%
+           family={Becker},
+           familyi={B\bibinitperiod},
+           given={Gary\bibnamedelima S.},
+           giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fa8b13d48b1d0a585b37cfd0348fb188}{%
+           family={Tomes},
+           familyi={T\bibinitperiod},
+           given={Nigel},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {[The University of Chicago Press, Society of Labor Economists, NORC at the University of Chicago]}%
+      }
+      \strng{namehash}{00fd0a6dfb9c5a835c996a57c3dc7f78}
+      \strng{fullhash}{00fd0a6dfb9c5a835c996a57c3dc7f78}
+      \strng{fullhashraw}{00fd0a6dfb9c5a835c996a57c3dc7f78}
+      \strng{bibnamehash}{00fd0a6dfb9c5a835c996a57c3dc7f78}
+      \strng{authorbibnamehash}{00fd0a6dfb9c5a835c996a57c3dc7f78}
+      \strng{authornamehash}{00fd0a6dfb9c5a835c996a57c3dc7f78}
+      \strng{authorfullhash}{00fd0a6dfb9c5a835c996a57c3dc7f78}
+      \strng{authorfullhashraw}{00fd0a6dfb9c5a835c996a57c3dc7f78}
+      \field{extraname}{2}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper develops a model of the transmission of earnings, assets, and consumption from parents to descendants. The model assumes utility-maximizing parents who are concerned about the welfare of their children. The degree of intergenerational mobility is determined by the interaction of this utility-maximizing behavior with investment and consumption opportunities in different generations and with different kinds of luck. We examine a number of empirical studies for different countries. Regression to the mean in earnings in rich countries appears to be rapid. Almost all the earnings advantages or disadvantages of ancestors are wiped out in three generations.}
+      \field{issn}{0734306X, 15375307}
+      \field{journaltitle}{Journal of Labor Economics}
+      \field{number}{3}
+      \field{title}{Human Capital and the Rise and Fall of Families}
+      \field{urlday}{23}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{volume}{4}
+      \field{year}{1986}
+      \field{urldateera}{ce}
+      \field{pages}{S1\bibrangedash S39}
+      \range{pages}{-1}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/2534952
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/2534952
+      \endverb
+    \endentry
+    \entry{Berritela_2016}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=bbf034d0ff9393268db63774eed6fd3e}{%
+           family={Berrittella},
+           familyi={B\bibinitperiod},
+           given={Maria},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0bd3e2c5f54c7dc2bbbc593065f63bdb}{%
+           family={Dardanoni},
+           familyi={D\bibinitperiod},
+           given={Valentino},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2447b07c0fe5b129ba275479ed900cda}
+      \strng{fullhash}{2447b07c0fe5b129ba275479ed900cda}
+      \strng{fullhashraw}{2447b07c0fe5b129ba275479ed900cda}
+      \strng{bibnamehash}{2447b07c0fe5b129ba275479ed900cda}
+      \strng{authorbibnamehash}{2447b07c0fe5b129ba275479ed900cda}
+      \strng{authornamehash}{2447b07c0fe5b129ba275479ed900cda}
+      \strng{authorfullhash}{2447b07c0fe5b129ba275479ed900cda}
+      \strng{authorfullhashraw}{2447b07c0fe5b129ba275479ed900cda}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The aim of this paper is to explore nonlinearity in intergenerational income transmission. We use a set of occupational tables in different countries to test nonlinearity. We also empirically address how policy variables can affect nonlinearity. Our findings suggest that concavity is supported in those societies with less credit constraints, but with more poverty and income inequality; education has an increasing effect on convexity.}
+      \field{issn}{0313-5926}
+      \field{journaltitle}{Economic Analysis and Policy}
+      \field{title}{Nonlinearity in intergenerational income transmission: A cross-country analysis}
+      \field{volume}{52}
+      \field{year}{2016}
+      \field{pages}{1\bibrangedash 10}
+      \range{pages}{10}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.eap.2016.06.005
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0313592616300352
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0313592616300352
+      \endverb
+      \keyw{Becker–Tomes model,Credit constraints,Education,Income inequality,Nonlinearity}
     \endentry
     \entry{Black_2011}{article}{}{}
       \name{author}{2}{}{%
@@ -400,6 +502,86 @@
       \endverb
       \verb{url}
       \verb https://doi.org/10.1007/s10888-023-09619-0
+      \endverb
+    \endentry
+    \entry{Bratsberg_2007}{article}{}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=ced2fc464a0afc0857620379668d8d79}{%
+           family={Bratsberg},
+           familyi={B\bibinitperiod},
+           given={Bernt},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f7bdf93e47829c25eabc7301f06168bd}{%
+           family={Røed},
+           familyi={R\bibinitperiod},
+           given={Knut},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eaad5ce8b11cdffc2e0792e7daf6765e}{%
+           family={Raaum},
+           familyi={R\bibinitperiod},
+           given={Oddbjørn},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3fa585a75afbcb52ae736afb24f977d7}{%
+           family={Naylor},
+           familyi={N\bibinitperiod},
+           given={Robin},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b02c24e889a5a8c423e06e84654e8070}{%
+           family={Jäntti},
+           familyi={J\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2e0702a8bc83734c2e9aa270c2aff8b2}{%
+           family={Eriksson},
+           familyi={E\bibinitperiod},
+           given={Tor},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=99f1bd107f0839334e3b6f8742c27c94}{%
+           family={Österbacka},
+           familyi={Ö\bibinitperiod},
+           given={Eva},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{fe0a6b9a9d137fbb59f759b918164b76}
+      \strng{fullhash}{fe0a6b9a9d137fbb59f759b918164b76}
+      \strng{fullhashraw}{fe0a6b9a9d137fbb59f759b918164b76}
+      \strng{bibnamehash}{fe0a6b9a9d137fbb59f759b918164b76}
+      \strng{authorbibnamehash}{fe0a6b9a9d137fbb59f759b918164b76}
+      \strng{authornamehash}{fe0a6b9a9d137fbb59f759b918164b76}
+      \strng{authorfullhash}{fe0a6b9a9d137fbb59f759b918164b76}
+      \strng{authorfullhashraw}{fe0a6b9a9d137fbb59f759b918164b76}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We show that the patterns of intergenerational earnings mobility in Denmark, Finland and Norway, unlike those for the US and the UK, are highly nonlinear. The Nordic relationship between log earnings of sons and fathers is flat in the lower segments of the fathers’ earnings distribution – sons growing up in the poorest households have the same adult earnings prospects as sons in moderately poor households – and is increasingly positive in middle and upper segments. This convex pattern contrasts sharply with our findings for the US and the UK, where the relationship is much closer to being linear. As a result, cross-country comparisons of intergenerational earnings elasticities may be misleading with respect to transmission mechanisms in the central parts of the earnings distribution and uninformative in the tails of the distribution.}
+      \field{journaltitle}{The Economic Journal}
+      \field{number}{519}
+      \field{title}{Nonlinearities in Intergenerational Earnings Mobility: Consequences for Cross-Country Comparisons}
+      \field{volume}{117}
+      \field{year}{2007}
+      \field{pages}{C72\bibrangedash C92}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb https://doi.org/10.1111/j.1468-0297.2007.02036.x
+      \endverb
+      \verb{eprint}
+      \verb https://onlinelibrary.wiley.com/doi/pdf/10.1111/j.1468-0297.2007.02036.x
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1468-0297.2007.02036.x
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1468-0297.2007.02036.x
       \endverb
     \endentry
     \entry{Buera_2021}{article}{}{}
@@ -706,6 +888,73 @@
       \verb https://www.aeaweb.org/articles?id=10.1257/jep.27.3.79
       \endverb
     \endentry
+    \entry{Cortes_2024}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=83eccf466ff5ed7a3810d12226855afb}{%
+           family={Cortés\bibnamedelima Orihuela},
+           familyi={C\bibinitperiod\bibinitdelim O\bibinitperiod},
+           given={Javier},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=355cee0b5a63fb56680d28f735bbb759}{%
+           family={Díaz},
+           familyi={D\bibinitperiod},
+           given={Juan\bibnamedelima D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a8b9051f37987c1f08e6431e2a1bc4c1}{%
+           family={Gutiérrez\bibnamedelima Cubillos},
+           familyi={G\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Pablo},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bf51393eb7e3408ec605a16e5c40c41b}{%
+           family={Troncoso},
+           familyi={T\bibinitperiod},
+           given={Pablo\bibnamedelima A.},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1a9472ad3f0ac20a622a322d3fffa632}{%
+           family={Villarroel},
+           familyi={V\bibinitperiod},
+           given={Gabriel\bibnamedelima I.},
+           giveni={G\bibinitperiod\bibinitdelim I\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f1866dd4389b666bded152583fa590d8}
+      \strng{fullhash}{f1866dd4389b666bded152583fa590d8}
+      \strng{fullhashraw}{f1866dd4389b666bded152583fa590d8}
+      \strng{bibnamehash}{f1866dd4389b666bded152583fa590d8}
+      \strng{authorbibnamehash}{f1866dd4389b666bded152583fa590d8}
+      \strng{authornamehash}{f1866dd4389b666bded152583fa590d8}
+      \strng{authorfullhash}{f1866dd4389b666bded152583fa590d8}
+      \strng{authorfullhashraw}{f1866dd4389b666bded152583fa590d8}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper provides the first estimates of intergenerational earnings mobility in Chile using administrative data linking parents' and children's earnings from the formal private sector. We calculate mobility measures across the earnings distribution, revealing high mobility in the bottom 80{\%} and 65{\%} of the parents' and children's distribution, respectively. However, we observe significant persistence in the upper tail of the earnings distribution. Additionally, we identify notable gender heterogeneities in these mobility patterns. Specifically, the intergenerational mobility gender gap shows a nonlinear relationship with respect to parental earnings. Furthermore, we find that differences in mobility between the upper tail of the earnings distribution and the rest of the population are more pronounced for daughters than for sons. These findings suggest that the dynamics of gender-based mobility at the upper tail of the earnings distribution differ from those observed in the rest of the population.}
+      \field{issn}{1435-8921}
+      \field{journaltitle}{Empirical Economics}
+      \field{month}{11}
+      \field{number}{5}
+      \field{title}{Intergenerational earnings mobility in Chile: the tale of the upper tail}
+      \field{volume}{67}
+      \field{year}{2024}
+      \field{pages}{2411\bibrangedash 2447}
+      \range{pages}{37}
+      \verb{doi}
+      \verb 10.1007/s00181-024-02607-x
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s00181-024-02607-x
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s00181-024-02607-x
+      \endverb
+    \endentry
     \entry{Durlauf_1996}{article}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=970b13c0c3f0d6bc26fad003cdd99463}{%
@@ -799,6 +1048,58 @@
       \endverb
       \verb{url}
       \verb https://doi.org/10.1086/696058
+      \endverb
+    \endentry
+    \entry{Gabaix_2008}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=b53634e8226ff6b3b6e290047a5cb42c}{%
+           family={Gabaix},
+           familyi={G\bibinitperiod},
+           given={Xavier},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=801e813c8d7e4c1e61b1fdce03cbbd7d}{%
+           family={Landier},
+           familyi={L\bibinitperiod},
+           given={Augustin},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{816588d53acb96324faa2ca3b3ffbc60}
+      \strng{fullhash}{816588d53acb96324faa2ca3b3ffbc60}
+      \strng{fullhashraw}{816588d53acb96324faa2ca3b3ffbc60}
+      \strng{bibnamehash}{816588d53acb96324faa2ca3b3ffbc60}
+      \strng{authorbibnamehash}{816588d53acb96324faa2ca3b3ffbc60}
+      \strng{authornamehash}{816588d53acb96324faa2ca3b3ffbc60}
+      \strng{authorfullhash}{816588d53acb96324faa2ca3b3ffbc60}
+      \strng{authorfullhashraw}{816588d53acb96324faa2ca3b3ffbc60}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper develops a simple equilibrium model of CEO pay. CEOs have different talents and are matched to firms in a competitive assignment model. In market equilibrium, a CEO's pay depends on both the size of his firm and the aggregate firm size. The model determines the level of CEO pay across firms and over time, offering a benchmark for calibratable corporate finance. We find a very small dispersion in CEO talent, which nonetheless justifies large pay differences. In recent decades at least, the size of large firms explains many of the patterns in CEO pay, across firms, over time, and between countries. In particular, in the baseline specification of the model's parameters, the sixfold increase of U.S. CEO pay between 1980 and 2003 can be fully attributed to the sixfold increase in market capitalization of large companies during that period.}
+      \field{issn}{0033-5533}
+      \field{journaltitle}{The Quarterly Journal of Economics}
+      \field{month}{02}
+      \field{number}{1}
+      \field{title}{Why has CEO Pay Increased So Much?*}
+      \field{volume}{123}
+      \field{year}{2008}
+      \field{pages}{49\bibrangedash 100}
+      \range{pages}{52}
+      \verb{doi}
+      \verb 10.1162/qjec.2008.123.1.49
+      \endverb
+      \verb{eprint}
+      \verb https://academic.oup.com/qje/article-pdf/123/1/49/5339213/123-1-49.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1162/qjec.2008.123.1.49
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1162/qjec.2008.123.1.49
       \endverb
     \endentry
     \entry{Gregg_2019}{article}{}{}
@@ -1060,6 +1361,61 @@
       \verb http://www.jstor.org/stable/2999442
       \endverb
     \endentry
+    \entry{Leites_2022}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=beb1818bfbf947b8563da9ea67451eae}{%
+           family={Leites},
+           familyi={L\bibinitperiod},
+           given={Martín},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=75f70bdff596baa200d29128ebf7dfad}{%
+           family={Ramos},
+           familyi={R\bibinitperiod},
+           given={Xavier},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=363d57e0ec242d4b83773f6a800fea54}{%
+           family={Rodríguez},
+           familyi={R\bibinitperiod},
+           given={Cecilia},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a126111858e84e4c02ef9c1e1257b87f}{%
+           family={Vilá},
+           familyi={V\bibinitperiod},
+           given={Joan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Instituto de Economía - IECON}%
+      }
+      \strng{namehash}{eae446fb6bfb00d7cf062f7c142246f6}
+      \strng{fullhash}{eae446fb6bfb00d7cf062f7c142246f6}
+      \strng{fullhashraw}{eae446fb6bfb00d7cf062f7c142246f6}
+      \strng{bibnamehash}{eae446fb6bfb00d7cf062f7c142246f6}
+      \strng{authorbibnamehash}{eae446fb6bfb00d7cf062f7c142246f6}
+      \strng{authornamehash}{eae446fb6bfb00d7cf062f7c142246f6}
+      \strng{authorfullhash}{eae446fb6bfb00d7cf062f7c142246f6}
+      \strng{authorfullhashraw}{eae446fb6bfb00d7cf062f7c142246f6}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Documentos de Trabajo (working papers)}
+      \field{number}{22-05}
+      \field{title}{Intergenerational Mobility along the Income Distribution: Estimates Using Administrative Data for a Developing Country}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://ideas.repec.org/p/ulr/wpaper/dt-05-22.html
+      \endverb
+      \verb{url}
+      \verb https://ideas.repec.org/p/ulr/wpaper/dt-05-22.html
+      \endverb
+    \endentry
     \entry{Lochner_2011}{article}{}{}
       \name{author}{2}{}{%
         {{un=1,uniquepart=given,hash=185de230d06858e647b7bbffecef9087}{%
@@ -1191,6 +1547,70 @@
       \endverb
       \verb{url}
       \verb https://www.aeaweb.org/articles?id=10.1257/pol.2.3.180
+      \endverb
+    \endentry
+    \entry{Smith_2019}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=892bcbf9fb91b1348837862cbf71f80f}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b959b817d7c67ae93fd77d8ec376d3df}{%
+           family={Yagan},
+           familyi={Y\bibinitperiod},
+           given={Danny},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0c77ec0c2f1c248c1ce8111764ecbb62}{%
+           family={Zidar},
+           familyi={Z\bibinitperiod},
+           given={Owen},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9b81e7882778f3acfd3d430a21366088}{%
+           family={Zwick},
+           familyi={Z\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8a22455455a3e0aaf33acc9b51fb80d5}
+      \strng{fullhash}{8a22455455a3e0aaf33acc9b51fb80d5}
+      \strng{fullhashraw}{8a22455455a3e0aaf33acc9b51fb80d5}
+      \strng{bibnamehash}{8a22455455a3e0aaf33acc9b51fb80d5}
+      \strng{authorbibnamehash}{8a22455455a3e0aaf33acc9b51fb80d5}
+      \strng{authornamehash}{8a22455455a3e0aaf33acc9b51fb80d5}
+      \strng{authorfullhash}{8a22455455a3e0aaf33acc9b51fb80d5}
+      \strng{authorfullhashraw}{8a22455455a3e0aaf33acc9b51fb80d5}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{How important is human capital at the top of the U.S. income distribution? A primary source of top income is private “pass-through” business profit, which can include entrepreneurial labor income for tax reasons. This article asks whether top pass-through profit mostly reflects human capital, defined as all inalienable factors embodied in business owners, rather than financial capital. Tax data linking 11 million firms to their owners show that top pass-through profit accrues to working-age owners of closely held mid-market firms in skill-intensive industries. Pass-through profit falls by three-quarters after owner retirement or premature death. Classifying three-quarters of pass-through profit as human capital income, we find that the typical top earner derives most of her income from human capital, not financial capital. Growth in pass-through profit is explained by both rising productivity and a rising share of value added accruing to owners.}
+      \field{issn}{0033-5533}
+      \field{journaltitle}{The Quarterly Journal of Economics}
+      \field{month}{07}
+      \field{number}{4}
+      \field{title}{Capitalists in the Twenty-First Century*}
+      \field{volume}{134}
+      \field{year}{2019}
+      \field{pages}{1675\bibrangedash 1745}
+      \range{pages}{71}
+      \verb{doi}
+      \verb 10.1093/qje/qjz020
+      \endverb
+      \verb{eprint}
+      \verb https://academic.oup.com/qje/article-pdf/134/4/1675/32666241/qjz020.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1093/qje/qjz020
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1093/qje/qjz020
       \endverb
     \endentry
     \entry{Solon_1999}{incollection}{}{}
