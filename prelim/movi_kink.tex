@@ -1,0 +1,393 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb, amsthm, geometry, setspace, graphicx,appendix,xcolor,tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage[style=authoryear, hyperref=auto,dashed=false,maxnames=99,labelnumber=true,defernumbers=false,sorting=nyt,backend=biber]{biblatex}
+\addbibresource{biblio.bib}
+\newtheorem{proposition}{Proposition}
+\usepackage{enumitem}
+\setlist[itemize]{itemsep=0pt, topsep=2pt}
+\geometry{margin=2.5cm}
+\setstretch{1.2}
+
+\begin{document}
+\title{Nonlinear Intergenerational Mobility: Returns to Human Capital and Discrete Investment Choices}
+\maketitle 
+
+\begin{abstract}
+We study how non-linear returns to human capital shape intergenerational mobility. We develop an intergenerational model of parental investment in which the market return to human capital is increasing and features discrete thresholds. In this environment, the mapping from parental income into optimal investment becomes highly non-linear: small differences in parental income can induce large, discrete changes in investment choices, even in the absence of credit constraints, innate ability differences, or technological complementarities in skill formation. As a result, families sort endogenously into low- and high-investment regimes, generating persistent inequality and reduced intergenerational mobility, particularly at the top of the income distribution. 
+\section{Introduction}
+
+A central feature of intergenerational mobility is that the transmission of income between parents and children is not uniform along the income distribution. This observation has been highlighted in the empirical literature, which points out that the relationship between parents’ and children’s incomes is non-linear even in canonical log–log specifications \parencite{Chetty_2014}. Consistent with this view, a growing body of work documents direct evidence of non-linearities in the intergenerational elasticity of income (IGE), with substantially higher persistence in specific segments of the parental income distribution. For the Nordic economies, \textcite{Bratsberg_2007} find a concave intergenerational relationship at the bottom and a convex one at the top of the distribution. At the international level, \textcite{Berritela_2016} document heterogeneity in intergenerational transmission, while for Latin America recent evidence shows that, although mobility is relatively high in the middle of the distribution, intergenerational persistence is considerably stronger at the top \parencite{Leites_2022,Cortes_2024,Britto_2022}.
+
+These empirical patterns pose a challenge to standard models of intergenerational mobility \parencite{Becker_Tomes_1979,Solon_1999,Solon_2004}. In the canonical human capital investment framework, parental decisions respond smoothly and continuously to changes in income, generating approximately linear relationships between parents’ and children’s incomes. As a result, these models have difficulty explaining why intergenerational persistence is particularly high at the upper tail of the income distribution. This paper starts from this puzzle and proposes a mechanism that endogenously generates non-linearities in intergenerational income transmission.
+
+A natural explanation for the presence of non-linearities in intergenerational mobility is that incentives to invest in human capital are not constant along the income distribution. In particular, if market returns to skills increase disproportionately beyond certain levels of human capital, small differences in parental resources can translate into amplified differences in investment decisions and, consequently, into higher intergenerational income persistence.
+
+In this sense, the profound changes observed in wage structures since the 1980s provide a relevant empirical context for studying the origins of these non-linearities. Since the 1980s, wage inequality has increased substantially in both developed and developing economies. A central explanation for this phenomenon is skill-biased technological change, which has increased the relative demand for more skilled workers \parencite{Katz_1992,Krusell_2000,Card_2002,Buera_2021}. Along these lines, \textcite{Murphy_1993} argue that a substantial fraction of the increase in wage inequality can be attributed to higher returns to skill.
+
+These changes in the structure of labor market returns not only affect the income distribution within a generation, but also have the potential to modify the mechanisms through which economic advantages are transmitted from parents to children. In particular, when returns to human capital increase, parental investment decisions play a central role in shaping children’s future income outcomes.
+
+A natural channel through which to study this connection is human capital investment. In an environment in which the market increasingly rewards skills, it is plausible that parents face stronger incentives to invest in their children’s human capital in order to improve their future economic well-being. Under homogeneous returns to human capital, an increase in the return to skill would induce relatively uniform increases in parental investment, shifting the distribution of children’s incomes without substantially altering its relative composition.
+
+This reasoning changes fundamentally when market returns to skills depend on the level of human capital attained and are increasing in that level. In such a case, parental investment decisions may respond non-linearly to small differences in parental income, giving rise to large and discrete changes in optimal investment. This structure is analogous to a tax system with bracketed marginal rates: just as incentives to generate income change when crossing income thresholds, incentives to invest in human capital change when surpassing specific levels of potential human capital. Unlike the tax case—where marginal rates typically reduce net returns—here marginal returns increase when thresholds are crossed, amplifying differences in investment incentives.
+
+As a consequence, wealthier parents can finance investments sufficient to reach the levels of human capital most highly valued by the market and benefit from increasing returns. In contrast, lower-income parents, unable to cover the cost required to surpass these thresholds, tend to concentrate their investments at low levels of human capital accumulation. This mechanism generates persistent disparities in parental investment and lays the groundwork for lower intergenerational mobility, particularly at the upper end of the income distribution.
+
+Increasing returns to human capital can arise from several mechanisms. On the one hand, the emergence of superstar economies \parencite{Rosen_1983,Autor_2020} has increased demand for highly skilled workers in talent-intensive firms, disproportionately raising returns at the top of the human capital distribution. In this context, reaching sufficiently high levels of human capital allows access to occupations and firms where accumulated skills are especially valued and thus more highly rewarded.
+
+On the other hand, accumulating human capital beyond certain thresholds facilitates access to elite schools and universities, as well as to employers at more productive firms that differentially value such credentials \parencite{Zimmerman_2019,Chetty_2025}. Access to these environments not only directly increases the returns to invested human capital, but also enables the formation of valuable networks and connections \parencite{Bavaro_2022}, which can amplify initial disparities and generate inefficiencies associated with talent misallocation \parencite{Bandyopadhyay_2019}. Consistent with these mechanisms, empirical evidence shows that incomes at the top of the distribution largely reflect high returns to human capital. Executive compensation has increased substantially over recent decades \parencite{Gabaix_2008}, suggesting that the market rewards individuals with high levels of skill and human capital in an increasingly convex manner. Complementarily, using U.S. administrative data, \textcite{Smith_2019} document that a predominant share of income at the top percentile comes from pass-through business income associated with labor and entrepreneurial skills rather than from financial capital. Taken together, these findings suggest that, at the top of the distribution, income responds disproportionately to human capital accumulation, reinforcing the relevance of mechanisms featuring increasing returns.
+
+From an aggregate empirical perspective, a salient fact in modern economies is the positive association between income inequality and intergenerational persistence, a regularity summarized by the so-called \emph{Great Gatsby Curve} \parencite{Corak_2013}. This pattern suggests that economies characterized by greater income dispersion tend to exhibit lower intergenerational mobility on average, placing social mobility at the center of economic and policy debates. In particular, the coexistence of high inequality and low mobility raises fundamental questions about equality of opportunity and challenges the extent to which income differences reflect meritocratic processes as opposed to the persistent transmission of economic advantage across generations.
+
+In light of the mechanisms described above, the \emph{Great Gatsby Curve} can be interpreted as the aggregate manifestation of heterogeneous microeconomic responses to changes in the structure of returns to human capital. This interpretation fits within a literature that has sought to rationalize the link between inequality and intergenerational mobility from different perspectives \parencite{Becker_2018,Durlauf_2018,BouchardSt-Amant2024}, while emphasizing the role of parental investment decisions in the presence of non-linear returns to skill. In particular, when returns to skill investment are increasing and feature thresholds, rising wage inequality not only amplifies income dispersion within a generation, but also intensifies disparities in parental investment decisions. This mechanism generates higher intergenerational persistence, especially at the upper end of the income distribution, where access to high-return regimes is feasible.
+
+This paper formalizes this intuition within an intergenerational model of human capital investment. We build on the classic framework of \textcite{Becker_Tomes_1979}, with simplifications following \textcite{Solon_1999}, and incorporate a structure of differentiated returns to human capital investment. This extension alters optimal parental investment decisions and, as a result, the properties of intergenerational income transmission.
+
+As a result, the parental investment problem features non-convexities associated with the existence of differentiated return regimes to human capital. In particular, parents face a low-return regime at low levels of investment and a high-return regime once a given threshold is surpassed. In this environment, there exists a level of parental income at which parents are indifferent between choosing an investment that keeps them in the low-return regime and an investment that allows access to the high-return regime. Given this point of indifference, intermediate levels of investment between the two regimes are strictly dominated and are not chosen in equilibrium. This structure introduces a bifurcation point at which small changes in parental income can induce large, discrete adjustments in children’s human capital investment.
+
+This mechanism is conceptually analogous to that arising in classic models of non-linear taxation \parencite{Burtless_1978,Hausman_1985}, such as negative income tax (NIT) programs. In those models, the introduction of transfers with discontinuous marginal tax rates generates non-convex budget sets, implying that certain ranges of labor supply never constitute a global optimum under convex preferences. Similarly, in our framework, the presence of thresholds in human capital returns implies that certain intermediate levels of parental investment are strictly dominated, concentrating decisions in low- or high-investment regimes. This pattern contributes to the formation of economic dynasties and to lower intergenerational mobility, particularly at the top of the income distribution.
+
+Within the intergenerational mobility literature, some studies move more directly toward characterizing non-linearities across the entire income distribution. \textcite{Bratsberg_2007} document non-linear intergenerational income transmission in Denmark, Finland, and Norway. At the bottom of the distribution, they find a concave relationship between parental and children’s incomes, consistent with models featuring credit constraints on human capital investment \parencite{Becker_1986,Lochner_2011,Lochner_2020}. At the top of the distribution, the authors suggest the possibility of a convex relationship, motivated by increasing returns to skill investment at high levels of human capital. The interaction of both mechanisms yields an S-shaped relationship, characterized by lower intergenerational mobility at both the bottom and the top of the parental income distribution. However, their analysis does not incorporate an explicit parental investment mechanism capable of explaining how increases in parental income translate into discrete changes in investment decisions and, consequently, into endogenous changes in the slope of intergenerational transmission at the top of the distribution.
+
+Our approach is also related to \textcite{Becker_2018}, who show that children’s income is convex in parental human capital and that economic dynasties may emerge. In their framework, this result arises from complementarities in human capital production \parencite{Cunha_2007}, whereby parental human capital increases productivity both in the labor market and in children’s skill formation. In contrast, in our model income convexity and intergenerational persistence emerge from differences in market returns to human capital beyond certain investment levels, even in the absence of technological complementarities in skill production. In this sense, our mechanism provides an alternative and complementary explanation for the emergence of economic dynasties and non-linearities in the IGE.
+
+Finally, this paper relates to \textcite{Solon_2004}, who shows that global increases in returns to human capital, combined with higher levels of inequality, raise the intergenerational elasticity of income in line with the Great Gatsby Curve. However, in that framework inequality is treated as exogenous, and the role of parental investment decisions or endogenous changes in the structure of human capital returns is not examined. In this respect, our model complements this literature by endogenizing parental investment responses to changes in returns and by showing how these responses can generate persistent non-linearities in intergenerational mobility.
+
+
+%\textcite{Galor_1993}
+%Rentas y college : \textcite{Zimmerman_2019,Murphy_1991,Torvik_2002}
+%Formación de capital Humano \textcite{Cunha_2007}
+%Articulos de Chetty:  \textcite{Chetty_2014,Chetty_2025}
+%Credit Constrains: \textcite{Lochner_2011,Lochner_2020}
+%Referals \textcite{Bavaro_2022}
+%Missallocation: \textcite{Bandyopadhyay_2019}
+
+
+
+\section{Threshold Returns and Discrete Parental Investment Choices}
+
+Consider a family with two generations. The parent lives in period $t-1$ and decides how to allocate income between own consumption and investment in the human capital of the child, who lives in period $t$. Higher investment in human capital today translates into higher income for the child in the future.
+
+In the simplest case, the child’s income increases proportionally with parental investment: each additional unit invested generates the same marginal return, regardless of the investment level. In such an environment, changes in the return to human capital investment affect all families in a similar way and do not qualitatively alter optimal decisions across agents. This paper instead explores a different mechanism. Suppose that returns to human capital investment are not constant but increase beyond a certain investment threshold. In particular, above a level $\bar I$, each additional unit invested yields a higher marginal return than the previous one.
+
+This structure introduces a non-linearity in intergenerational income transmission. The parent maximizes a utility function that is a weighted sum of two concave components: utility from own consumption and utility derived from the child’s future income. Under these preferences, indifference curves are convex.
+
+As illustrated in Figure~\ref{fig:kink}, the presence of a \emph{kink} in market returns to human capital can generate discontinuous behavior and discrete changes in optimal parental investment. For a given level of parental income, two global optima may coexist: one located in the low-return regime and another that exceeds the threshold $\bar I$ and benefits from the discrete increase in marginal returns. A marginal increase in parental income shifts the global optimum to the high-return regime, while a marginal decrease leads the parent to choose the low-return regime. Importantly, under concave preferences over consumption and the child’s income, the parent never chooses to invest exactly $\bar I$, as such an investment does not allow the parent to exploit increasing marginal returns and is therefore strictly dominated.
+
+This figure complements the conjecture proposed by \textcite{Bratsberg_2007} regarding convex non-linearities in intergenerational income relationships, which we endogenize through discrete changes in human capital returns beyond a certain level of parental investment.
+
+This mechanism is conceptually analogous to that arising in classic models of non-linear taxation with transfers, such as negative income tax (NIT) programs \parencite{Burtless_1978,Hausman_1985}. In those models, the presence of segments with discontinuous marginal tax rates generates non-convex budget sets. As a consequence, under convex indifference curves, certain ranges of labor supply never constitute an optimal solution: individuals choose corner solutions associated with different tax regimes, and small changes in non-labor income or policy parameters can induce discrete adjustments in labor supply decisions.
+
+Similarly, in our framework, thresholds in human capital returns induce non-convexities in the parental investment problem. The existence of a discrete change in marginal returns implies that certain intermediate levels of investment are strictly dominated and therefore never chosen in equilibrium. As a result, parental decisions concentrate in two well-defined regimes: a low-investment regime associated with low marginal returns, and a high-investment regime that allows access to increasing returns to human capital. As in non-linear tax models, small variations in parental income can generate discrete changes in the optimal decision, shifting the family from one regime to the other.
+
+It is important to note that this mechanism differs from models of \emph{bunching} under progressive taxation \parencite{Saez_2010}. In that context, budget sets remain convex, there is always a unique global optimum, and the \emph{kink} itself may constitute an optimal choice under certain preference configurations. In contrast, in our environment—much like in models with non-convex budget sets—the threshold $\bar I$ is never chosen in equilibrium under concave preferences, as it does not allow agents to fully exploit increasing marginal returns. This structure generates persistent polarization in parental investment and contributes to the formation of economic dynasties, reducing intergenerational mobility, particularly at the upper end of the income distribution.
+
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[xscale=1.3, yscale=0.5]
+	\label{fig:kink}
+	% Parameters
+	%------------------------------------------------
+	\def\rone{-0.60}   % very low first slope
+	\def\rtwo{1.80}    % very high second slope
+	\def\Ibar{4}
+	\def\e{1}
+	
+	\def\IL{2}
+	\def\IH{6}
+	
+	% Technology
+	\def\yone(#1){(1+\rone)*(#1)+\e}
+	\def\ytwo(#1){(1+\rtwo)*(#1)+\e-(\rtwo-\rone)*\Ibar}
+	
+	%------------------------------------------------
+	% Axes
+	%------------------------------------------------
+	\draw[->] (0,0) -- (8.5,0) node[below] {$I_{t-1}$};
+	\draw[->] (0,0) -- (0,13) node[left] {$y_t$};
+	
+	%------------------------------------------------
+	% Child income (technology)
+	%------------------------------------------------
+	\draw[thick,blue]
+	plot[domain=0:\Ibar] (\x,{\yone(\x)});
+	\draw[thick,blue]
+	plot[domain=\Ibar:7.8] (\x,{\ytwo(\x)});
+	
+	
+	%------------------------------------------------
+	% Kink
+	%------------------------------------------------
+	\filldraw[black] (\Ibar,{\yone(\Ibar)}) circle (2pt);
+	\draw[dashed] (\Ibar,0) -- (\Ibar,{\yone(\Ibar)});
+	\node[below] at (\Ibar,0) {$\bar I$};
+	
+	%------------------------------------------------
+	% Double tangency points
+	%------------------------------------------------
+	\filldraw[red] (\IL,{\yone(\IL)}) circle (2pt);
+	\node[below left] at (\IL,{\yone(\IL)}) {$I_L$};
+	
+	\filldraw[red] (\IH,{\ytwo(\IH)}) circle (2pt);
+	\node[below right] at (\IH,{\ytwo(\IH)}) {$I_H$};
+	%------------------------------------------------
+	% Convex indifference curve (lowered but still convex)
+	%------------------------------------------------
+	\draw[thick]
+	plot[smooth,domain=0.7:7.6]
+	(\x,{
+		0.3*(\x-\IL)^2
+		+ (1+\rone)*(\x-\IL)
+		+ \yone(\IL)
+	});
+	
+	\node at (3,1) {$(1+r)$};
+	\node at (5.5,4) {$(1+r')$};
+	%------------------------------------------------
+	% Tangency guides
+	%------------------------------------------------
+	% At I_L
+	\draw[dotted]
+	(\IL-1.1,{\yone(\IL)-(1+\rone)})
+	--
+	(\IL+1.1,{\yone(\IL)+(1+\rone)});
+	
+	% At I_H
+	\draw[dotted]
+	(\IH-1.1,{\ytwo(\IH)-(1+\rtwo)})
+	--
+	(\IH+1.1,{\ytwo(\IH)+(1+\rtwo)});
+	
+\end{tikzpicture}
+\caption{Optimal parental investment decisions under non-linear returns to human capital. The figure illustrates the coexistence of two global optima, one in the low-return regime and another exceeding the threshold $\bar I$ under convex indifference curves. This result complements Figure 1(b) in \textcite{Bratsberg_2007} by endogenizing the conjecture of a convex relationship in intergenerational income transmission through discrete changes in returns to human capital investment.}
+\label{fig:kink}
+\end{figure}
+
+
+
+\section{Modelo}
+
+Consider a family with two generations. The parent lives in period $t-1$ and decides how to allocate income $y_{t-1}$ between own consumption $c_{t-1}$ and investment in the child’s human capital, $I_{t-1}$, who lives in period $t$. Higher investment in human capital translates into higher income for the child in the future.
+
+We assume that the child’s income features a discrete change in returns to human capital investment. In particular, the marginal return to human capital equals $r$ for investment levels below a threshold $\bar I$, and increases to $r' > r$ once investment exceeds this threshold. The term $e_t$ captures components of the child’s human capital that are inherited and exogenous to parental investment decisions.
+
+Under this structure, the child’s income is given by
+\[
+y_t = (1+r) I_{t-1} + e_t + (r' - r)\max\{0,\, I_{t-1} - \bar I\}.
+\]
+
+Following the simplified framework of \textcite{Solon_1999}, the parent maximizes a utility function that depends on own consumption and the child’s future income, weighted by an altruism parameter $\alpha \in (0,1)$,
+\[
+\alpha \log(c_{t-1}) + (1-\alpha)\log y_t.
+\]
+
+As illustrated in Figure~\ref{fig:kink}, the presence of discrete changes in human capital returns, combined with concave preferences over consumption and the child’s income, implies convex indifference curves. This structure generates a situation in which it is not optimal for the parent to invest exactly at the point where the regime change in returns occurs, nor in its neighborhood. As a result, the intergenerational income transmission technology exhibits an inherent non-linearity.
+
+Local solutions to the parent’s problem are obtained by solving the maximization problem separately within each segment of the linear relationship between the child’s income and human capital investment, under the assumption that each segment extends over the entire investment domain—that is, using the virtual relationships associated with each regime. For any of these solutions to constitute a global optimum, the resulting investment level must lie within the domain of the corresponding segment. Once the candidate global optima are identified, the associated indirect utilities are compared.
+
+It is more informative, however, to directly characterize the level of parental income at which the parent is indifferent between investing under the low-return regime and under the high-return regime. This indifference point determines a threshold beyond which small changes in parental income can induce discrete changes in optimal investment in the child’s human capital.
+
+Given a technological regime with constant return $\rho \in \{r,r'\}$, the parent solves the following local problem:
+\[
+\max_{I\in[0,y_{t-1}]}
+\;
+\alpha \log(y_{t-1}-I)
++
+(1-\alpha)\log\big((1+\rho)I+e_t\big).
+\]
+
+The first-order condition is
+\[
+\frac{\alpha}{y_{t-1}-I}
+=
+\frac{(1-\alpha)(1+\rho)}{(1+\rho)I+e_t},
+\]
+which yields the locally optimal investment
+\[
+I^*(\rho)
+=
+(1-\alpha)y_{t-1}
+-
+\frac{\alpha}{1+\rho}e_t.
+\]
+
+Evaluating the objective function at $I^*(\rho)$ and using the first-order condition, the indirect utility associated with regime $\rho$ can be written as
+\[
+V(\rho)
+=
+\log\big((1+\rho)y_{t-1}+e_t\big)
+-
+\alpha\log(1+\rho)
++
+\alpha\log\alpha
++
+(1-\alpha)\log(1-\alpha).
+\]
+The last term is constant in $\rho$ and therefore irrelevant for regime comparison.
+
+The parent is indifferent between investing under the low-return regime $r$ and the high-return regime $r'>r$ when
+\[
+V(r)=V(r').
+\]
+Using the closed-form expression for indirect utility, this condition can be written as
+\[
+\log\frac{(1+r')y_{t-1}+e_t}{(1+r)y_{t-1}+e_t}
+=
+\alpha
+\log\frac{1+r'}{1+r}.
+\tag{IC}
+\]
+
+Exponentiating both sides yields
+\[
+\frac{(1+r')y_{t-1}+e_t}{(1+r)y_{t-1}+e_t}
+=
+\left(\frac{1+r'}{1+r}\right)^{\alpha}.
+\]
+
+Multiplying and rearranging terms gives
+\[
+(1+r')y_{t-1}+e_t
+=
+\left(\frac{1+r'}{1+r}\right)^{\alpha}
+\big[(1+r)y_{t-1}+e_t\big].
+\]
+
+Collecting terms in $y_{t-1}$,
+\[
+\Big[(1+r')-(1+r)\Big(\tfrac{1+r'}{1+r}\Big)^{\alpha}\Big]y_{t-1}
+=
+e_t\Big[\Big(\tfrac{1+r'}{1+r}\Big)^{\alpha}-1\Big].
+\]
+
+Therefore, the level of parental income that leaves the parent indifferent between the two regimes is given by
+\[
+\boxed{
+y_{t-1}^{\text{ind}}(e_t)
+=
+\frac{
+e_t\Big[\big(\tfrac{1+r'}{1+r}\big)^{\alpha}-1\Big]
+}{
+(1+r')-(1+r)\big(\tfrac{1+r'}{1+r}\big)^{\alpha}
+}
+}
+\]
+
+Since $r'>r$ and $\alpha\in(0,1)$, both the numerator and the denominator are strictly positive, ensuring that $y_{t-1}^{\text{ind}}(e_t)>0$. Consequently, for $y_{t-1}<y_{t-1}^{\text{ind}}(e_t)$ the parent prefers to invest under the low-return regime, while for $y_{t-1}>y_{t-1}^{\text{ind}}(e_t)$ it is optimal to jump discretely to the high-return regime. This mechanism introduces a discontinuity in optimal investment and generates a non-linearity in the intergenerational income transmission technology.
+
+For this income level to act as an effective (\emph{binding}) regime-switching threshold, it must be the case that, when evaluated under the low-return regime, the optimal investment choice reaches the kink in the technology. In particular, parental income $y_{t-1}^{\text{ind}}(e_t)$ must be sufficiently low such that optimal investment in the first segment equals $\bar I$.
+
+Recalling that under the low-return regime optimal investment is given by
+\[
+I^*(y_{t-1},e_t)
+=
+(1-\alpha)y_{t-1}-\frac{\alpha}{1+r}e_t,
+\]
+the condition for the threshold $y_{t-1}^{\text{ind}}(e_t)$ to be economically relevant is
+\[
+I^*\big(y_{t-1}^{\text{ind}}(e_t),e_t\big)\;\leq\;\bar I.
+\]
+
+When this condition holds, the parent is exactly at the boundary of the first segment of the technology, and the preference crossing between regimes translates into an effective switch in the investment regime. Otherwise, if for $y_{t-1}^{\text{ind}}(e_t)$ optimal investment under the low-return regime exceeds $\bar I$, the indifference point has no economic content, since the technological constraint is not binding and the parent would already be operating in the high-return segment.
+
+With this structure, the intergenerational income transmission technology can be written in reduced form by substituting optimal investment choices into the child’s income equation. Since regime choice depends on parental income, two distinct intergenerational relationships emerge.
+
+For parents with income below the indifference threshold,
+\(y_{t-1} \leq y_{t-1}^{\text{ind}}(e_t)\),
+optimal investment occurs under the low-return regime $r$,
+\[
+I^*(r)
+=
+(1-\alpha)y_{t-1}
+-
+\frac{\alpha}{1+r}e_t.
+\]
+Substituting into the child’s income equation yields
+\[
+\begin{aligned}
+y_t
+&=
+(1+r)I^*(r)+e_t \\
+&=
+(1+r)(1-\alpha)y_{t-1}
++
+\alpha e_t.
+\end{aligned}
+\]
+
+For parents with income above the threshold,
+\(y_{t-1} > y_{t-1}^{\text{ind}}(e_t)\),
+the global optimum involves investing under the high-return regime $r'$,
+\[
+I^*(r')
+=
+(1-\alpha)y_{t-1}
+-
+\frac{\alpha}{1+r'}e_t.
+\]
+In this case, the child’s income is given by
+\[
+\begin{aligned}
+y_t
+&=
+(1+r')I^*(r')+e_t \\
+&=
+(1+r')(1-\alpha)y_{t-1}
++
+\alpha e_t.
+\end{aligned}
+\]
+
+As a result, the intergenerational income relationship takes a non-linear, piecewise form, with different slopes depending on the level of parental income:
+\[
+y_t
+=
+\begin{cases}
+(1+r)(1-\alpha)y_{t-1}+\alpha e_t,
+& \text{if } y_{t-1}\leq y_{t-1}^{\text{ind}}(e_t), \\[0.4em]
+(1+r')(1-\alpha)y_{t-1}+\alpha e_t,
+& \text{if } y_{t-1}> y_{t-1}^{\text{ind}}(e_t).
+\end{cases}
+\]
+
+Defining $\beta \equiv (1+r)(1-\alpha)$ and $\beta' \equiv (1+r')(1-\alpha)$, with $\beta' > \beta$, this expression can be rewritten in a form analogous to specifications commonly used in the empirical intergenerational mobility literature, which typically models the relationship between parent and child income as linear in levels or in logs. In our case, this relationship features a structural non-linearity associated with a discrete change in slope beyond a threshold level of parental income:
+\[
+y_t
+=
+\begin{cases}
+\beta y_{t-1}+\alpha e_t,
+& \text{if } y_{t-1}\leq y_{t-1}^{\text{ind}}(e_t), \\[0.4em]
+\beta' y_{t-1}+\alpha e_t,
+& \text{if } y_{t-1}> y_{t-1}^{\text{ind}}(e_t).
+\end{cases}
+\]
+
+This framework naturally connects to the empirical literature on intergenerational mobility, which summarizes economic persistence across generations through the intergenerational elasticity of income (IGE). In that approach, the IGE measures the sensitivity of children’s income to variations in parental income and is interpreted as an aggregate indicator of economic mobility within a society.
+
+In our model, however, this elasticity is not homogeneous across the parental income distribution. Intergenerational transmission operates through distinct regimes: for relatively low-income families, children’s income responds moderately to changes in parental income; in contrast, once parental income exceeds a critical threshold, this response becomes substantially stronger, reflecting higher marginal returns to human capital investment. This structure generates greater intergenerational persistence at the upper end of the income distribution.
+
+As a consequence, intergenerational persistence implied by the model is higher at the top of the income distribution than in the middle, giving rise to an intergenerational elasticity of income (IGE) that varies endogenously along the distribution. This non-linearity provides a structural interpretation of the literature documenting non-linear intergenerational relationships \parencite{Black_2011,Durlauf_2018,Becker_2018}, as well as of empirical evidence identifying these patterns in Latin America \parencite{Leites_2022,Cortes_2024} and in developed economies \parencite{Bratsberg_2007,Berritela_2016,Gregg_2019}.
+
+In particular, findings documenting non-linearities in intergenerational income transmission in European and Latin American contexts suggest that international comparisons based exclusively on aggregate mobility measures, such as IGE, may be misleading. The presence of non-linearities implies that economies with similar aggregate IGE levels can exhibit substantially different patterns of intergenerational persistence along the income distribution, especially at the upper end, where increasing returns to human capital are concentrated.
+
+
+\section{Future Work}
+
+A first avenue for extension is to explain the rise in income inequality endogenously, through increases in the returns to human capital investment at high levels of accumulation. In this regard, \textcite{Becker_Tomes_1979} generate inequality using the coefficient of variation as a measure of income dispersion. However, their approach relies on the assumption that the intergenerational income process along a dynasty $\{y_0, y_1, y_2, \ldots\}$ is stationary.
+
+In the model proposed in this paper, stationarity is difficult to sustain. The presence of regime changes in returns to human capital tends to persistently alter the income distribution, generating dynamics that may amplify inequality over time. One possible way to restore stationarity is to introduce income components that are not directly linked to parental investment decisions, such as idiosyncratic productivity shocks, luck components, or government transfers, which may act as countervailing forces in the intergenerational transmission process. Despite these challenges, the stationarity assumption remains conceptually useful for deriving closed-form expressions and for the analysis of inequality \parencite{Becker_Tomes_1979,Solon_1999,Solon_2004,Bratsberg_2007}.
+
+A second important extension concerns the introduction of taxation. The tax system can modify the relevant slopes of the parent’s budget constraint and, consequently, alter incentives to invest in human capital. In particular, progressive income taxation may attenuate the effective returns to human capital at the upper end of the income distribution, reducing or even eliminating regimes of increasing returns and bringing the intergenerational income relationship closer to the classical linear case. This extension opens the possibility of linking the properties of intergenerational mobility to the degree of tax progressivity across countries. It is plausible that countries exhibiting more linear intergenerational income relationships are characterized by high marginal tax rates at the top of the income distribution, although this remains to be explored.
+
+In this context, it is natural to study how changes in marginal income tax rates affect the shape of the intergenerational transmission and, in particular, how such changes are reflected in the geometry of the parental investment problem illustrated in this paper. This line of research would allow the theoretical model to be connected to observable institutional variation and to comparative evidence on intergenerational mobility.
+
+
+
+
+\printbibliography
+
+
+
+\end{document}

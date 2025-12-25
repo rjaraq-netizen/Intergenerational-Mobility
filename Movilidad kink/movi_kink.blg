@@ -1,30 +1,30 @@
 [0] Config.pm:328> INFO - This is Biber 2.21
 [0] Config.pm:331> INFO - Logfile is 'movi_kink.blg'
-[145] biber-MSWIN64:342> INFO - === 
-[196] Biber.pm:421> INFO - Reading 'movi_kink.bcf'
-[374] Biber.pm:1002> INFO - Found 33 citekeys in bib section 0
-[398] Biber.pm:4487> INFO - Processing section 0
-[413] Biber.pm:4678> INFO - Looking for bibtex file 'biblio.bib' for section 0
-[490] bibtex.pm:1713> INFO - LaTeX decoding ...
-[632] bibtex.pm:1519> INFO - Found BibTeX data source 'biblio.bib'
-[954] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[954] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[954] Biber.pm:4307> INFO - Sorting list 'nyt/global//global/global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[954] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
-[1007] bbl.pm:676> INFO - Writing 'movi_kink.bbl' with encoding 'UTF-8'
-[1039] bbl.pm:779> INFO - Output to movi_kink.bbl
-[1040] Biber.pm:132> WARN - Duplicate entry key: 'Autor_2020' in file 'biblio.bib', skipping ...
-[1040] Biber.pm:132> WARN - Duplicate entry key: 'Zimmerman_2019' in file 'biblio.bib', skipping ...
-[1040] Biber.pm:132> WARN - Duplicate entry key: 'Autor_2020' in file 'biblio.bib', skipping ...
-[1040] Biber.pm:132> WARN - legacy month field 'September' in entry 'Corak_2013' is not an integer - this will probably not sort properly.
-[1040] Biber.pm:132> WARN - legacy month field 'Dec' in entry 'BouchardSt-Amant2024' is not an integer - this will probably not sort properly.
-[1041] Biber.pm:132> WARN - legacy month field 'January' in entry 'Zimmerman_2019' is not an integer - this will probably not sort properly.
-[1041] Biber.pm:132> WARN - legacy month field 'August' in entry 'Saez_2010' is not an integer - this will probably not sort properly.
-[1041] Biber.pm:132> WARN - legacy month field 'October' in entry 'Lochner_2011' is not an integer - this will probably not sort properly.
-[1041] Biber.pm:132> WARN - legacy month field 'Apr' in entry 'Gregg_2019' is not an integer - this will probably not sort properly.
-[1041] Biber.pm:132> WARN - legacy month field 'Nov' in entry 'Cortes_2024' is not an integer - this will probably not sort properly.
-[1041] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\rober\AppData\Local\Temp\biber_tmp_qYvi\a9e03cb3043b9e2c02591da84105bb68_22868.utf8, line 131, warning: 3 characters of junk seen at toplevel
-[1041] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\rober\AppData\Local\Temp\biber_tmp_qYvi\a9e03cb3043b9e2c02591da84105bb68_22868.utf8, line 206, warning: 11 characters of junk seen at toplevel
-[1041] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\rober\AppData\Local\Temp\biber_tmp_qYvi\a9e03cb3043b9e2c02591da84105bb68_22868.utf8, line 346, warning: 3 characters of junk seen at toplevel
-[1041] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\rober\AppData\Local\Temp\biber_tmp_qYvi\a9e03cb3043b9e2c02591da84105bb68_22868.utf8, line 620, warning: 3 characters of junk seen at toplevel
-[1042] Biber.pm:134> INFO - WARNINGS: 14
+[301] biber-MSWIN64:342> INFO - === 
+[419] Biber.pm:421> INFO - Reading 'movi_kink.bcf'
+[581] Biber.pm:1002> INFO - Found 33 citekeys in bib section 0
+[603] Biber.pm:4487> INFO - Processing section 0
+[629] Biber.pm:4678> INFO - Looking for bibtex file 'biblio.bib' for section 0
+[709] bibtex.pm:1713> INFO - LaTeX decoding ...
+[845] bibtex.pm:1519> INFO - Found BibTeX data source 'biblio.bib'
+[1225] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1225] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1225] Biber.pm:4307> INFO - Sorting list 'nyt/global//global/global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[1226] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[1334] bbl.pm:676> INFO - Writing 'movi_kink.bbl' with encoding 'UTF-8'
+[1369] bbl.pm:779> INFO - Output to movi_kink.bbl
+[1370] Biber.pm:132> WARN - Duplicate entry key: 'Autor_2020' in file 'biblio.bib', skipping ...
+[1370] Biber.pm:132> WARN - Duplicate entry key: 'Zimmerman_2019' in file 'biblio.bib', skipping ...
+[1370] Biber.pm:132> WARN - Duplicate entry key: 'Autor_2020' in file 'biblio.bib', skipping ...
+[1370] Biber.pm:132> WARN - legacy month field 'Nov' in entry 'Cortes_2024' is not an integer - this will probably not sort properly.
+[1370] Biber.pm:132> WARN - legacy month field 'January' in entry 'Zimmerman_2019' is not an integer - this will probably not sort properly.
+[1370] Biber.pm:132> WARN - legacy month field 'September' in entry 'Corak_2013' is not an integer - this will probably not sort properly.
+[1370] Biber.pm:132> WARN - legacy month field 'Dec' in entry 'BouchardSt-Amant2024' is not an integer - this will probably not sort properly.
+[1370] Biber.pm:132> WARN - legacy month field 'August' in entry 'Saez_2010' is not an integer - this will probably not sort properly.
+[1370] Biber.pm:132> WARN - legacy month field 'Apr' in entry 'Gregg_2019' is not an integer - this will probably not sort properly.
+[1371] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\rober\AppData\Local\Temp\biber_tmp_MC7f\a9e03cb3043b9e2c02591da84105bb68_19620.utf8, line 131, warning: 3 characters of junk seen at toplevel
+[1371] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\rober\AppData\Local\Temp\biber_tmp_MC7f\a9e03cb3043b9e2c02591da84105bb68_19620.utf8, line 206, warning: 11 characters of junk seen at toplevel
+[1371] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\rober\AppData\Local\Temp\biber_tmp_MC7f\a9e03cb3043b9e2c02591da84105bb68_19620.utf8, line 346, warning: 3 characters of junk seen at toplevel
+[1371] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\rober\AppData\Local\Temp\biber_tmp_MC7f\a9e03cb3043b9e2c02591da84105bb68_19620.utf8, line 620, warning: 3 characters of junk seen at toplevel
+[1371] Biber.pm:132> WARN - I didn't find a database entry for 'Solon_1999_Solon_2004' (section 0)
+[1371] Biber.pm:134> INFO - WARNINGS: 14

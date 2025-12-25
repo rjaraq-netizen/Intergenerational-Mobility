@@ -807,6 +807,56 @@
       \verb https://doi.org/10.1086/342055
       \endverb
     \endentry
+    \entry{Lochner_2020}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=dc7895def97e1dc14c1c5b979511a04b}{%
+           family={Caucutt},
+           familyi={C\bibinitperiod},
+           given={Elizabeth\bibnamedelima M.},
+           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=623004be42b0570d3e07e6461095dc4a}{%
+           family={Lochner},
+           familyi={L\bibinitperiod},
+           given={Lance},
+           giveni={L\bibinitperiod},
+           givenun=1}}%
+      }
+      \strng{namehash}{82fb84f527cfdfa5c78fd8d9a4e9fc39}
+      \strng{fullhash}{82fb84f527cfdfa5c78fd8d9a4e9fc39}
+      \strng{fullhashraw}{82fb84f527cfdfa5c78fd8d9a4e9fc39}
+      \strng{bibnamehash}{82fb84f527cfdfa5c78fd8d9a4e9fc39}
+      \strng{authorbibnamehash}{82fb84f527cfdfa5c78fd8d9a4e9fc39}
+      \strng{authornamehash}{82fb84f527cfdfa5c78fd8d9a4e9fc39}
+      \strng{authorfullhash}{82fb84f527cfdfa5c78fd8d9a4e9fc39}
+      \strng{authorfullhashraw}{82fb84f527cfdfa5c78fd8d9a4e9fc39}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We develop a dynastic human capital investment framework to study the importance of family borrowing constraints and uninsured labor market risk, as well as the process of intergenerational ability transmission, in determining human capital investments in children at different ages. We calibrate our model to data from the Children of the National Longitudinal Survey of Youth. While the effects of relaxing any borrowing limit at a single stage are modest, eliminating all life-cycle borrowing limits dramatically increases investments, earnings, and intergenerational mobility. The impacts of policy changes at college-going ages are greater when anticipated earlier, and shifting subsidies to earlier ages increases aggregate welfare and human capital.}
+      \field{journaltitle}{Journal of Political Economy}
+      \field{number}{3}
+      \field{title}{Early and Late Human Capital Investments, Borrowing Constraints, and the Family}
+      \field{volume}{128}
+      \field{year}{2020}
+      \field{pages}{1065\bibrangedash 1147}
+      \range{pages}{83}
+      \verb{doi}
+      \verb 10.1086/704759
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1086/704759
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1086/704759
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1086/704759
+      \endverb
+    \endentry
     \entry{Chetty_2025}{article}{}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=7a853740afbc544905334cf607b3cd51}{%
@@ -1033,6 +1083,53 @@
       \endverb
       \verb{url}
       \verb https://doi.org/10.1007/s00181-024-02607-x
+      \endverb
+    \endentry
+    \entry{Cunha_2007}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=95879561df1d4fe8a5a8dafde92a6aaa}{%
+           family={Cunha},
+           familyi={C\bibinitperiod},
+           given={Flavio},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=31a1496cdbf5dc77b32758042c61ba9c}{%
+           family={Heckman},
+           familyi={H\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b1c6e837f5cad7ba70f57e20cd8ee583}
+      \strng{fullhash}{b1c6e837f5cad7ba70f57e20cd8ee583}
+      \strng{fullhashraw}{b1c6e837f5cad7ba70f57e20cd8ee583}
+      \strng{bibnamehash}{b1c6e837f5cad7ba70f57e20cd8ee583}
+      \strng{authorbibnamehash}{b1c6e837f5cad7ba70f57e20cd8ee583}
+      \strng{authornamehash}{b1c6e837f5cad7ba70f57e20cd8ee583}
+      \strng{authorfullhash}{b1c6e837f5cad7ba70f57e20cd8ee583}
+      \strng{authorfullhashraw}{b1c6e837f5cad7ba70f57e20cd8ee583}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Economic Review}
+      \field{month}{5}
+      \field{number}{2}
+      \field{title}{The Technology of Skill Formation}
+      \field{volume}{97}
+      \field{year}{2007}
+      \field{pages}{31\bibrangedash 47}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1257/aer.97.2.31
+      \endverb
+      \verb{urlraw}
+      \verb https://www.aeaweb.org/articles?id=10.1257/aer.97.2.31
+      \endverb
+      \verb{url}
+      \verb https://www.aeaweb.org/articles?id=10.1257/aer.97.2.31
       \endverb
     \endentry
     \entry{Durlauf_2018}{article}{}{}
@@ -1450,6 +1547,53 @@
       \verb https://ideas.repec.org/p/ulr/wpaper/dt-05-22.html
       \endverb
     \endentry
+    \entry{Lochner_2011}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=1,uniquepart=given,hash=185de230d06858e647b7bbffecef9087}{%
+           family={Lochner},
+           familyi={L\bibinitperiod},
+           given={Lance\bibnamedelima J.},
+           giveni={L\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=c1163cb45f0c3aef69aea5a35c5ea556}{%
+           family={Monge-Naranjo},
+           familyi={M\bibinithyphendelim N\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f3885c0698a5fc29c6d29af47b2d8b74}
+      \strng{fullhash}{f3885c0698a5fc29c6d29af47b2d8b74}
+      \strng{fullhashraw}{f3885c0698a5fc29c6d29af47b2d8b74}
+      \strng{bibnamehash}{f3885c0698a5fc29c6d29af47b2d8b74}
+      \strng{authorbibnamehash}{f3885c0698a5fc29c6d29af47b2d8b74}
+      \strng{authornamehash}{f3885c0698a5fc29c6d29af47b2d8b74}
+      \strng{authorfullhash}{f3885c0698a5fc29c6d29af47b2d8b74}
+      \strng{authorfullhashraw}{f3885c0698a5fc29c6d29af47b2d8b74}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Economic Review}
+      \field{month}{10}
+      \field{number}{6}
+      \field{title}{The Nature of Credit Constraints and Human Capital}
+      \field{volume}{101}
+      \field{year}{2011}
+      \field{pages}{2487\bibrangedash 2529}
+      \range{pages}{43}
+      \verb{doi}
+      \verb 10.1257/aer.101.6.2487
+      \endverb
+      \verb{urlraw}
+      \verb https://www.aeaweb.org/articles?id=10.1257/aer.101.6.2487
+      \endverb
+      \verb{url}
+      \verb https://www.aeaweb.org/articles?id=10.1257/aer.101.6.2487
+      \endverb
+    \endentry
     \entry{Rosen_1983}{article}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=9ad40576acffeb7d769dc8b41f375d2b}{%
@@ -1748,7 +1892,6 @@
       \endverb
     \endentry
   \enddatalist
-  \missing{Solon_1999_Solon_2004}
 \endrefsection
 \endinput
 

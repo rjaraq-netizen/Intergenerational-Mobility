@@ -2397,36 +2397,40 @@
     <bcf:citekey order="12" intorder="1">Gabaix_2008</bcf:citekey>
     <bcf:citekey order="13" intorder="1">Smith_2019</bcf:citekey>
     <bcf:citekey order="14" intorder="1">Corak_2013</bcf:citekey>
-    <bcf:citekey order="15" intorder="1">Durlauf_2018</bcf:citekey>
-    <bcf:citekey order="15" intorder="2">BouchardSt-Amant2024</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">Becker_2018</bcf:citekey>
+    <bcf:citekey order="15" intorder="2">Durlauf_2018</bcf:citekey>
+    <bcf:citekey order="15" intorder="3">BouchardSt-Amant2024</bcf:citekey>
     <bcf:citekey order="16" intorder="1">Becker_Tomes_1979</bcf:citekey>
     <bcf:citekey order="17" intorder="1">Solon_1999</bcf:citekey>
     <bcf:citekey order="18" intorder="1">Burtless_1978</bcf:citekey>
     <bcf:citekey order="18" intorder="2">Hausman_1985</bcf:citekey>
     <bcf:citekey order="19" intorder="1">Bratsberg_2007</bcf:citekey>
     <bcf:citekey order="20" intorder="1">Becker_1986</bcf:citekey>
+    <bcf:citekey order="20" intorder="2">Lochner_2011</bcf:citekey>
+    <bcf:citekey order="20" intorder="3">Lochner_2020</bcf:citekey>
     <bcf:citekey order="21" intorder="1">Becker_2018</bcf:citekey>
-    <bcf:citekey order="22" intorder="1">Solon_2004</bcf:citekey>
-    <bcf:citekey order="23" intorder="1">Bratsberg_2007</bcf:citekey>
-    <bcf:citekey order="24" intorder="1">Burtless_1978</bcf:citekey>
-    <bcf:citekey order="24" intorder="2">Hausman_1985</bcf:citekey>
-    <bcf:citekey order="25" intorder="1">Saez_2010</bcf:citekey>
-    <bcf:citekey order="26" intorder="1">Bratsberg_2007</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">Cunha_2007</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">Solon_2004</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">Bratsberg_2007</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">Burtless_1978</bcf:citekey>
+    <bcf:citekey order="25" intorder="2">Hausman_1985</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">Saez_2010</bcf:citekey>
     <bcf:citekey order="27" intorder="1">Bratsberg_2007</bcf:citekey>
-    <bcf:citekey order="28" intorder="1">Solon_1999</bcf:citekey>
-    <bcf:citekey order="29" intorder="1">Black_2011</bcf:citekey>
-    <bcf:citekey order="29" intorder="2">Durlauf_2018</bcf:citekey>
-    <bcf:citekey order="29" intorder="3">Becker_2018</bcf:citekey>
-    <bcf:citekey order="30" intorder="1">Leites_2022</bcf:citekey>
-    <bcf:citekey order="30" intorder="2">Cortes_2024</bcf:citekey>
-    <bcf:citekey order="31" intorder="1">Bratsberg_2007</bcf:citekey>
-    <bcf:citekey order="31" intorder="2">Berritela_2016</bcf:citekey>
-    <bcf:citekey order="31" intorder="3">Gregg_2019</bcf:citekey>
-    <bcf:citekey order="32" intorder="1">Becker_Tomes_1979</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">Bratsberg_2007</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">Solon_1999</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">Black_2011</bcf:citekey>
+    <bcf:citekey order="30" intorder="2">Durlauf_2018</bcf:citekey>
+    <bcf:citekey order="30" intorder="3">Becker_2018</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">Leites_2022</bcf:citekey>
+    <bcf:citekey order="31" intorder="2">Cortes_2024</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">Bratsberg_2007</bcf:citekey>
+    <bcf:citekey order="32" intorder="2">Berritela_2016</bcf:citekey>
+    <bcf:citekey order="32" intorder="3">Gregg_2019</bcf:citekey>
     <bcf:citekey order="33" intorder="1">Becker_Tomes_1979</bcf:citekey>
-    <bcf:citekey order="33" intorder="2">Solon_1999</bcf:citekey>
-    <bcf:citekey order="33" intorder="3">Solon_2004</bcf:citekey>
-    <bcf:citekey order="33" intorder="4">Bratsberg_2007</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">Becker_Tomes_1979</bcf:citekey>
+    <bcf:citekey order="34" intorder="2">Solon_1999</bcf:citekey>
+    <bcf:citekey order="34" intorder="3">Solon_2004</bcf:citekey>
+    <bcf:citekey order="34" intorder="4">Bratsberg_2007</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
