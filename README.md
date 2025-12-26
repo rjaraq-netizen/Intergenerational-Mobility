@@ -44,7 +44,4 @@ The framework provides a mechanism-consistent interpretation of empirical patter
   - Progressive taxation with distint marginal tax rate. 
   - How changes in the rate of return of human capital investments affect inequality and mobility.
 
----
-If you use or build on this repository, please cite it as:
 
-> *Author*. **Intergenerational Mobility and Nonlinear Human Capital Returns**. Working paper.
