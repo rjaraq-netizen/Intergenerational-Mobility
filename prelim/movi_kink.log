@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.8)  26 DEC 2025 00:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.8)  26 DEC 2025 18:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -886,31 +886,20 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'movi_kink.bbl' found.
- (movi_kink.bbl
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Krueger_2012
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-)
+ (movi_kink.bbl)
 Package biblatex Info: Reference section=0 on input line 13.
 Package biblatex Info: Reference segment=0 on input line 13.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 15.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 16.
 
- (E:\Miktex\tex/latex/amsfonts\umsa.fd
+
+(E:\Miktex\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 15.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 16.
 
  (E:\Miktex\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-
-LaTeX Warning: No \author given.
-
-
 
 [1
 
@@ -918,16 +907,12 @@ LaTeX Warning: No \author given.
 
 [2]
 
-LaTeX Warning: Citation 'Krueger_2012' on page 3 undefined on input line 29.
-
-
-
 [3]
 
 [4]
 
 [5]
-Overfull \hbox (12.27829pt too wide) in paragraph at lines 69--70
+Overfull \hbox (12.27829pt too wide) in paragraph at lines 70--71
 []\OT1/cmr/m/n/10.95 Similarly, in our frame-work, thresh-olds in hu-man cap-i-
 tal re-turns in-duce non-convexities
  []
@@ -943,7 +928,7 @@ tal re-turns in-duce non-convexities
 [9]
 
 [10]
-Overfull \hbox (0.38535pt too wide) in paragraph at lines 360--361
+Overfull \hbox (0.38535pt too wide) in paragraph at lines 361--362
 []\OT1/cmr/m/n/10.95 In par-tic-u-lar, find-ings doc-u-ment-ing non-linearities
  in in-ter-gen-er-a-tional in-come trans-
  []
@@ -953,7 +938,7 @@ Overfull \hbox (0.38535pt too wide) in paragraph at lines 360--361
 [11]
 
 [12]
-Overfull \hbox (7.19217pt too wide) in paragraph at lines 377--377
+Overfull \hbox (7.19217pt too wide) in paragraph at lines 378--378
 \OT1/cmr/m/n/12 bil-ity and hu-man cap-i-tal ac-cu-mu-la-tion''. In: \OT1/cmr/m
 /it/12 Eco-nomic Mod-elling \OT1/cmr/m/n/12 110, p. 105811.
  []
@@ -963,7 +948,7 @@ Overfull \hbox (7.19217pt too wide) in paragraph at lines 377--377
 [13]
 
 [14]
-Overfull \hbox (1.74763pt too wide) in paragraph at lines 377--377
+Overfull \hbox (1.74763pt too wide) in paragraph at lines 378--378
 [][]\OT1/cmr/m/n/12 Durlauf, Steven N. and Ananth Se-shadri (2018). ``Un-der-st
 and-ing the Great Gatsby
  []
@@ -971,7 +956,7 @@ and-ing the Great Gatsby
 
 
 [15]
-Overfull \hbox (4.18507pt too wide) in paragraph at lines 377--377
+Overfull \hbox (4.18507pt too wide) in paragraph at lines 378--378
 \OT1/cmr/m/n/12 Credit Con-straints and Hu-man Cap-i-tal''. In: \OT1/cmr/m/it/1
 2 Amer-i-can Eco-nomic Re-view \OT1/cmr/m/n/12 101.6,
  []
@@ -982,13 +967,13 @@ Overfull \hbox (4.18507pt too wide) in paragraph at lines 377--377
 
 [17]
 
-! LaTeX Error: \begin{abstract} on input line 17 ended by \end{document}.
+! LaTeX Error: \begin{abstract} on input line 18 ended by \end{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.380 \end{document}
+l.381 \end{document}
                     
 ? 
 (movi_kink.aux)
@@ -998,14 +983,7 @@ L3 programming layer <2025-10-09>
  ***********
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
-
-
-Package biblatex Warning: Please rerun LaTeX.
-(biblatex)                Page breaks have changed.
 
 Package logreq Info: Writing requests to 'movi_kink.run.xml'.
 \openout1 = `movi_kink.run.xml'.
@@ -1013,13 +991,13 @@ Package logreq Info: Writing requests to 'movi_kink.run.xml'.
  )
 (\end occurred inside a group at level 1)
 
-### semi simple group (level 1) entered at line 17 (\begingroup)
+### semi simple group (level 1) entered at line 18 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 32816 strings out of 468080
- 784985 string characters out of 5442607
- 1696226 words of memory out of 5000000
- 61024 multiletter control sequences out of 15000+600000
+ 32822 strings out of 468080
+ 785159 string characters out of 5442607
+ 1696314 words of memory out of 5000000
+ 61030 multiletter control sequences out of 15000+600000
  638889 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,10n,87p,2036b,1628s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1036,7 +1014,7 @@ ts/type1/public/amsfonts/cm/cmsy10.pfb><E:/Miktex/fonts/type1/public/amsfonts/c
 m/cmsy6.pfb><E:/Miktex/fonts/type1/public/amsfonts/cm/cmsy8.pfb><E:/Miktex/font
 s/type1/public/amsfonts/cm/cmti10.pfb><E:/Miktex/fonts/type1/public/amsfonts/cm
 /cmti12.pfb><E:/Miktex/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on movi_kink.pdf (17 pages, 293094 bytes).
+Output written on movi_kink.pdf (17 pages, 292287 bytes).
 PDF statistics:
  155 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

@@ -1140,12 +1140,12 @@
            given={Stacy\bibnamedelima Berg},
            giveni={S\bibinitperiod\bibinitdelim B\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=34526c3bf548080921683822747fad7e}{%
+        {{un=1,uniquepart=given,hash=34526c3bf548080921683822747fad7e}{%
            family={Krueger},
            familyi={K\bibinitperiod},
            given={Alan\bibnamedelima B.},
            giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
       }
       \strng{namehash}{2d46196936819de4cb23b4473f25364a}
       \strng{fullhash}{2d46196936819de4cb23b4473f25364a}
@@ -1479,6 +1479,34 @@
       \verb{url}
       \verb https://doi.org/10.2307/2118323
       \endverb
+    \endentry
+    \entry{Krueger_2012}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=1,uniquepart=given,hash=785092a4b37542bb40bea00956803f89}{%
+           family={Krueger},
+           familyi={K\bibinitperiod},
+           given={Alan},
+           giveni={A\bibinitperiod},
+           givenun=1}}%
+      }
+      \strng{namehash}{785092a4b37542bb40bea00956803f89}
+      \strng{fullhash}{785092a4b37542bb40bea00956803f89}
+      \strng{fullhashraw}{785092a4b37542bb40bea00956803f89}
+      \strng{bibnamehash}{785092a4b37542bb40bea00956803f89}
+      \strng{authorbibnamehash}{785092a4b37542bb40bea00956803f89}
+      \strng{authornamehash}{785092a4b37542bb40bea00956803f89}
+      \strng{authorfullhash}{785092a4b37542bb40bea00956803f89}
+      \strng{authorfullhashraw}{785092a4b37542bb40bea00956803f89}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Speech at the Center for American Progress, Washington, DC}
+      \field{note}{Accessed: 2025-12-25}
+      \field{title}{The Rise and Consequences of Inequality in the United States}
+      \field{year}{2012}
     \endentry
     \entry{Krusell_2000}{article}{}{}
       \name{author}{4}{}{%
@@ -1944,7 +1972,6 @@
       \endverb
     \endentry
   \enddatalist
-  \missing{Krueger_2012}
 \endrefsection
 \endinput
 
