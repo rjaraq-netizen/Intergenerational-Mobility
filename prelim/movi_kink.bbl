@@ -1132,6 +1132,58 @@
       \verb https://www.aeaweb.org/articles?id=10.1257/aer.97.2.31
       \endverb
     \endentry
+    \entry{Dale_2002}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=20bbd35e6a26f958835cdf32f49447c3}{%
+           family={Dale},
+           familyi={D\bibinitperiod},
+           given={Stacy\bibnamedelima Berg},
+           giveni={S\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=34526c3bf548080921683822747fad7e}{%
+           family={Krueger},
+           familyi={K\bibinitperiod},
+           given={Alan\bibnamedelima B.},
+           giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2d46196936819de4cb23b4473f25364a}
+      \strng{fullhash}{2d46196936819de4cb23b4473f25364a}
+      \strng{fullhashraw}{2d46196936819de4cb23b4473f25364a}
+      \strng{bibnamehash}{2d46196936819de4cb23b4473f25364a}
+      \strng{authorbibnamehash}{2d46196936819de4cb23b4473f25364a}
+      \strng{authornamehash}{2d46196936819de4cb23b4473f25364a}
+      \strng{authorfullhash}{2d46196936819de4cb23b4473f25364a}
+      \strng{authorfullhashraw}{2d46196936819de4cb23b4473f25364a}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Estimates of the effect of college selectivity on earnings may be biased because elite colleges admit students, in part, based on characteristics that are related to future earnings. We matched students who applied to, and were accepted by, similar colleges to try to eliminate this bias. Using the College and Beyond data set and National Longitudinal Survey of the High School Class of 1972, we find that students who attended more selective colleges earned about the same as students of seemingly comparable ability who attended less selective schools. Children from low-income families, however, earned more if they attended selective colleges.}
+      \field{issn}{0033-5533}
+      \field{journaltitle}{The Quarterly Journal of Economics}
+      \field{month}{11}
+      \field{number}{4}
+      \field{title}{Estimating the Payoff to Attending a More Selective College: An Application of Selection on Observables and Unobservables*}
+      \field{volume}{117}
+      \field{year}{2002}
+      \field{pages}{1491\bibrangedash 1527}
+      \range{pages}{37}
+      \verb{doi}
+      \verb 10.1162/003355302320935089
+      \endverb
+      \verb{eprint}
+      \verb https://academic.oup.com/qje/article-pdf/117/4/1491/5304491/117-4-1491.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1162/003355302320935089
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1162/003355302320935089
+      \endverb
+    \endentry
     \entry{Durlauf_2018}{article}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=970b13c0c3f0d6bc26fad003cdd99463}{%
@@ -1892,6 +1944,7 @@
       \endverb
     \endentry
   \enddatalist
+  \missing{Krueger_2012}
 \endrefsection
 \endinput
 

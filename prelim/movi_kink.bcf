@@ -2390,13 +2390,15 @@
     <bcf:citekey order="7" intorder="1">Murphy_1993</bcf:citekey>
     <bcf:citekey order="8" intorder="1">Rosen_1983</bcf:citekey>
     <bcf:citekey order="8" intorder="2">Autor_2020</bcf:citekey>
-    <bcf:citekey order="9" intorder="1">Zimmerman_2019</bcf:citekey>
-    <bcf:citekey order="9" intorder="2">Chetty_2025</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">Dale_2002</bcf:citekey>
+    <bcf:citekey order="9" intorder="2">Zimmerman_2019</bcf:citekey>
+    <bcf:citekey order="9" intorder="3">Chetty_2025</bcf:citekey>
     <bcf:citekey order="10" intorder="1">Bavaro_2022</bcf:citekey>
     <bcf:citekey order="11" intorder="1">Bandyopadhyay_2019</bcf:citekey>
     <bcf:citekey order="12" intorder="1">Gabaix_2008</bcf:citekey>
     <bcf:citekey order="13" intorder="1">Smith_2019</bcf:citekey>
-    <bcf:citekey order="14" intorder="1">Corak_2013</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">Krueger_2012</bcf:citekey>
+    <bcf:citekey order="14" intorder="2">Corak_2013</bcf:citekey>
     <bcf:citekey order="15" intorder="1">Becker_2018</bcf:citekey>
     <bcf:citekey order="15" intorder="2">Durlauf_2018</bcf:citekey>
     <bcf:citekey order="15" intorder="3">BouchardSt-Amant2024</bcf:citekey>
